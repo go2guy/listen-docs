@@ -7,9 +7,8 @@
          xmlns:ns3="http://www.w3.org/1998/Math/MathML"
          xmlns:ns="http://docbook.org/ns/docbook">
   <info>
-  <title><emphasis role="bold"><guibutton>VoIP Phone
+    <title><emphasis role="bold"><guibutton>VoIP Phone
     Configuration</guibutton></emphasis></title>
-    
 
     <biblioid>A00002010081701</biblioid>
 
@@ -28,15 +27,19 @@
     </revhistory>
   </info>
 
-  <section><title>Linksys IP Phone SPA942 Configuration</title>
-    
+  <section>
+    <title>Linksys IP Phone SPA942 Configuration</title>
 
     <para><emphasis role="bold">These are instructions for configuring your
-    Linksys SPA942 <inlinemediaobject><imageobject><imagedata contentwidth="40" fileref="Images/LinksysSPA942.jpg"/></imageobject></inlinemediaobject> VoIP phone to work with Interact's
-    Listen solution.</emphasis></para>
+    Linksys SPA942 <inlinemediaobject>
+        <imageobject>
+          <imagedata contentwidth="40" fileref="Images/LinksysSPA942.jpg"></imagedata>
+        </imageobject>
+      </inlinemediaobject> VoIP phone to work with the Listen
+    solution.</emphasis></para>
 
-    <section><title>On the Phone</title>
-      
+    <section>
+      <title>On the Phone</title>
 
       <para>First, you will need to obtain the current IP Address of the
       phone. To do that preform the following steps:</para>
@@ -74,12 +77,21 @@
 
           <itemizedlist>
             <listitem>
-              <para>Press the page button <inlinemediaobject><imageobject><imagedata depth="10" fileref="Images/PageButton.jpg"/></imageobject></inlinemediaobject></para>
+              <para>Press the page button <inlinemediaobject>
+                  <imageobject>
+                    <imagedata depth="10" fileref="Images/PageButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject></para>
             </listitem>
 
             <listitem>
               <para>Scroll down on screen to "Network" and hit enter or just
-              press the nine button <inlinemediaobject><imageobject><imagedata contentwidth="10" fileref="Images/NineButton.jpg"/></imageobject></inlinemediaobject></para>
+              press the nine button <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="10"
+                               fileref="Images/NineButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject></para>
             </listitem>
 
             <listitem>
@@ -91,15 +103,15 @@
       </orderedlist>
     </section>
 
-    <section><title>Configure Phone via HTTP</title>
-      
+    <section>
+      <title>Configure Phone via HTTP</title>
 
       <para>All necessary phone configurations can be preformed via a web
       page. Below are instructions for logging in and configuring each
       page.</para>
 
-      <section><title>Login to the HTTP phone interface</title>
-        
+      <section>
+        <title>Login to the HTTP phone interface</title>
 
         <orderedlist numeration="loweralpha">
           <listitem>
@@ -117,19 +129,21 @@
         </orderedlist>
       </section>
 
-      <section><title>HTTP Phone Tabs</title>
-        
+      <section>
+        <title>HTTP Phone Tabs</title>
 
         <orderedlist numeration="upperalpha">
           <listitem>
-            <para><emphasis role="bold"><guibutton>Info</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>Info</guibutton></emphasis></para>
 
             <para>The Info tab provides a snap shot of most phone
             configurations.</para>
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>System</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>System</guibutton></emphasis></para>
 
             <para>The System tab is used for configuring the phone for the
             local network. Only the following items need to be set/verified on
@@ -154,7 +168,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/SystemConfiguration.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/SystemConfiguration.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -172,7 +187,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="2.5in" fileref="Images/DHCP.jpg"/>
+                    <imagedata align="left" contentwidth="2.5in"
+                               fileref="Images/DHCP.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -190,8 +206,7 @@
 
                   <listitem>
                     <para><emphasis role="bold">Domain: </emphasis>Set to your
-                    domain (<emphasis>i.e.
-                    "interact.nonreg"</emphasis>).</para>
+                    domain (<emphasis>i.e. "newnet.local"</emphasis>).</para>
                   </listitem>
 
                   <listitem>
@@ -203,7 +218,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/OptionalNetwork.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/OptionalNetwork.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -211,28 +227,32 @@
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>SIP</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>SIP</guibutton></emphasis></para>
 
             <para>The SIP tab does not need to be modified. Default
             configurations can be used.</para>
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>Provisioning</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>Provisioning</guibutton></emphasis></para>
 
             <para>The Provisioning tab does not need to be modified. Default
             configurations can be used.</para>
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>Regional</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>Regional</guibutton></emphasis></para>
 
             <para>The Regional tab does not need to be modified. Default
             configurations can be used.</para>
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>Phone</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>Phone</guibutton></emphasis></para>
 
             <para>The Phone tab is used for configuring the phone display and
             configuring the extension keys. There are a few items to change
@@ -277,7 +297,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/PhoneGeneral.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/PhoneGeneral.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -304,7 +325,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/LineKey.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/LineKey.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -331,7 +353,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="2.5in" fileref="Images/ExtGeneral.jpg"/>
+                    <imagedata align="left" contentwidth="2.5in"
+                               fileref="Images/ExtGeneral.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -349,7 +372,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/ProxyandRegistration.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/ProxyandRegistration.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -379,7 +403,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/SubscriberInfo.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/SubscriberInfo.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -397,7 +422,8 @@
 
                 <mediaobject>
                   <imageobject>
-                    <imagedata align="left" contentwidth="6.0in" fileref="Images/DialPlan.jpg"/>
+                    <imagedata align="left" contentwidth="6.0in"
+                               fileref="Images/DialPlan.jpg"></imagedata>
                   </imageobject>
                 </mediaobject>
               </listitem>
@@ -413,7 +439,8 @@
           </listitem>
 
           <listitem>
-            <para><emphasis role="bold"><guibutton>User</guibutton></emphasis></para>
+            <para><emphasis
+            role="bold"><guibutton>User</guibutton></emphasis></para>
 
             <para>The User tab does not need to be modified. Default
             configurations can be used.</para>
@@ -422,10 +449,10 @@
       </section>
     </section>
   </section>
-  
+
   <?hard-pagebreak ?>
- 
-   <glossary role="NotInToc">
-     <title>Company Information</title>
-   </glossary>
+
+  <glossary role="NotInToc">
+    <title>Company Information</title>
+  </glossary>
 </article>

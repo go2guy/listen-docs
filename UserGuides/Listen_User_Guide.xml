@@ -2987,7 +2987,7 @@
         the fax to.</para>
 
         <para><emphasis role="bold">Files:</emphasis> Select the file to send.
-        The file must be in pdf format.</para>
+        The file must be in PDF format.</para>
 
         <section>
           <title>Sending Fax</title>
@@ -3963,7 +3963,7 @@
                 </listitem>
               </itemizedlist>
 
-              <para><emphasis>Note: Email notification is intergrated with
+              <para><emphasis>Note: Email notification is integrated with
               Outlook. You can accept or decline the invitation or propose a
               new time for the conference.</emphasis></para>
             </listitem>
@@ -4410,7 +4410,7 @@
                   <imagedata contentwidth="30"
                              fileref="Images/AddNumberGrail.jpg"></imagedata>
                 </imageobject>
-              </inlinemediaobject> button to add additonal number(s). All of
+              </inlinemediaobject> button to add additional number(s). All of
             the numbers listed will be dialed all at once.</para>
           </listitem>
         </orderedlist>
@@ -5282,7 +5282,7 @@
 
           <listitem>
             <para><emphasis role="bold">Fax:</emphasis> This feature allow you
-            to send and receive fax in the pdf format using the GUI.</para>
+            to send and receive fax in the PDF format using the GUI.</para>
           </listitem>
 
           <listitem>
@@ -5306,7 +5306,7 @@
             <para><emphasis role="bold">IP PBX:</emphasis> This feature allows
             extended functionality for calls and intraoffice communication.
             Calls between two phones on the network can use forwarding and
-            transfering keys etc.</para>
+            transferring keys etc.</para>
 
             <para><emphasis>Note: If a feature is not licensed, it is not
             displayed.</emphasis></para>
@@ -5447,7 +5447,7 @@
             </listitem>
 
             <listitem>
-              <para>Select the Destination Organzation from the drop down
+              <para>Select the Destination Organization from the drop down
               menu.</para>
             </listitem>
 
@@ -7250,7 +7250,7 @@
           </listitem>
 
           <listitem>
-            <para>Voicemail reocrds are highlighted in yellow. Possible DRs
+            <para>Voicemail records are highlighted in yellow. Possible DRs
             for voicemail include:</para>
 
             <para>Change of voicemail passcode/greeting</para>
