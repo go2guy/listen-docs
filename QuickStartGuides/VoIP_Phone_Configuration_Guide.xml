@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1999/xhtml"
+         xmlns:ns3="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns="http://docbook.org/ns/docbook">
+  <info>
+  <title><emphasis role="bold"><guibutton>VoIP Phone
+    Configuration</guibutton></emphasis></title>
+    
+
+    <biblioid>A00002010081701</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>17 August 2010</date>
+
+        <authorinitials>Mark Wemhoff</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section><title>Linksys IP Phone SPA942 Configuration</title>
+    
+
+    <para><emphasis role="bold">These are instructions for configuring your
+    Linksys SPA942 <inlinemediaobject><imageobject><imagedata contentwidth="40" fileref="Images/LinksysSPA942.jpg"/></imageobject></inlinemediaobject> VoIP phone to work with Interact's
+    Listen solution.</emphasis></para>
+
+    <section><title>On the Phone</title>
+      
+
+      <para>First, you will need to obtain the current IP Address of the
+      phone. To do that preform the following steps:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>If not already, install phone:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Place phone at desired location.</para>
+            </listitem>
+
+            <listitem>
+              <para>Plug in network cable.</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Your computer current network cable can be plugged
+                  into the phone and another (<emphasis>provided in
+                  box</emphasis>) cable can go from phone to your
+                  computer.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Plug in power cable.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Once phone is on:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Press the page button <inlinemediaobject><imageobject><imagedata depth="10" fileref="Images/PageButton.jpg"/></imageobject></inlinemediaobject></para>
+            </listitem>
+
+            <listitem>
+              <para>Scroll down on screen to "Network" and hit enter or just
+              press the nine button <inlinemediaobject><imageobject><imagedata contentwidth="10" fileref="Images/NineButton.jpg"/></imageobject></inlinemediaobject></para>
+            </listitem>
+
+            <listitem>
+              <para>Copy the IP address and continue on to the "Configure
+              Phone via HTTP" section.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </orderedlist>
+    </section>
+
+    <section><title>Configure Phone via HTTP</title>
+      
+
+      <para>All necessary phone configurations can be preformed via a web
+      page. Below are instructions for logging in and configuring each
+      page.</para>
+
+      <section><title>Login to the HTTP phone interface</title>
+        
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>If configured before, you can use:</para>
+
+            <para>http://ext&lt;Your Extension&gt;/admin/advanced</para>
+          </listitem>
+
+          <listitem>
+            <para>Otherwise, you will need to use the IP address obtained in
+            the "On the Phone" section:</para>
+
+            <para>http://&lt;Phone IP address&gt;/admin/advanced</para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section><title>HTTP Phone Tabs</title>
+        
+
+        <orderedlist numeration="upperalpha">
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Info</guibutton></emphasis></para>
+
+            <para>The Info tab provides a snap shot of most phone
+            configurations.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>System</guibutton></emphasis></para>
+
+            <para>The System tab is used for configuring the phone for the
+            local network. Only the following items need to be set/verified on
+            this tab:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para><emphasis role="bold">System
+                Configuration</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Enable Web Admin
+                    Access:</emphasis> Set this value to "yes".</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Admin Passwd: </emphasis>Leave
+                    blank.</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/SystemConfiguration.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Internet Connection
+                Type</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Connection Type:
+                    </emphasis>Set this value to DHCP.</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="2.5in" fileref="Images/DHCP.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Optional Network
+                Configuration</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Host Name:</emphasis> Set to
+                    your extension "ext&lt;Your Extension&gt;" (<emphasis>i.e.
+                    "ext 359</emphasis>).</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Domain: </emphasis>Set to your
+                    domain (<emphasis>i.e.
+                    "interact.nonreg"</emphasis>).</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Primary DNS:</emphasis> Set to
+                    your primary DNS address (<emphasis>i.e.
+                    "206.157.72.238"</emphasis>).</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/OptionalNetwork.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>SIP</guibutton></emphasis></para>
+
+            <para>The SIP tab does not need to be modified. Default
+            configurations can be used.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Provisioning</guibutton></emphasis></para>
+
+            <para>The Provisioning tab does not need to be modified. Default
+            configurations can be used.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Regional</guibutton></emphasis></para>
+
+            <para>The Regional tab does not need to be modified. Default
+            configurations can be used.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Phone</guibutton></emphasis></para>
+
+            <para>The Phone tab is used for configuring the phone display and
+            configuring the extension keys. There are a few items to change
+            and/or verify. These items are listed below:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para><emphasis role="bold">General</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Station Name:</emphasis> Set
+                    to your extension "ext&lt;Your Extension&gt;"
+                    (<emphasis>i.e. "ext 359"</emphasis>).</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Text Logo: </emphasis>This can
+                    be set to your name, Interact Inc, or anything you would
+                    like displayed on your phone.</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">BMP Picture Download
+                    URL:</emphasis> The URL for the BMP picture to be
+                    displayed on the phone.</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Select Logo:</emphasis> This
+                    is used to indicate what to display (<emphasis>Text Logo,
+                    BMP Picture, None</emphasis>) when phone boots.</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Select Background
+                    Picture:</emphasis> This is used to indicate what to
+                    display (<emphasis>Text Logo, BMP Picture,
+                    None</emphasis>) when phone is fully booted up.</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/PhoneGeneral.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Line Key 1 - 4</emphasis></para>
+
+                <para>These settings can all be the same.</para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Extension:</emphasis> These
+                    values should all be 1 in normal configurations for all
+                    Line Keys.</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Short Name:</emphasis> Can be
+                    left as is to display Line 1, Line 2, etc.. or renamed to
+                    Listen 1, etc. All other settings on this section can
+                    remain as defaulted.</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/LineKey.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Ext
+            1</guibutton></emphasis></para>
+
+            <para>This will be the configurations to reach the Listen server.
+            Please modify and/or verify these following settings:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para><emphasis role="bold">General</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Line Enable</emphasis>: Must
+                    be set to "yes".</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="2.5in" fileref="Images/ExtGeneral.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Proxy and
+                Registration</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Proxy:</emphasis> Set to
+                    "listen".</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/ProxyandRegistration.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Subscriber
+                Information</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Display Name</emphasis>: Set
+                    to your extension "ext&lt;Your Extension&gt;"
+                    (<emphasis>i.e. "ext359"</emphasis>).</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">User ID:</emphasis> Set to
+                    your extension "ext&lt;Your Extension&gt;" (<emphasis>i.e.
+                    "ext359"</emphasis>)</para>
+                  </listitem>
+
+                  <listitem>
+                    <para><emphasis role="bold">Password:</emphasis> Set to
+                    "1234".</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/SubscriberInfo.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+
+              <listitem>
+                <para><emphasis role="bold">Dial Plan</emphasis></para>
+
+                <itemizedlist>
+                  <listitem>
+                    <para><emphasis role="bold">Dial Plan:</emphasis> Set to
+                    "(S2 xxx|S3 x.*x.*x.*x.|S5
+                    &lt;9,:9&gt;x.|#xx|#9xxx)".</para>
+                  </listitem>
+                </itemizedlist>
+
+                <mediaobject>
+                  <imageobject>
+                    <imagedata align="left" contentwidth="6.0in" fileref="Images/DialPlan.jpg"/>
+                  </imageobject>
+                </mediaobject>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>Ext 2, 3,
+            4</guibutton></emphasis></para>
+
+            <para>Ext 2, 3 and 4 should be left alone as all four lines are
+            setup to use Ext 1 configurations.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold"><guibutton>User</guibutton></emphasis></para>
+
+            <para>The User tab does not need to be modified. Default
+            configurations can be used.</para>
+          </listitem>
+        </orderedlist>
+      </section>
+    </section>
+  </section>
+  
+  <?hard-pagebreak ?>
+ 
+   <glossary role="NotInToc">
+     <title>Company Information</title>
+   </glossary>
+</article>

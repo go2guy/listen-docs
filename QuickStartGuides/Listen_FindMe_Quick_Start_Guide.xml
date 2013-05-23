@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+    <title><inlinegraphic contentwidth="2.0in"
+    fileref="../../docbook/stylesheets/listen_logo.jpg" /></title>
+
+    <subtitle><emphasis role="bold"><guibutton>........FindMe Quick Start
+    Guide</guibutton></emphasis></subtitle>
+
+    <biblioid>B00002011011801</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>18 January 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>03 March 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Find Me/Follow Me Menu</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title></title>
+
+    <para><emphasis role="bold"><guibutton>Access Find Me/Follow
+    Me</guibutton></emphasis></para>
+
+    <para>You can access Find Me/Follow Me menu from:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Your own extension:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the access number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>Someone else's extension:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the access number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your mailbox number and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>An external phone:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the access number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your mailbox number and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+
+        <para>When dialing from an external number, if that number is one of
+        your access numbers then you only have to enter your passcode. If the
+        person is calling them from a phone that isn't registered as someone's
+        access number, it will prompt them to enter their mailbox
+        number.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Find Me/Follow Me
+    Menu</guibutton></emphasis></para>
+
+    <para>This menu is accessed upon entering your mailbox. You will hear your
+    Find Me/Follow Me status.</para>
+
+    <para>At this time, you have 2 options:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>You can activate or deactivate based on your current Find
+        Me/Follow Me status.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>When activate, the expiration time will be 24 hour from the
+            activation time.</para>
+          </listitem>
+
+          <listitem>
+            <para>When deactivate, the configuration will expire
+            immediately.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>You can edit your number(s). The following options are
+        available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to enable the
+            number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis><guilabel>2</guilabel></emphasis> to disable
+            the number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis><guilabel>3</guilabel></emphasis> to delete
+            the number.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>For More
+    Information</guibutton></emphasis></para>
+
+    <para>See the Listen User's Guide for additional information and advanced
+    features.</para>
+  </section>
+</article>

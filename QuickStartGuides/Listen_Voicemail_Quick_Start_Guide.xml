@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+    <title><inlinegraphic contentwidth="2.0in"
+    fileref="../../docbook/stylesheets/listen_logo.jpg" /></title>
+
+    <subtitle><emphasis role="bold"><guibutton>Voicemail Quick Start
+    Guide</guibutton></emphasis></subtitle>
+
+    <biblioid>B00002010070901</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>09 July 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>22 October 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>Added the Mailbox Menu and Mailbox Maintenance Menus.</para>
+
+          <para>Reorganized document for better flow.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>30 August 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated the Guide</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title></title>
+
+    <para><emphasis role="bold"><guibutton>Access
+    Mailbox</guibutton></emphasis></para>
+
+    <para>You can access your mailbox from:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Your own extension:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the internal Listen voicemail number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>Someone else's extension:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the internal Listen voicemail number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your mailbox number and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>An external phone:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the external Listen voicemail number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your mailbox number and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Mailbox
+    Menu</guibutton></emphasis></para>
+
+    <para>This menu is accessed upon entering your mailbox.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>The following options are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to retrieve a
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>2</guilabel></emphasis> to send a message to
+            another mailbox.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>3</guilabel></emphasis> for mailbox
+            maintenance.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press<emphasis role="bold"><guilabel>8</guilabel></emphasis>
+            to dial a number</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>9</guilabel></emphasis> for paging
+            support</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis> when finish.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+
+    <para><emphasis role="bold"><guibutton>Listen to
+    Messages</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Access mailbox.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        retrieve messages.</para>
+      </listitem>
+
+      <listitem>
+        <para>The current message count is played (<emphasis># of new and old
+        messages</emphasis>).</para>
+
+        <para>Messages are played in the following order:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>New messages only</para>
+          </listitem>
+
+          <listitem>
+            <para>New and old messages - Each new message is played, followed
+            by the old messages.</para>
+          </listitem>
+
+          <listitem>
+            <para>Old messages only</para>
+          </listitem>
+
+          <listitem>
+            <para>No messages - A message is played stating that there are no
+            messages and you are returned to the Mailbox Menu.</para>
+
+            <para><emphasis>Note: The order that the messages are played in
+            (newest to oldest or oldest to newest) is based on the
+            subscriber's settings.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>The first message is played followed by the Message Menu
+        options.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to go to the next
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>2</guilabel></emphasis> to pause the
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>3</guilabel></emphasis> to delete the
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>4</guilabel></emphasis> to skip
+            backward</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>5</guilabel></emphasis> to save the
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>6</guilabel></emphasis> to skip
+            forward.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>7</guilabel></emphasis> to repeat the
+            message.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>8</guilabel></emphasis> to reply to
+            sender.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>9</guilabel></emphasis> to restart from the
+            beginning of all messages.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>0</guilabel></emphasis> to forward the
+            message to another mailbox</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis> to replay the menu
+            options.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis> when finished. The
+            Mailbox Menu option is played again.</para>
+          </listitem>
+
+          <listitem>
+            <para>If no option is selected, the current message is
+            replayed.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>The next message is played followed by the Message Menu options.
+        This continues until all messages (<emphasis>new and old</emphasis>)
+        have been played.</para>
+      </listitem>
+
+      <listitem>
+        <para>Once all messages have played, you are returned to the Mailbox
+        Menu.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Reply to
+    Sender</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Access Mailbox.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        retrieve messages.</para>
+      </listitem>
+
+      <listitem>
+        <para>After the message you wish to reply to is played, press
+        <emphasis role="bold"><guilabel>8</guilabel></emphasis>.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to dial the caller's
+            number</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>2</guilabel></emphasis> to leave a voice
+            message</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>to return to the
+            previous menu</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Record your message.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>#</guilabel></emphasis> or
+        hang up.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Forward
+    Message</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Access Mailbox.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        retrieve messages.</para>
+      </listitem>
+
+      <listitem>
+        <para>After the message you wish to forward is played, press <emphasis
+        role="bold"><guilabel>0</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter the mailbox number you wish to forward the message
+        to.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played indicating the message was
+            forwarded.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>The Message Menu is played.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Mailbox Maintenance
+    Menu</guibutton></emphasis></para>
+
+    <para>This menu is accessed by pressing <emphasis
+    role="bold"><guilabel>3</guilabel></emphasis> from the Mailbox
+    Menu.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>The following options are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to change your
+            mailbox greeting.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>2</guilabel></emphasis> to change your
+            passcode.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press any other key to return to the previous menu.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+
+    <para><emphasis role="bold"><guibutton>Change
+    Greeting</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Access mailbox.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis>
+        for mailbox maintenance.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        change your mailbox greeting.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis> to return to the
+            previous menu.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press any other key when you hear the number with the
+            greeting you wish to change.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Each mailbox number is played.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>If no number is selected, you are returned to the Mailbox
+            Maintenance Menu.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press any key when you hear the number of the greeting you wish
+        to change.</para>
+      </listitem>
+
+      <listitem>
+        <para>Record your message and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis> to complete the
+        recording.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>The Record Menu options are played.</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Press <emphasis
+                role="bold"><guilabel>1</guilabel></emphasis> to save.</para>
+              </listitem>
+
+              <listitem>
+                <para>Press <emphasis
+                role="bold"><guilabel>2</guilabel></emphasis> to listen to the
+                recording.</para>
+              </listitem>
+
+              <listitem>
+                <para>Press <emphasis
+                role="bold"><guilabel>3</guilabel></emphasis> to
+                re-record.</para>
+              </listitem>
+
+              <listitem>
+                <para>Press <emphasis
+                role="bold"><guilabel>4</guilabel></emphasis> to return to the
+                previous menu.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        save the greeting and return to the Mailbox Maintenance Menu.</para>
+
+        <para>OR</para>
+
+        <para>Press <emphasis role="bold"><guilabel>2</guilabel></emphasis> to
+        listen to the greeting and then press 1 to save the greeting and
+        return to the Mailbox Maintenance Menu.</para>
+
+        <para>OR</para>
+
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis> to
+        re-record the message. Record the message and press 1 to save the
+        greeting and return to the Mailbox Maintenance Menu.</para>
+
+        <para>Press <emphasis role="bold"><guilabel>4</guilabel></emphasis> to
+        return to the previous menu without changing your greeting.</para>
+      </listitem>
+
+      <listitem>
+        <para>At the Mailbox Maintenance Menu, press any key (<emphasis>except
+        1 and 2</emphasis>) to return to the Mailbox Menu.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Change
+    Passcode</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Access mailbox.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis>
+        for mailbox maintenance.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>2</guilabel></emphasis> to
+        change your passcode.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter the new passcode and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>Re-enter the new passcode and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>The passcode is saved and you are returned to the Mailbox
+        Maintenance Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>At the Mailbox Maintenance Menu, press any key (<emphasis>except
+        1 and 2</emphasis>) to return to the Mailbox Menu.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>For More
+    Information</guibutton></emphasis></para>
+
+    <para>See the Listen User's Guide for additional information and advanced
+    features.</para>
+  </section>
+</article>

@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+    <title><inlinegraphic align="left" contentwidth="2.0in"
+    fileref="../../docbook/stylesheets/listen_logo.jpg" /></title>
+
+    <subtitle><emphasis role="bold"><guibutton>Conferencing Quick Start
+    Guide</guibutton></emphasis></subtitle>
+
+    <biblioid>B00002010071401</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>14 July 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title>Host Features</title>
+
+    <para><emphasis role="bold"><guibutton>Start a
+    Conference</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Dial into the conference number.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter the Admin PIN and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>Record your name and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>. You are taken to the
+        Admin Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        start the conference .</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>An entry tone/name is played for each participant currently
+            waiting.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis> at any time to go to
+            the Conference Menu.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Initiate "OnDemand"
+    Call</guibutton></emphasis> (<emphasis>Interactive Call</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Select dial option:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>From the Main Menu, Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis>
+            (<emphasis>conference not started</emphasis>).</para>
+          </listitem>
+
+          <listitem>
+            <para>From the Admin Menu, Press <emphasis
+            role="bold"><guilabel>3</guilabel></emphasis>
+            (<emphasis>conference not started</emphasis>).</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis> to get to the
+            Conference Menu and then <emphasis
+            role="bold"><guilabel>5</guilabel></emphasis>
+            (<emphasis>conference started</emphasis>).</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis>
+        for an interactive call.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter the destination number and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+        <para><emphasis>Note: For Voice Over IP (VOIP), use '*' key in place
+        of '.'.</emphasis></para>
+
+        <itemizedlist>
+          <listitem>
+            <para>If the party does not answer the call, you can make a new
+            call by pressing <emphasis role="bold">1</emphasis> or press any
+            other key to return to the previous menu.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>The party called answers the phone.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press the<emphasis role="bold">
+        <guilabel>*</guilabel></emphasis> key. The following options are then
+        available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis> to add the party to
+            the conference</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>2</guilabel></emphasis> to end this
+            call</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Call is ended. Called party does not join
+                conference.</para>
+              </listitem>
+
+              <listitem>
+                <para>You are returned to the previous menu.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Press any key to return to your call</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>You are reconnected to the called party.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        add the party to the conference.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>You are returned to the previous menu.</para>
+          </listitem>
+
+          <listitem>
+            <para>The called party is prompted to record their name.</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>If the conference is already in progress, an entry tone
+                and their name is played as they join the conference as an
+                active participant.</para>
+              </listitem>
+
+              <listitem>
+                <para>If the conference has not started, they are placed on
+                hold until it starts.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Initiate "OnDemand"
+    Call</guibutton></emphasis> (<emphasis>Automated Invite</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Select dial option:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>From the Main Menu, Press <emphasis
+            role="bold"><guilabel>1</guilabel></emphasis>
+            (<emphasis>conference not started</emphasis>).</para>
+          </listitem>
+
+          <listitem>
+            <para>From the Admin Menu, Press <emphasis
+            role="bold"><guilabel>3</guilabel></emphasis>
+            (<emphasis>conference not started</emphasis>).</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis> to get to the
+            Conference Menu and then <emphasis
+            role="bold"><guilabel>5</guilabel></emphasis>
+            (<emphasis>conference started</emphasis>).</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>2</guilabel></emphasis>
+        for an automated invite.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter the destination number and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+        <para><emphasis>Note: For Voice Over IP (VOIP), use '*' key in place
+        of '.'.</emphasis></para>
+
+        <itemizedlist>
+          <listitem>
+            <para>You are returned to the previous menu. No further action is
+            required.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>The party called answers the phone. They are asked to join the
+        conference.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>If the called party presses any key they are prompted to
+            record their name.</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>If the conference is already in progress, an entry tone
+                and their name is played as they join the conference as an
+                active participant.</para>
+              </listitem>
+
+              <listitem>
+                <para>If the conference has not started, they are placed on
+                hold until it starts.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Otherwise, the called party hangs up.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Roll Call
+    </guibutton></emphasis>(<emphasis>conference not
+    started</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>At the Admin Menu, Press <emphasis
+        role="bold"><guilabel>2</guilabel></emphasis> to listen to a roll call
+        of waiting participants.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Each participant name is played.</para>
+
+            <para><emphasis>Note: If there are no participants in the
+            conference, you are returned to the Admin Menu.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Once all participant names have been played, an "End of roll
+        call" message is played and you are returned to the Admin Menu.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Roll Call</guibutton></emphasis>
+    (<emphasis>conference started</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        get to the Roll Call Menu.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>The available options are played.</para>
+          </listitem>
+
+          <listitem>
+            <para>Each participant name is played.</para>
+
+            <para><emphasis>Note: If there are no participants in the
+            conference, you are returned to the Conference
+            Menu.</emphasis></para>
+          </listitem>
+
+          <listitem>
+            <para>Once all participant names have been played, an "End of roll
+            call" message is played and you are returned to the Conference
+            Menu.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, 4 or 5</emphasis>) to
+        return to the conference.</para>
+
+        <para><emphasis>Note: This can be done at any time during the roll
+        call.</emphasis></para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Passive/Active
+    Mode</guibutton></emphasis> (<emphasis>own line</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>2</guilabel></emphasis> to
+        toggle yourself to passive/active mode.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played that you are now in passive or active
+            mode.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, 4 or 5</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Passive/Active
+    Mode</guibutton></emphasis> (<emphasis>active
+    participant</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        get to the Roll Call Menu.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating the available options.</para>
+          </listitem>
+
+          <listitem>
+            <para>Each participant name is played.</para>
+
+            <para><emphasis>Note: If there are no participants in the
+            conference, you are returned to the Conference
+            Menu.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis>
+        when the name of the participant you wish to place in passive mode is
+        played,</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating whether or not the participant
+            was placed in passive mode.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>OR</para>
+
+        <para>Press <emphasis role="bold"><guilabel>2</guilabel></emphasis>
+        when the name of the participant you wish to place in active mode is
+        played.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating whether or not the participant
+            was placed in active mode.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Once all participant names have been played, an "End of roll
+        call" message is played and you are returned to the Conference
+        Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, 4 or 5</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Drop
+    Participant</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis> to
+        get to the Roll Call Menu.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating the available options.</para>
+          </listitem>
+
+          <listitem>
+            <para>Each participant name is played.</para>
+
+            <para><emphasis>Note: If there are no participants in the
+            conference, you are returned to the Conference
+            Menu.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis>
+        when the name of the participant you wish to drop is played.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played asking if you wish to drop the
+            participant.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis> to
+        drop the participant.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating whether or not the participant
+            was dropped.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Once all participant names have been played, an "End of roll
+        call" message is played and you are returned to the Conference
+        Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, 4 or 5</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Record
+    Conference</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>3</guilabel></emphasis> to
+        record/stop recording the conference.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played stating whether or not the recording was
+            successfully started/stopped.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, 4 or 5</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>End
+    Conference</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>4</guilabel></emphasis> to
+        end the conference.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played to all participants stating that the
+            host has ended the conference.</para>
+          </listitem>
+
+          <listitem>
+            <para>You are taken to the Main Menu</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Hang up.</para>
+      </listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Participant Features</title>
+
+    <para><emphasis role="bold"><guibutton>Join
+    Conference</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Dial into the conference number.</para>
+      </listitem>
+
+      <listitem>
+        <para>Enter your PIN and press<emphasis role="bold">
+        <guilabel>#</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>Record your name and press <emphasis
+        role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>If the conference has not been started, a message is played
+            indicating that the conference has not started and on hold music
+            is played. The music will continue to play until the conference is
+            started by the host.</para>
+          </listitem>
+
+          <listitem>
+            <para>If the conference has been started, a message is played
+            indicating that you are being put into the conference. An entry
+            tone and your name are played.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Roll
+    Call</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>1</guilabel></emphasis>
+        for roll call.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Each participant name is played.</para>
+
+            <para><emphasis>Note: If there are no participants in the
+            conference, you are returned to the Conference
+            Menu.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Once all participant names have been played, an "End of roll
+        call" message is played and you are returned to the Conference
+        Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, or 4</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Active/Passive
+    Mode</guibutton></emphasis> (<emphasis>own line</emphasis>)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>*</guilabel></emphasis> to
+        get to the Conference Menu.</para>
+      </listitem>
+
+      <listitem>
+        <para>Press <emphasis
+        role="bold"><guilabel>2</guilabel></emphasis>.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>A message is played that you are now in passive or active
+            mode.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Press any key (<emphasis>except 1, 2, 3, or 4</emphasis>) to
+        return to the conference.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>For More
+    Information</guibutton></emphasis></para>
+
+    <para>See the Listen User's Guide for additional information and advanced
+    features.</para>
+  </section>
+</article>

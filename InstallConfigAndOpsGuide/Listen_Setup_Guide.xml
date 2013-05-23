@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+    <title>Listen Setup Guide</title>
+
+    <subtitle>Installation, Configuration &amp; Operations</subtitle>
+
+    <biblioid>B00002010041502</biblioid>
+
+    <revhistory>
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>15 April 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>17 June 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>Updated installation instructions.</para>
+
+          <para>Reworked document to include Voicemail and FindMe for both the
+          TUI and GUI.</para>
+
+          <para>Updated Conferencing information, including screens.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>29 November 2010</date>
+
+        <authorinitials>Mark Wemhoff</authorinitials>
+
+        <revdescription>
+          <para>Added Play Voicemail in Browser</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.3</revnumber>
+
+        <date>07 April 2011</date>
+
+        <authorinitials>Mark Wemhoff</authorinitials>
+
+        <revdescription>
+          <para>Added More generic install and upgrade instructions</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.4</revnumber>
+
+        <date>26 July 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Added Listen webserver default port 9091</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.5</revnumber>
+
+        <date>06 October 2011</date>
+
+        <authorinitials>Mark Wemhoff</authorinitials>
+
+        <revdescription>
+          <para>Update prerequisites for Java and updated install
+          instructions.</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title>Introduction</title>
+
+    <section>
+      <title>Identification</title>
+
+      <para>This document is for System Administrators and Operators.</para>
+    </section>
+
+    <section>
+      <title>Minimum System Requirements</title>
+
+      <para>In order for you to access all of the Listen features, the system
+      must meet the following minimum requirements:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Red Hat or CentOS Linux 5.x</para>
+        </listitem>
+
+        <listitem>
+          <para>Web Browser (<emphasis>Internet Explorer 8 or higher or
+          Firefox 3.5 or higher</emphasis>)</para>
+        </listitem>
+
+        <listitem>
+          <para>JavaScript is enabled in your browser. Follow the steps below
+          to enable JavaScript for your browser type:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Internet Explorer: Go to Tools in the file menu and select
+              'Internet Options'. Go to the 'Security' section and click on
+              the 'Custom Level..' button. Once there, scroll down to a
+              section called 'Scripting' and select 'Enable' for 'Active
+              Scripting'.</para>
+
+              <para>OR</para>
+            </listitem>
+
+            <listitem>
+              <para>Firefox: Go to Tools in the file menu and select
+              'Options'. Go to the 'Content' section and select the check box
+              for 'Enable JavaScript'.</para>
+
+              <para>OR</para>
+            </listitem>
+
+            <listitem>
+              <para>Chrome: Go to Settings menu and select 'Options'. Go to
+              the 'Under the Hood' section and select 'Content Settings...'
+              under Privacy. Go to JavaScript and click 'Allow all sites to
+              run JavaScript'.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Listen Websever default port is 9091. Firewall should be
+          adjusted if the default port is changed.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>System Overview</title>
+
+      <para>Listen is a fully automated, full-duplex conferencing system,
+      utilizing enhanced digital audio conferencing technology that requires
+      no operator intervention, resulting in a state of the art system that
+      supports scheduled and on the fly conferences. It offers unlimited
+      scalability and supports multiple simultaneous conferences of two or
+      more participants.</para>
+
+      <para>The system may be implemented as a service provider solution or as
+      a stand-alone conferencing unit for your business. The system can
+      operate in either a SIP environment, PSTN/TDM or both. A SIP conference
+      size is unlimited, whereas an PSTN conference size is hardware
+      dependent.</para>
+
+      <para>Two conference modes are available:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>"OnDemand" - This mode allows an administrator to dial out to
+          all conference participants bringing them together into one
+          conference call. No extra steps are required by the participants,
+          they simply have to answer their phone.</para>
+        </listitem>
+
+        <listitem>
+          <para>"MeetMe" - This mode allows an administrator to have a
+          dedicated conference up and ready for their conference participants
+          to join. The administrator will assign either an active or passive
+          pin to each participant, which they use to join the conference after
+          dialing in to a pre-determined telephone number. "MeetMe"
+          conferences also allow the administrator to dial out to bring
+          additional participants into the call via the "OnDemand"
+          feature.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>There is a Telephone User Interface (TUI) and Graphical User
+      Interface (GUI). All participants can use the TUI, whereas, only system
+      and conference administrators can use the GUI.</para>
+    </section>
+
+    <section>
+      <title>Document Overview</title>
+
+      <para>This document contains installation, configuration and operation
+      instructions for Listen.</para>
+
+      <para>The following formatting conventions are used within the
+      guide:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>All notes are indented and
+          <emphasis>italicized</emphasis>.</para>
+        </listitem>
+
+        <listitem>
+          <para>All field names are in <emphasis
+          role="bold">bold</emphasis>.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Interact References</title>
+
+      <para>Listen User's Guide - Administrator's Guide</para>
+
+      <para>Listen User's Guide</para>
+
+      <para>Platform Collector User's Guide</para>
+
+      <para>Realize User's Guide</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Install/Uninstall</title>
+
+    <section>
+      <title>Prerequisites</title>
+
+      <orderedlist>
+        <listitem>
+          <para>Httpd must be running and should be configured in chkconfig so
+          that it starts up automatically on system boot.</para>
+        </listitem>
+
+        <listitem>
+          <para>MySqld must be running and should be configured in chkconfig
+          so that it starts up automatically on system boot.</para>
+        </listitem>
+
+        <listitem>
+          <para>MySQL Connector/J must be installed and can be downloaded
+          here:</para>
+
+          <para><uri
+          xlink:href="http://www.mysql.com/downloads/connector/j/"></uri></para>
+        </listitem>
+
+        <listitem>
+          <para>php-mysql must be installed.</para>
+        </listitem>
+
+        <listitem>
+          <para>Lame needs to be installed in: /usr/local/bin for voicemails
+          to be available to be listened to in the GUI.</para>
+        </listitem>
+      </orderedlist>
+    </section>
+
+    <section>
+      <title>Install</title>
+
+      <para>To install the Platform Collector and Listen perform the following
+      steps:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Log on to the server as the root user.</para>
+        </listitem>
+
+        <listitem>
+          <para>Place the
+          <filename>listen-&lt;version&gt;-&lt;release&gt;.ii</filename>
+          package onto the system in the<filename> /interact</filename>
+          directory.</para>
+        </listitem>
+
+        <listitem>
+          <para>Go to the<filename> /interact</filename> directory:</para>
+
+          <programlisting>&gt; cd /interact</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>Install the listen package and answer the configuration
+          questions:</para>
+
+          <programlisting>&gt; ./listen-&lt;version&gt;-&lt;release&gt;.ii --stop --install --start all
+    Will the platform collector be sending its stats to a central collector?
+        (The value must either be yes or no)
+    [default: yes]:
+
+    Enter the central collector hostname
+        (The value may be any number of letters, numbers, dashes, or periods.)
+    [default: defaultrealize]:
+
+    Enter the central collector port
+        (The value may be any number of digits.)
+    [default: 61616]:
+
+    Enter the host running the listen controller
+        (The value may be any number of letters, numbers, dashes, or periods.)
+    [default: localhost]:
+
+    Enter the server name of the SIP trunk
+        (The value may be any number of letters, numbers, dashes, or periods. The value may not be blank.)
+    [default: localhost]:
+
+    Enter the phone number to use if the controller is unreachable
+        (The value may be any number of letters, numbers, dashes, or periods. The value may not be blank.)
+    : 
+
+    Turn on Transcription
+        (The value may only be y/n)
+    [default: n]:
+
+    Enter the controller port
+        (The value may be any number of digits.)
+    [default: 9091]:</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>The Listen GUI should now be accessible by logging in at the
+          following URL:</para>
+
+          <para><emphasis
+          role="bold"><guibutton>http://&lt;servername&gt;:9091/login</guibutton></emphasis></para>
+        </listitem>
+      </orderedlist>
+    </section>
+
+    <section>
+      <title>License</title>
+
+      <para>To license the Platform Collector and Listen perform the following
+      steps:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Run xmlunlock to license the server.</para>
+
+          <programlisting>&gt; /interact/program/xmlunlock</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>Go to the <filename>/interact/master/</filename>
+          directory:</para>
+
+          <programlisting>&gt; cd /interact/master</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>Update the <filename>iimoap.cfg</filename> file to have the
+          correct number of licensed ports.</para>
+
+          <programlisting>P: 0 0 <emphasis role="bold">512</emphasis> 19 0 "iiCAPER" "iiCAPER" "-DIRMA VRU -DFP file:/interact/apps/iistart.ccxml"</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>Update the <filename>voipmgr.xml</filename> file to have the
+          correct number of licensed ports.</para>
+
+          <programlisting>&lt;processinstance id="0" <emphasis role="bold">channels="512"</emphasis> hold_before_refer="true" dirma="voip" offerto="VRU"&gt;</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>Start the processes up in the following order:</para>
+
+          <para>Restart httpd</para>
+
+          <programlisting>&gt; service httpd restart</programlisting>
+
+          <para>Start the VIP (<emphasis>starts FTL, ELN, iiMOAP and
+          SysSrvr</emphasis>):</para>
+
+          <programlisting>&gt; service vipStart restart</programlisting>
+
+          <para>Start the Platform Collector:</para>
+
+          <programlisting>&gt; service collector restart</programlisting>
+
+          <para>Start the Listen controller (GUI):</para>
+
+          <programlisting>&gt; service listen-controller restart</programlisting>
+        </listitem>
+
+        <listitem>
+          <para>The Listen GUI should now be accessible by logging in at the
+          following URL:</para>
+
+          <para><emphasis
+          role="bold"><guibutton>http://&lt;servername&gt;:9091/login</guibutton></emphasis></para>
+        </listitem>
+      </orderedlist>
+    </section>
+
+    <section>
+      <title>Uninstall</title>
+
+      <para>Perform the following logged into the system as the root
+      user.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>To uninstall listen, perform the following command:</para>
+
+          <programlisting>&gt; ./listen-&lt;version&gt;-&lt;release&gt;.ii --stop --uninstall all</programlisting>
+        </listitem>
+      </orderedlist>
+    </section>
+  </section>
+
+  <section>
+    <title>Configuration</title>
+
+    <section>
+      <title>General Configuration</title>
+
+      <section>
+        <title>/interact/apps/spotbuild/listen_main/root.vxml</title>
+
+        <para>This file contains global variable declarations and
+        initializations for the main listen applications.</para>
+
+        <informaltable frame="all">
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1.0*" />
+
+            <colspec colname="c2" colnum="2" colwidth="1.5*" />
+
+            <colspec colname="c3" colnum="3" colwidth="3*" />
+
+            <thead>
+              <row>
+                <entry>Variable Name<?dbfo bgcolor="#DDDDDD" ?></entry>
+
+                <entry>Default<?dbfo bgcolor="#DDDDDD" ?></entry>
+
+                <entry>Description<?dbfo bgcolor="#DDDDDD" ?></entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry>"cntrlURL"</entry>
+
+                <entry>"'http://localhost:9091'"</entry>
+
+                <entry>The URL for the default controller.</entry>
+              </row>
+
+              <row>
+                <entry>"hostname"</entry>
+
+                <entry>"'localhost.interact.nonreg'"</entry>
+
+                <entry>The name of the host running the listen controller. The
+                value may be any number of letters, numbers, dashes, or
+                periods.</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </informaltable>
+      </section>
+    </section>
+
+    <section>
+      <title>Conference Configuration</title>
+
+      <section>
+        <title>/interact/apps/spotbuild/listen_conference/root.vxml</title>
+
+        <para>This file contains global variable declarations and
+        initializations.</para>
+
+        <informaltable frame="all">
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1.0*" />
+
+            <colspec colname="c2" colnum="2" colwidth="1.5*" />
+
+            <colspec colname="c3" colnum="3" colwidth="3*" />
+
+            <thead>
+              <row>
+                <entry>Variable Name<?dbfo bgcolor="#DDDDDD" ?></entry>
+
+                <entry>Default<?dbfo bgcolor="#DDDDDD" ?></entry>
+
+                <entry>Description<?dbfo bgcolor="#DDDDDD" ?></entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry>"maxErr"</entry>
+
+                <entry>3</entry>
+
+                <entry>The maximum allowed errors.</entry>
+              </row>
+
+              <row>
+                <entry>"maxHelp"</entry>
+
+                <entry>3</entry>
+
+                <entry>The maximum allowed help attempts.</entry>
+              </row>
+
+              <row>
+                <entry>"sipURL"</entry>
+
+                <entry>"'"</entry>
+
+                <entry>The server name of the SIP trunk. The value may be any
+                number of letters, numbers, dashes, or periods or the value
+                may be blank.</entry>
+              </row>
+
+              <row>
+                <entry>"hostname"</entry>
+
+                <entry>"'localhost.interact.nonreg'"</entry>
+
+                <entry>The name of the host running the listen controller. The
+                value may be any number of letters, numbers, dashes, or
+                periods.</entry>
+              </row>
+
+              <row>
+                <entry>"pstnLength"</entry>
+
+                <entry>10</entry>
+
+                <entry>The minimum number of digits allowed for a PSTN
+                call.</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </informaltable>
+      </section>
+
+      <section>
+        <title>/interact/apps/spotbiuld/listen_conference/audio/onHoldMusic.00.wav</title>
+
+        <para><emphasis>Note: This is optional
+        configuration.</emphasis></para>
+
+        <para>The system administrator is able to modify the music file that
+        is played for all conferences on the SPOT system. To do this, record
+        the desired music into a wav file. The file MUST be named
+        'onHoldMusic.00.wav' and replace the current file in the
+        '/interact/apps/spotbuild/listen_conference/audio directory. The
+        length of the music in the file is up to the discretion of the
+        administrator.</para>
+
+        <para role="indent1"><emphasis>Note: If the conference has not been
+        started and the music file ends, a message will be played to the
+        waiting participants stating that the conference has not started; then
+        the music file will be replayed. This process continues until the
+        conference is started.</emphasis></para>
+      </section>
+    </section>
+
+    <section>
+      <title>Voicemail Configuration</title>
+
+      <para></para>
+    </section>
+
+    <section>
+      <title>FindMe Configuration</title>
+
+      <para></para>
+    </section>
+  </section>
+
+  <section>
+    <title>Operations</title>
+
+    <para></para>
+
+    <section>
+      <title>Starting/Stopping listen-controller</title>
+
+      <para>The listen-controller controls the GUI portion of Listen.</para>
+
+      <para>To start/stop/status the listen-controller, perform the following
+      as the root user:</para>
+
+      <programlisting>service listen-controller start
+service listen-controller stop
+service listen-controller status</programlisting>
+    </section>
+
+    <section>
+      <title>Logs</title>
+
+      <section>
+        <title>/interact/listen/logs/listen.log</title>
+
+        <para>Contains the logs for the GUI portion of Listen.</para>
+      </section>
+
+      <section>
+        <title>/interact/listen/logs/listen-controller.log</title>
+
+        <para>Contains all logs regarding the startup of the
+        listen-controller.</para>
+      </section>
+
+      <section>
+        <title>Application Logs</title>
+
+        <para>The application log files reside in the
+        <filename>/interact/logs/</filename> directory. The following are the
+        types of log files presents in this directory:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>cx_???.dbg: The cx files contain the CCXML debug logs. The
+            VXlog</para>
+          </listitem>
+
+          <listitem>
+            <para>caper_????.dbg: Caper logs contain the VoiceXML debug
+            logs.</para>
+          </listitem>
+
+          <listitem>
+            <para>exceptionLog: This file contains all logs
+            (<emphasis>including error logs</emphasis>) from the VIP
+            system.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+    </section>
+
+    <section>
+      <title>Artifacts</title>
+
+      <para>All artifacts for conferencing and voicemail are stored in the
+      <filename>/var/www/html/listen/artifacts/</filename> directory. A
+      separate directory is created for each subscriber id, with
+      sub-directories splitting out conference and voicemail artifacts.</para>
+
+      <section>
+        <title>Conference Recordings</title>
+
+        <para>Conference recordings are stored as .wav files in the following
+        location:</para>
+
+        <programlisting>/interact/listen/artifacts/&lt;subscriber id&gt;/conference/record</programlisting>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>These files are created in the following
+            format:</glossterm>
+
+            <glossdef>
+              <para>&lt;conference id&gt;-&lt;time conference
+              started&gt;-&lt;time recording started&gt;.wav</para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>Example:</glossterm>
+
+            <glossdef>
+              <para>5-20100727144740647-20100727144748.wav</para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+      </section>
+
+      <section>
+        <title>Conference Rollcall</title>
+
+        <para>Each time a participant (<emphasis>including the
+        host</emphasis>) records their name to join a conference, a .wav file
+        is created. These files are stored within the hosts directory until
+        the participant leaves the conference. The .wav file for the host is
+        not removed from the directory until they hang up.</para>
+
+        <programlisting>/interact/listen/artifacts/&lt;subscriber id&gt;/conference/rollcall</programlisting>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>These files are created in the following
+            format:</glossterm>
+
+            <glossdef>
+              <para>&lt;line # subscriber called in on&gt;.wav</para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>Example:</glossterm>
+
+            <glossdef>
+              <informaltable frame="none">
+                <tgroup cols="2">
+                  <colspec colnum="1" colsep="0" colwidth="1.0*" rowsep="0" />
+
+                  <colspec colnum="2" colsep="0" colwidth="8.0*" rowsep="0" />
+
+                  <tbody>
+                    <row>
+                      <entry>247.wav</entry>
+
+                      <entry>This is the rollcall file for the host.</entry>
+                    </row>
+
+                    <row>
+                      <entry>355.wav</entry>
+
+                      <entry>This is the rollcall file for a
+                      participant.</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </informaltable>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+      </section>
+
+      <section>
+        <title>Voicemail Greetings</title>
+
+        <para>All subscriber custom greetings are stored as .wav files in the
+        following location:</para>
+
+        <programlisting>/interact/listen/artifacts/&lt;subscriber id&gt;/voicemail/greeting</programlisting>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>These files are created in the following
+            format:</glossterm>
+
+            <glossdef>
+              <para>&lt;accessNumber&gt;-greeting.wav</para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <para>So, if the subscriber has multiple access numbers, a separate
+        greeting can be recorded for each one.</para>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>Example:</glossterm>
+
+            <glossdef>
+              <informaltable frame="none">
+                <tgroup cols="2">
+                  <colspec colnum="1" colsep="0" colwidth="1.0*" rowsep="0" />
+
+                  <colspec colnum="2" colsep="0" colwidth="2.0*" rowsep="0" />
+
+                  <tbody>
+                    <row>
+                      <entry>348-greeting.wav</entry>
+
+                      <entry>This is the greeting for the subscriber's company
+                      mailbox.</entry>
+                    </row>
+
+                    <row>
+                      <entry>4025551212-greeting.wav</entry>
+
+                      <entry>This is the greeting for subscriber's work cell
+                      phone.</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </informaltable>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+      </section>
+
+      <section>
+        <title>Voicemail Messages</title>
+
+        <para>All voicemail messages are stored as .wav files in the following
+        location:</para>
+
+        <programlisting>/interact/listen/artifacts/&lt;subscriber id&gt;/voicemail/message</programlisting>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>These files are created in the following
+            format:</glossterm>
+
+            <glossdef>
+              <para>&lt;number of who left the message&gt;-&lt;date the
+              message was left&gt;-&lt;subscriber id&gt;.wav</para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <glosslist>
+          <glossentry>
+            <glossterm>Example:</glossterm>
+
+            <glossdef>
+              <informaltable frame="none">
+                <tgroup cols="2">
+                  <colspec colnum="1" colsep="0" colwidth="1.0*" rowsep="0" />
+
+                  <colspec colnum="2" colsep="0" colwidth="2.0*" rowsep="0" />
+
+                  <tbody>
+                    <row>
+                      <entry>101-20100727153054-3.wav</entry>
+
+                      <entry>This is a message from another extension.</entry>
+                    </row>
+
+                    <row>
+                      <entry>4025551234-20100727153054-3.wav</entry>
+
+                      <entry>This is a message from an outside number.</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </informaltable>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+      </section>
+    </section>
+  </section>
+
+  <?hard-pagebreak ?>
+
+  <glossary role="NotInToc">
+    <title>Company Information</title>
+  </glossary>
+</article>

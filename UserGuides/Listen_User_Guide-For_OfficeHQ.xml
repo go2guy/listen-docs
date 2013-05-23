@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+  <title>Name of Guide</title>
+    
+
+    <biblioid>C33002011033001</biblioid>
+
+    <revhistory>
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>30 March 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>04 April 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Added Configuration: Phone Numbers section</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>08 April 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Attendant section.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.3</revnumber>
+
+        <date>25 April 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Attendant.</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section><title>Introduction</title>
+    
+
+    <section><title>Identification</title>
+      
+
+      <para>This document is for Office HQ Listen Administrators.</para>
+    </section>
+
+    <section><title>Supported Browsers</title>
+      
+
+      <para>The following are required:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Internet Explorer 6 or higher</para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para>Javascript must be enabled on the browser</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section><title>System Overview</title>
+      
+
+      <para>Basic overview of the system.</para>
+    </section>
+
+    <section><title>Documentation Overview</title>
+      
+
+      <para>This document contains screen captures and instructions on how to
+      navigate the administrative features of the GUI.</para>
+
+      <para>The following formatting conventions are used within the
+      guide:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>All notes are indented and
+          <emphasis>italicized</emphasis>.</para>
+        </listitem>
+
+        <listitem>
+          <para>All field names are in <emphasis role="bold">bold</emphasis>.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section><title>Interact References</title>
+      
+
+      <para>List other documents that are referenced in this guide</para>
+    </section>
+  </section>
+
+  <section><title>Graphical User Interface (GUI)</title>
+    
+
+    <para>The Listen GUI is made up of three separate licensable
+    features:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Attendant</para>
+
+        <para><emphasis>Note: If a feature is not licensed, it is not
+        displayed on the GUI.</emphasis></para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Administrators can perform the following actions:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Attendant configuration</para>
+      </listitem>
+    </itemizedlist>
+
+    <para/>
+
+    <section><title>Login</title>
+      
+
+      <para>Log into Listen:</para>
+
+      <para>http://&lt;servername&gt;:9091/login</para>
+    </section>
+
+    <section><title>Attendant</title>
+      
+
+      <para>The Attendant screen is used to configure the menu for the auto
+      attendant. The auto attendant fields inbound calls and connects them to
+      their desired destination by requiring the caller to press one of the
+      pre-defined options. The caller can be connected to a particular number,
+      extension or one of the Listen applications <emphasis>(i.e.
+      Voicemail)</emphasis></para>
+
+      <para>Click <inlinemediaobject>
+          <imageobject>
+            <imagedata contentwidth="60" fileref="Images/AttendantButton.jpg"/>
+          </imageobject>
+        </inlinemediaobject> to display the Attendant screen.</para>
+
+      <para/>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="6.0in" fileref="Images/AttendantScreen.jpg"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>On install, a default "Main Entry" menu is created. This menu can
+      be modified and additional menus can be added.</para>
+
+      <para><guibutton role="bold">Menu Field Definitions</guibutton></para>
+
+      <para><emphasis role="bold">Menu Label:</emphasis> The name of the
+      menu.</para>
+
+      <para><emphasis role="bold">Entry Menu:</emphasis> Indicate whether or
+      not the menu is the starting menu for the call.</para>
+
+      <para><emphasis role="bold">Options Prompt:</emphasis> Select the audio
+      file that will be played when the caller first enters the menu. A
+      drop-down menu displays the available prompts or upload new
+      prompt.</para>
+
+      <glosslist>
+        <glossentry>
+          <glossdef>
+            <para>
+              <emphasis>Note: This prompt should provide the available menu
+              options. These prompts are located in the
+              /interact/apps/spotbuild/listen_autoAttendant/audio/
+              directory.</emphasis>
+            </para>
+          </glossdef>
+        </glossentry>
+      </glosslist>
+
+      <para><emphasis role="bold">On Keypress:</emphasis> The sequence of keys
+      to be pressed by the caller. Default is '0'.</para>
+
+      <glosslist>
+        <glossentry>
+          <glossterm>Keypress configuration rules</glossterm>
+
+          <glossdef>
+            <para/>
+
+            <itemizedlist>
+              <listitem>
+                <para>A keypress must be unique in each menu</para>
+              </listitem>
+
+              <listitem>
+                <para>A question mark (?) can be used for wildcard. Each
+                question mark represents one digit. The number of digits
+                configured is the length of number the system is expecting. To
+                configure ten digits wildcard number you would set up ten
+                question marks. <emphasis>(see example
+                above)</emphasis></para>
+              </listitem>
+
+              <listitem>
+                <para>When configure a single number as a keypress, that
+                number can not be used as a leading number for other keypress
+                option.</para>
+              </listitem>
+
+              <listitem>
+                <para>asterisk(*) and pound (#) can be used. If used as single
+                keypress, can not be used again as leading key for other
+                keypress option but acceptable as following keypress.</para>
+
+                <glosslist>
+                  <glossentry>
+                    <glossterm/>
+
+                    <glossdef>
+                      <para><emphasis>Example: # is configured as keypress
+                      therefore, #5 can not be used as another keypress.
+                      However, 5# can be used. This also applies to
+                      *.</emphasis></para>
+                    </glossdef>
+                  </glossentry>
+                </glosslist>
+              </listitem>
+            </itemizedlist>
+          </glossdef>
+        </glossentry>
+      </glosslist>
+
+      <para><emphasis role="bold">Play Prompt:</emphasis> Select the audio
+      file that will be played when the caller press this key. A drop-down
+      menu displays the available prompts or upload new prompt. The prompt is
+      played before the action is performed.</para>
+
+      <para><emphasis role="bold">Perform Action:</emphasis> The action to be
+      performed by the auto attendant. A drop-down menu displays the following
+      available options:</para>
+
+      <glosslist>
+        <glossentry>
+          <glossterm/>
+
+          <glossdef>
+            <para><emphasis role="bold">Go To A Menu:</emphasis> This will
+            take the caller to another menu. When selected, another drop-down
+            menu is displayed with the available menus. Select the desired
+            menu.</para>
+
+            <para><emphasis role="bold">Dial A Number:</emphasis> This will
+            dial the specified number. When selected, a text field is
+            displayed. Enter the number the auto attendant should dial.</para>
+
+            <para><emphasis role="bold">Dial What They Pressed:</emphasis>
+            This will dial the keys pressed by the caller. No additional
+            inputs are made.</para>
+
+            <para><emphasis role="bold">Launch An Application:</emphasis> This
+            will launch the specified application. When selected, another
+            drop-down menu is displayed with the available applications:
+            <emphasis>(Note: only licensed applications appear in the
+            drop-down menu)</emphasis></para>
+
+            <blockquote>
+              <para><emphasis role="bold">Attendant: </emphasis> The
+              application used to connect inbound calls to desired
+              destination. <emphasis/></para>
+
+              <para><emphasis role="bold">Broadcast:</emphasis> The
+              application used to broadcast messages.
+              <emphasis/></para>
+
+              <para><emphasis role="bold">Conferencing:</emphasis> The
+              conferencing application. <emphasis/></para>
+
+              <para><emphasis role="bold">Custom:</emphasis> A custom
+              application. If selected, enter the name of the custom
+              application. <emphasis/></para>
+
+              <para><emphasis role="bold">Direct Voicemail:</emphasis> The
+              application used for direct access to a mailbox. The main
+              mailbox Menu is bypassed, going straight to retrieving
+              messages.</para>
+
+              <glosslist>
+                <glossentry>
+                  <glossdef>
+                    <para>
+                      <emphasis>Note: If the number that you are calling in
+                      from is 7 digits or longer, then no passcode is
+                      required. If the number is less than 7 digits (i.e. your
+                      extension), then your passcode is still
+                      required.</emphasis>
+                    </para>
+                  </glossdef>
+                </glossentry>
+              </glosslist>
+
+              <para><emphasis role="bold">Find Me Config:</emphasis> The
+              application used to direct inbound calls to designated number.
+              <emphasis/></para>
+
+              <para><emphasis role="bold">Mailbox:</emphasis> The mailbox
+              administration application used to retrieve voicemails.</para>
+
+              <para><emphasis role="bold">Voicemail:</emphasis> The
+              application used to leave a voicemail for a subscriber.</para>
+            </blockquote>
+          </glossdef>
+        </glossentry>
+      </glosslist>
+
+      <para>The following two actions are required for every menu:</para>
+
+      <para><emphasis role="bold">Other Input: </emphasis> The action to be
+      performed by the auto attendant when the caller presses an undefined key
+      or series of keys. Selection an action from the drop-down menu
+      <emphasis>(see above for the available actions)</emphasis>.</para>
+
+      <para><emphasis role="bold">Timeout (5s):</emphasis> The action to be
+      performed by the auto attendant when the caller does not press any key
+      within 5 seconds of entering the menu. Select an option from the
+      drop-down menu <emphasis>(see above for the available
+      actions)</emphasis>.</para>
+
+      <para/>
+
+      <section><title>Add New Menu</title>
+        
+
+        <para>To Add new menu</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60" fileref="Images/AddNewMenuAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> button.</para>
+          </listitem>
+
+          <listitem>
+            <para>The Attendant menu will appear.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter the Menu Label.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select if the new menu is the entry menu.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Options Prompt from the drop-down menu.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter value for key press.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Play Prompt from the drop-down menu.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Perform Action. Based on the Perform Action type,
+            additional information may be required.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Play Prompt from the drop-down menu for Other
+            Input.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Perform Action from the drop-down menu for Other
+            Input.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Play Prompt from the drop-down menu for
+            Timeout.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select Perform Action from the drop-down menu for
+            Timeout.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60" fileref="Images/AddActionAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> to add more action. Repeat step 6 -
+            12.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30" fileref="Images/SaveButtonAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> .</para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section><title>Edit Menu</title>
+        
+
+        <para>All menus, including the default "Main Entry" can be
+        modified.</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Make the necessary changes.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30" fileref="Images/SaveButtonAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> .</para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section><title>Delete Menu</title>
+        
+
+        <para>All menus, including the default "Main Entry" can be
+        deleted.</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30" fileref="Images/DeleteAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> . A pop up message appears asking if you
+            are sure.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click Yes. The menu is removed from the screen.</para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section><title>Show/Hide Menu</title>
+        
+
+        <para>All menus, including the default "Main Entry" can be hidden.
+        Only the Menu Label remains visible.</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30" fileref="Images/ShowHideAttendant.jpg"/>
+                </imageobject>
+              </inlinemediaobject> .</para>
+          </listitem>
+
+          <listitem>
+            <para>Only Menu Labels remain visible.</para>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata contentwidth="6.0in" fileref="Images/ShowHideMenu.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </listitem>
+        </orderedlist>
+      </section>
+    </section>
+
+    <section><title>Configuration</title>
+      
+
+      <para>The configuration screen is used to configure Listen.</para>
+
+      <para>Click <inlinemediaobject>
+          <imageobject>
+            <imagedata contentwidth="60" fileref="Images/ConfigurationButtonNew.jpg"/>
+          </imageobject>
+        </inlinemediaobject> to display the Configuration screen.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="6.0in" fileref="Images/ConfigurationNew.jpg"/>
+        </imageobject>
+      </mediaobject>
+
+      <glosslist>
+        <glossentry>
+          <glossterm>The configuration screen is divided into the following
+          tabbed sections:</glossterm>
+
+          <glossdef>
+            <para/>
+
+            <para><emphasis role="bold">Phone Numbers</emphasis> - The phone
+            Number tab allows you to configure how the Listen IVR will route
+            specific or wildcarded phone numbers to the correct
+            application.</para>
+
+            <glosslist>
+              <glossentry>
+                <glossterm/>
+
+                <glossdef>
+                  <para><emphasis>Note: The phone number configurations must
+                  be routed to the IVR by a system
+                  administrator.</emphasis></para>
+                </glossdef>
+              </glossentry>
+            </glosslist>
+          </glossdef>
+        </glossentry>
+      </glosslist>
+
+      <section><title>Phone Numbers</title>
+        
+
+        <para>The Phone Numbers tab allows you to configure how the Listen IVR
+        will route specific or wildcarded phone numbers to the correct
+        application.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in" fileref="Images/PhoneNumbers_New.jpg"/>
+          </imageobject>
+        </mediaobject>
+
+        <para><guibutton>Phone Numbers Field Definitions</guibutton></para>
+
+        <para><emphasis role="bold">Number:</emphasis> The phone number, IP
+        address, hostname, extension, etc. of what the subscriber will need to
+        call in-to to access the application.</para>
+
+        <glosslist>
+          <glossentry>
+            <glossterm/>
+
+            <glossdef>
+              <para><emphasis>Note: Wildcards (*) can be used. If set to just
+              '*', then any IVR configured number not assigned to a different
+              application will be routed to that application. It can also be
+              used to wildcard a specific number (i.e. 1-800-555-1* or 77*, so
+              all calls to a number starting with either of those values will
+              be routed to that specific application).</emphasis></para>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <para><emphasis role="bold">Maps to:</emphasis> The application
+        assigned to the Number. A drop-down list displays the following
+        possible applications (based on licensing):</para>
+
+        <glosslist>
+          <glossentry>
+            <glossterm/>
+
+            <glossdef>
+              <para><emphasis role="bold">Attendant:</emphasis> The
+              application used to connect inbound calls to desired
+              destination.</para>
+
+              <para><emphasis role="bold">Conferencing:</emphasis> The
+              conferencing application (default is 990).</para>
+
+              <para><emphasis role="bold">Custom:</emphasis> A custom
+              application. If selected, the name of the custom application is
+              displayed.</para>
+
+              <para><emphasis role="bold">Direct Voicemail:</emphasis> The
+              application used for direct access to a mailbox (default is
+              880). The mail Mailbox Menu is bypassed, going straight to
+              retrieving messages.</para>
+
+              <para><emphasis role="bold">Find Me Config:</emphasis> The
+              application used to direct inbound calls to designated
+              number.</para>
+
+              <para><emphasis role="bold">Mailbox:</emphasis> The mailbox
+              administration application used to retrieve voicemail (default
+              is 770).</para>
+
+              <para><emphasis role="bold">Voicemail:</emphasis> The
+              application used to leave a voicemail for subscriber (default is
+              *).</para>
+
+              <glosslist>
+                <glossentry>
+                  <glossterm/>
+
+                  <glossdef>
+                    <para><emphasis>Note: If the number that you are calling
+                    in from is 7 digits or longer, then no passcode is
+                    required. If the number is less than 7 digits (i.e. your
+                    extension), then your passcode is still
+                    required.</emphasis></para>
+                  </glossdef>
+                </glossentry>
+              </glosslist>
+            </glossdef>
+          </glossentry>
+        </glosslist>
+
+        <section><title>Add Phone Numbers</title>
+          
+
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="60" fileref="Images/AddMappingButton.jpg"/>
+                  </imageobject>
+                </inlinemediaobject> . A new line is added.</para>
+            </listitem>
+
+            <listitem>
+              <para>Enter the number and select the application. If 'Custom'
+              is selected, enter the name of the customer application.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30" fileref="Images/SaveButtonAttendant.jpg"/>
+                  </imageobject>
+                </inlinemediaobject> . A Phone numbers updated message is
+              displayed.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section><title>Edit Phone Numbers</title>
+          
+
+          <orderedlist>
+            <listitem>
+              <para>Edit the record(s).</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30" fileref="Images/SaveButtonAttendant.jpg"/>
+                  </imageobject>
+                </inlinemediaobject> . A Phone numbers updated message is
+              displayed.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section><title>Delete Phone Numbers</title>
+          
+
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30" fileref="Images/DeleteAttendant.jpg"/>
+                  </imageobject>
+                </inlinemediaobject> next to the number you wish to delete.
+              The line is removed.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30" fileref="Images/SaveButtonAttendant.jpg"/>
+                  </imageobject>
+                </inlinemediaobject> . A Phone numbers updated message is
+              displayed.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+      </section>
+    </section>
+
+    <section><title>Organization Brand</title>
+      
+
+      <para>The Listen logo is provisioned upon install. However, a customized
+      logo can be uploaded.</para>
+
+      <section><title>Upload new logo</title>
+        
+
+        <orderedlist>
+          <listitem>
+            <para>Mouse over the logo, the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60" fileref="Images/ChangeLogoButton.jpg"/>
+                </imageobject>
+              </inlinemediaobject> box will appear.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click on the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60" fileref="Images/ChangeLogoButton.jpg"/>
+                </imageobject>
+              </inlinemediaobject> . The Upload New Logo box will
+            appear.</para>
+          </listitem>
+
+          <listitem>
+            <para>Select the logo you want to upload.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60" fileref="Images/UploadButton.jpg"/>
+                </imageobject>
+              </inlinemediaobject> . The new logo will replace the old
+            one.</para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section><title>Reset logo</title>
+        
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30" fileref="Images/ResetButton.jpg"/>
+                </imageobject>
+              </inlinemediaobject> . The original logo will replace the
+            uploaded one.</para>
+          </listitem>
+        </orderedlist>
+      </section>
+    </section>
+  </section>
+
+  <section><title>Section 2</title>
+    
+
+    <para/>
+
+    <section><title>Section 2.1</title>
+      
+
+      <para/>
+    </section>
+  </section>
+
+  <section><title>Appendix</title>
+    
+
+    <para>Can be removed if there is no appendix required.</para>
+
+    <section><title>Appendix A</title>
+      
+
+      <para/>
+    </section>
+  </section>
+  
+  <?hard-pagebreak ?>
+ 
+   <glossary role="NotInToc">
+     <title>Company Information</title>
+   </glossary>
+</article>
