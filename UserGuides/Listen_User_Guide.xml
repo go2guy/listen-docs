@@ -29,6 +29,18 @@
           <para>New Document</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>17 December 2013</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>Added ACD Tab and features.</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -2331,6 +2343,10 @@
 
         <listitem>
           <para>Attendant</para>
+        </listitem>
+
+        <listitem>
+          <para>ACD</para>
 
           <para vendor="Admin"><emphasis>Note: As an Administrator, the above
           features are also available. See the Listen User's Guide - A
@@ -5116,6 +5132,76 @@
       </section>
     </section>
 
+    <section vendor="Sub">
+      <title>ACD</title>
+
+      <para>The ACD screen is used to set</para>
+
+      <para>Click <inlinemediaobject>
+          <imageobject>
+            <imagedata contentwidth="30" fileref="Images/ACDTab.jpg"></imagedata>
+          </imageobject>
+        </inlinemediaobject> to display the ACD screen.</para>
+
+      <para>The ACD screen consists two tabs:</para>
+
+      <itemizedlist mark="none">
+        <listitem>
+          <para><emphasis role="bold">Status:</emphasis> This screen allows
+          you to set your current status and contact number.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Call Queue:</emphasis> This screen
+          </para>
+        </listitem>
+      </itemizedlist>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="6.0in" fileref="Images/ACDScreen.jpg"></imagedata>
+        </imageobject>
+      </mediaobject>
+
+      <para><guibutton role="bold">ACD Field Definitions</guibutton></para>
+
+      <para><emphasis role="bold">Status:</emphasis> The </para>
+
+      <para><emphasis role="bold">Contact Number:</emphasis> The </para>
+
+      <section>
+        <title>Set Status</title>
+
+        <para>To set your current status:</para>
+
+        <orderedlist>
+          <listitem>
+            <para></para>
+          </listitem>
+
+          <listitem>
+            <para></para>
+          </listitem>
+        </orderedlist>
+      </section>
+
+      <section>
+        <title>Update Contact Number</title>
+
+        <para>To update your contact number:</para>
+
+        <orderedlist>
+          <listitem>
+            <para></para>
+          </listitem>
+
+          <listitem>
+            <para></para>
+          </listitem>
+        </orderedlist>
+      </section>
+    </section>
+
     <section vendor="Custodian">
       <title>Organizations</title>
 
@@ -5526,7 +5612,7 @@
     <section vendor="Admin">
       <title>Administration</title>
 
-      <para>The Administration screen consists of six tabs:</para>
+      <para>The Administration screen consists of eight tabs:</para>
 
       <itemizedlist>
         <listitem>
@@ -5543,6 +5629,10 @@
 
         <listitem>
           <para>Configuration</para>
+        </listitem>
+
+        <listitem>
+          <para>ACD Skills</para>
         </listitem>
 
         <listitem>
@@ -6213,6 +6303,59 @@
 
           <para><emphasis role="bold">New Conference PIN Length:</emphasis>
           The Conference PIN length when a new user is created.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>ACD Skills</title>
+
+        <para>The ACD Skills screen displays </para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="5.0in" fileref="Images/ACDSkillTab.jpg"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold"><guibutton>ACD Field
+        Definitions</guibutton></emphasis></para>
+
+        <para><emphasis role="bold">Skill Name:</emphasis> The name of the
+        skill. This is displayed on the ACD screen.</para>
+
+        <para><emphasis role="bold">Users Assigned:</emphasis> The users
+        assigned to the skill.</para>
+
+        <para><emphasis role="bold">Menus Assigned: </emphasis> The </para>
+
+        <section>
+          <title>Add Skill</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Enter the name and description of the skill.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/AddSkillButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> and the Skill Created message
+              appears.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section>
+          <title>Delete Skill</title>
+
+          <orderedlist>
+            <listitem>
+              <para></para>
+            </listitem>
+          </orderedlist>
         </section>
       </section>
 
