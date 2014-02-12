@@ -117,7 +117,7 @@
 
         <itemizedlist>
           <listitem>
-            <para>Dial <emphasis role="bold"><guilabel>3</guilabel></emphasis>
+            <para>Dial <emphasis role="bold"><guilabel>4</guilabel></emphasis>
             digit number</para>
           </listitem>
         </itemizedlist>
@@ -130,8 +130,8 @@
           <listitem>
             <para>Press <emphasis
             role="bold"><guilabel>9</guilabel></emphasis> for outside line,
-            then dial 7 digits for local, 10 digits for long distance or
-            country code + numbers for international calls.</para>
+            then the 10 digits of the local or long distance number.
+            Dial the country code + numbers for international calls.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -350,11 +350,11 @@
 
             <para><emphasis>Example:</emphasis></para>
 
-            <para><emphasis>ext347 calls ext359</emphasis></para>
+            <para><emphasis>ext3478 calls ext3592</emphasis></para>
 
-            <para><emphasis>ext347 puts ext359 on hold</emphasis></para>
+            <para><emphasis>ext3478 puts ext3592 on hold</emphasis></para>
 
-            <para><emphasis>ext342 dials #9347 to talk to
+            <para><emphasis>ext3426 dials #93478 to talk to
             ext359</emphasis></para>
           </listitem>
         </orderedlist>
@@ -371,10 +371,10 @@
 
             <para><emphasis>Example:</emphasis></para>
 
-            <para><emphasis>ext347 calls ext359</emphasis></para>
+            <para><emphasis>ext3478 calls ext3592</emphasis></para>
 
-            <para><emphasis>ext342 dials #9359 to pick up call and talk to
-            ext347</emphasis></para>
+            <para><emphasis>ext3426 dials #93592 to pick up call and talk to
+            ext3478</emphasis></para>
 
             <para><emphasis> </emphasis></para>
           </listitem>
