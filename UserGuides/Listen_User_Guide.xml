@@ -41,6 +41,18 @@
           <para>Added ACD Tab and features.</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>13 May 2013</date>
+
+        <authorinitials>Daniel Walter</authorinitials>
+
+        <revdescription>
+          <para>Updated ACD Tab.</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -5132,7 +5144,7 @@
       </section>
     </section>
 
-    <section vendor="Sub">
+    <section>
       <title>ACD</title>
 
       <para>The ACD screen is used to manage Listen's Automatic Call
@@ -5140,11 +5152,13 @@
 
       <para>Click <inlinemediaobject>
           <imageobject>
-            <imagedata contentwidth="30" fileref="Images/ACDTab.jpg"></imagedata>
+            <imagedata contentwidth="20" fileref="Images/ACDTab.jpg"></imagedata>
           </imageobject>
         </inlinemediaobject> to display the ACD screen.</para>
 
-      <para>The ACD screen consists of five tabs:</para>
+      <para vendor="Sub">The ACD screen consists of four tabs:</para>
+
+      <para vendor="Admin">The ACD screen consists of five tabs:</para>
 
       <itemizedlist mark="none">
         <listitem>
@@ -5170,9 +5184,9 @@
           allows you to view ACD calls you have personally attended to.</para>
         </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Agent Status (Admin Only):</emphasis>
-          This screen allows you to view the status of all agents within your
+        <listitem vendor="Admin">
+          <para><emphasis role="bold">Agent Status:</emphasis> This screen
+          allows you to view the status of all agents within your
           organization.</para>
         </listitem>
       </itemizedlist>
@@ -5297,7 +5311,7 @@
           <listitem>
             <para>Using the contact number select, <inlinemediaobject>
                 <imageobject>
-                  <imagedata contentwidth="75"
+                  <imagedata contentwidth="60"
                              fileref="Images/ACDContactNumberSelect.JPG"></imagedata>
                 </imageobject>
               </inlinemediaobject> , found just below "Your ACD Contact
@@ -5333,7 +5347,7 @@
           <listitem>
             <para>Click <inlinemediaobject>
                 <imageobject>
-                  <imagedata contentwidth="30"
+                  <imagedata contentwidth="20"
                              fileref="Images/ACDTransferButton.JPG"></imagedata>
                 </imageobject>
               </inlinemediaobject> to bring up a selection box with available
@@ -5367,7 +5381,6 @@
             disconnect the current call.</para>
           </listitem>
         </orderedlist>
-
       </section>
 
       <section>
@@ -5465,7 +5478,6 @@
             directed to an agent.</para>
           </listitem>
         </orderedlist>
-
       </section>
 
       <section>
@@ -5493,7 +5505,7 @@
 
         <para>Click <inlinemediaobject>
             <imageobject>
-              <imagedata contentwidth="60" fileref="Images/ACDMessagesTab.JPG"></imagedata>
+              <imagedata contentwidth="30" fileref="Images/ACDMessagesTab.JPG"></imagedata>
             </imageobject>
           </inlinemediaobject> to display the ACD Messages Screen.</para>
 
@@ -5576,7 +5588,7 @@
           <listitem>
             <para>Click the <inlinemediaobject>
                 <imageobject>
-                  <imagedata contentwidth="30"
+                  <imagedata contentwidth="20"
                              fileref="Images/ACDVoicemailDeleteButton.JPG"></imagedata>
                 </imageobject>
               </inlinemediaobject> button corresponding to the message you
@@ -5606,7 +5618,6 @@
             the specific skill displayed.</para>
           </listitem>
         </orderedlist>
-
       </section>
 
       <section>
@@ -5638,7 +5649,7 @@
 
         <para>Click <inlinemediaobject>
             <imageobject>
-              <imagedata contentwidth="60"
+              <imagedata contentwidth="30"
                          fileref="Images/ACDCallHistoryTab.JPG"></imagedata>
             </imageobject>
           </inlinemediaobject> to display the call history screen.</para>
@@ -5672,7 +5683,7 @@
           <listitem>
             <para>Click the <inlinemediaobject>
                 <imageobject>
-                  <imagedata contentwidth="30"
+                  <imagedata contentwidth="20"
                              fileref="Images/ACDCallHistoryFilterButton.JPG"></imagedata>
                 </imageobject>
               </inlinemediaobject> button to refresh the page with the new
@@ -5694,7 +5705,6 @@
             the filtered results.</para>
           </listitem>
         </orderedlist>
-
       </section>
 
       <section vendor="Admin">
@@ -5756,7 +5766,6 @@
               </inlinemediaobject> button to toggle the agent's status.</para>
           </listitem>
         </orderedlist>
-
       </section>
     </section>
 
@@ -6867,11 +6876,16 @@
       <section>
         <title>ACD Skills</title>
 
-        <para>The ACD Skills screen displays</para>
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="30" fileref="Images/ACDSkillsTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the ACD Skills Screen.</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata contentwidth="5.0in" fileref="Images/ACDSkillTab.jpg"></imagedata>
+            <imagedata contentwidth="5.0in"
+                       fileref="Images/ACDSkillsScreen.JPG"></imagedata>
           </imageobject>
         </mediaobject>
 
@@ -6879,12 +6893,14 @@
         Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Skill Name:</emphasis> The name of the
-        skill. This is displayed on the ACD screen.</para>
+        skill. This will be displayed when referencing the skill on other
+        screens.</para>
 
-        <para><emphasis role="bold">Users Assigned:</emphasis> The users
-        assigned to the skill.</para>
+        <para><emphasis role="bold">Users Assigned:</emphasis> The number of
+        users assigned to the skill.</para>
 
-        <para><emphasis role="bold">Menus Assigned: </emphasis> The</para>
+        <para><emphasis role="bold">Menus Assigned: </emphasis> The numbers of
+        menus assigned to the skill.</para>
 
         <section>
           <title>Add Skill</title>
@@ -6911,7 +6927,101 @@
 
           <orderedlist>
             <listitem>
-              <para></para>
+              <para>Edit the skill, using the steps below, to remove assigned
+              users.</para>
+
+              <para>The <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDDeleteSkillButtonDisabled.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button will remain disabled until all
+              users are removed.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDDeleteSkillButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button corresponding to the skill you
+              wish to delete.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section>
+          <title>Edit Skill</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/ACDEditSkillButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> to edit the corresponding skill. You will
+              be redirected to the edit skills screen.</para>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata contentwidth="6.0in"
+                             fileref="Images/ACDEditSkillScreen.JPG"></imagedata>
+                </imageobject>
+              </mediaobject>
+            </listitem>
+
+            <listitem>
+              <para>Edit the appropriate fields.</para>
+
+              <para><emphasis role="bold">Skill Field
+              Definitions:</emphasis></para>
+
+              <para><emphasis role="bold">Skill Name:</emphasis> The name of
+              the skill. This will be displayed on all screens that reference
+              the skill.</para>
+
+              <para><emphasis role="bold">Skill Description:</emphasis> The
+              skill's description.</para>
+
+              <para><emphasis role="bold">Skill Assigned Users:</emphasis> The
+              users assigned the skill. Selected users will be highlighted.
+              Multiple users can be assigned by holding Ctrl.</para>
+
+              <para><emphasis role="bold">Associated Voicemail
+              User:</emphasis> Voicemails for this skill will be deflected to
+              this user's voicemail box.</para>
+
+              <para><emphasis role="bold">On Hold Prompt Selection:</emphasis>
+              The prompt to play when a caller is placed on hold. This is
+              played before the hold music begins playing.</para>
+
+              <para><emphasis role="bold">Extended On Hold Prompt
+              Selection:</emphasis> After the hold music selection has looped
+              three times, and the on hold prompt has looped twice, an
+              additional prompt may be played to prompt the caller to leave a
+              voicemail. If the call opts out of leaving a voicemail, the
+              pattern is repeated.</para>
+
+              <para><emphasis role="bold">On Hold Music Selection:</emphasis>
+              The music played to the caller on hold. It will loop
+              indefinitely.</para>
+
+              <para><emphasis role="bold">Call Connect Prompt
+              Selection:</emphasis> This prompt plays when the caller is
+              connected with an agent associated with the skill.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDUpdateSkillButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> to save the new settings. You will be
+              redirected back to the skill list if successful. You will remain
+              on the edit skill screen if there was an error.</para>
             </listitem>
           </orderedlist>
         </section>
@@ -7473,6 +7583,13 @@
                                fileref="Images/EditButtonG.jpg"></imagedata>
                   </imageobject>
                 </inlinemediaobject> and the Edit User screen appears.</para>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata contentwidth="6.0in"
+                             fileref="Images/UpdatedUserEditScreen.JPG"></imagedata>
+                </imageobject>
+              </mediaobject>
             </listitem>
 
             <listitem>
@@ -7602,7 +7719,8 @@
 
         <mediaobject>
           <imageobject>
-            <imagedata contentwidth="6.0in" fileref="Images/Permissions.jpg"></imagedata>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/UpdatedUserPermissionsScreen.JPG"></imagedata>
           </imageobject>
         </mediaobject>
 
@@ -7622,7 +7740,15 @@
         <para><emphasis role="bold">Permissions:</emphasis> Whether or not the
         user has permission to each of the following permissions:</para>
 
-        <itemizedlist mark="none">
+        <itemizedlist>
+          <listitem>
+            <para>ACD</para>
+          </listitem>
+
+          <listitem>
+            <para>ACD Call Queue</para>
+          </listitem>
+
           <listitem>
             <para>Administration</para>
           </listitem>
@@ -7717,7 +7843,7 @@
         <mediaobject>
           <imageobject>
             <imagedata contentwidth="5.0in"
-                       fileref="Images/ProfileSettings.jpg"></imagedata>
+                       fileref="Images/UpdatedProfileScreen.JPG"></imagedata>
           </imageobject>
         </mediaobject>
 
@@ -7744,6 +7870,10 @@
 
         <para><emphasis role="bold">Email Address:</emphasis> The email
         address of the user.</para>
+
+        <para><emphasis role="bold">User Skill:</emphasis> A table of the
+        user's skills. The user's priority for each skill can be updated here
+        as well.</para>
 
         <section>
           <title>Edit Settings</title>
