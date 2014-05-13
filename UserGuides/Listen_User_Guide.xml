@@ -5309,8 +5309,6 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
-
         <para><emphasis role="bold">During a call:</emphasis></para>
 
         <para>During a call, the current call section will be populated with
@@ -5370,7 +5368,6 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
       </section>
 
       <section>
@@ -5469,7 +5466,6 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
       </section>
 
       <section>
@@ -5611,7 +5607,6 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
       </section>
 
       <section>
@@ -5700,10 +5695,9 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
       </section>
 
-      <section>
+      <section vendor="Admin">
         <title>Agent Status:</title>
 
         <para>The agent status screen shows the status of all agents within an
@@ -5763,7 +5757,6 @@
           </listitem>
         </orderedlist>
 
-        <para></para>
       </section>
     </section>
 
