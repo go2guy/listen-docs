@@ -2324,7 +2324,7 @@
     <section>
       <title>GUI Features</title>
 
-      <para vendor="Admin;Sub">The Listen GUI is made up of four separate
+      <para vendor="Admin;Sub">The Listen GUI is made up of five separate
       licensable features (<emphasis>displayed only if
       licensed</emphasis>):</para>
 
@@ -5135,7 +5135,8 @@
     <section vendor="Sub">
       <title>ACD</title>
 
-      <para>The ACD screen is used to set</para>
+      <para>The ACD screen is used to manage Listen's Automatic Call
+      Distribution features.</para>
 
       <para>Click <inlinemediaobject>
           <imageobject>
@@ -5143,62 +5144,626 @@
           </imageobject>
         </inlinemediaobject> to display the ACD screen.</para>
 
-      <para>The ACD screen consists two tabs:</para>
+      <para>The ACD screen consists of five tabs:</para>
 
       <itemizedlist mark="none">
         <listitem>
           <para><emphasis role="bold">Status:</emphasis> This screen allows
-          you to set your current status and contact number.</para>
+          you to set your current status and contact number. It also shows a
+          quick summary of your call information.</para>
         </listitem>
 
         <listitem>
           <para><emphasis role="bold">Call Queue:</emphasis> This screen
-          </para>
+          allows you to view incoming calls associated with your configured
+          ACD skills.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold"><emphasis role="bold">Messages:
+          </emphasis></emphasis>This screen allows you to view voicemails for
+          your configured ACD skills.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Call History:</emphasis> This screen
+          allows you to view ACD calls you have personally attended to.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Agent Status (Admin Only):</emphasis>
+          This screen allows you to view the status of all agents within your
+          organization.</para>
         </listitem>
       </itemizedlist>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata contentwidth="6.0in" fileref="Images/ACDScreen.jpg"></imagedata>
-        </imageobject>
-      </mediaobject>
-
-      <para><guibutton role="bold">ACD Field Definitions</guibutton></para>
-
-      <para><emphasis role="bold">Status:</emphasis> The </para>
-
-      <para><emphasis role="bold">Contact Number:</emphasis> The </para>
-
       <section>
-        <title>Set Status</title>
+        <title>Status:</title>
 
-        <para>To set your current status:</para>
+        <para><guibutton role="bold">Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="30" fileref="Images/ACDStatusTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the ACD status
+        screen.</guibutton></para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ACDStatusScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><guibutton role="bold">ACD Status Screen Field
+        Definitions:</guibutton></para>
+
+        <para><emphasis role="bold">Status:</emphasis> Your call availability.
+        Your status determines whether Listen will route incoming calls to
+        you. There are three potential states.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Unavailable:</emphasis> Calls will not
+            be routed to you. This is the default state.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Available:</emphasis> Calls will be
+            routed to you.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Voicemail:</emphasis> This is a
+            special status that cannot be configured manually. It is reserved
+            for users selected as the voicemail user for a given skill.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para><emphasis role="bold">Contact Number:</emphasis> The number
+        Listen will try to contact you with.</para>
+
+        <para><emphasis role="bold">Current Call:</emphasis> The ACD call you
+        are currently on. There are five additional fields specific to this
+        call.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Hold:</emphasis> Displays whether the
+            call is on hold or not.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Caller:</emphasis> The ANI of the
+            current call.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Skill:</emphasis> The requested skill
+            for the current call. This should correspond to one of your own
+            skills.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Transfer:</emphasis> Transfers the
+            current call.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Disconnect:</emphasis> Disconnects the
+            current call.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para><emphasis role="bold">Waiting Calls:</emphasis> The first five
+        calls queued calls associated with any of your configured ACD
+        skills.</para>
+
+        <para><emphasis role="bold">Call History:</emphasis> Your ACD call
+        history for the current day. This will only display calls routed to
+        you by the ACD system.</para>
+
+        <para><emphasis role="bold">To set your current
+        status:</emphasis></para>
 
         <orderedlist>
           <listitem>
-            <para></para>
+            <para>Click the colored button, <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject>, just below "Your Current ACD
+            Status".</para>
           </listitem>
 
           <listitem>
-            <para></para>
+            <para>The color should change, as shown here, <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject>, to indicate your were successful.</para>
+
+            <para>Note: The status toggles, so if you were "Available",
+            following the same procedure above will toggle your status to
+            "Unavailable".</para>
           </listitem>
         </orderedlist>
+
+        <para><emphasis role="bold">To update your contact
+        number:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Using the contact number select, <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="75"
+                             fileref="Images/ACDContactNumberSelect.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> , found just below "Your ACD Contact
+            Number", select a phone number.</para>
+
+            <para>Note: The numbers displayed in the select must be previously
+            configured as an extension or as a personal number via your
+            profile.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
+
+        <para><emphasis role="bold">During a call:</emphasis></para>
+
+        <para>During a call, the current call section will be populated with
+        additional fields, as shown here: <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="2.0in"
+                         fileref="Images/ACDCurrentCall.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> .</para>
+
+        <para><emphasis role="bold">To place a call on hold:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Check the checkbox, under the label 'Hold'.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To transfer a call:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDTransferButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> to bring up a selection box with available
+            agents to transfer the call to. You should see a selection box
+            appear, as shown below.</para>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata contentwidth="3.0in"
+                           fileref="Images/ACDCurrentCallTransfer.JPG"></imagedata>
+              </imageobject>
+            </mediaobject>
+          </listitem>
+
+          <listitem>
+            <para>Using the new selection box, choose one of the available
+            agents.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To disconnect a call:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDDisconnectButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> , within the current call section, to
+            disconnect the current call.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
       </section>
 
       <section>
-        <title>Update Contact Number</title>
+        <title>Call Queue:</title>
 
-        <para>To update your contact number:</para>
+        <para>The call queue screen displays any incoming call that is
+        associated with one of the agent's skills. It may also be configured
+        to display all calls, regardless of the agent's skill set by assigning
+        the ACD_Call_Queue or Administrator role to an agent.</para>
+
+        <para><emphasis role="bold">ACD Call Queue Field
+        Definitions:</emphasis></para>
+
+        <para><emphasis role="bold">Agent:</emphasis> The requested agent. The
+        agent selected is determined by an algorithm that factors in the
+        agent's skill priority and availability.</para>
+
+        <para><emphasis role="bold">Caller:</emphasis> The caller ANI.</para>
+
+        <para><emphasis role="bold">Skill:</emphasis> The caller's requested
+        department.</para>
+
+        <para><emphasis role="bold">Status:</emphasis> The current status of
+        the call. Eight possible states.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>WAITING: Waiting for an agent to become available.</para>
+          </listitem>
+
+          <listitem>
+            <para>CONNECT_REQUESTED: Waiting for the selected agent to
+            answer.</para>
+          </listitem>
+
+          <listitem>
+            <para>CONNECTED: The select agent has answered, the call is now in
+            progress.</para>
+          </listitem>
+
+          <listitem>
+            <para>COMPLETED: The call was completed successfully.</para>
+          </listitem>
+
+          <listitem>
+            <para>CONNECT_FAIL: The call was not answered due to agent
+            availability or system malfunctions.</para>
+          </listitem>
+
+          <listitem>
+            <para>DISCONNECTED: The call was disconnected by the agent.</para>
+          </listitem>
+
+          <listitem>
+            <para>VOICEMAIL: The call was transferred to the agent's
+            voicemail.</para>
+          </listitem>
+
+          <listitem>
+            <para>ENDED: The call was ended by the caller.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para><emphasis role="bold">Wait Time:</emphasis> The total time the
+        call has been in the queue.</para>
+
+        <para><emphasis role="bold">Last Activity:</emphasis> The total time
+        since the call was last updated.</para>
+
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="30"
+                         fileref="Images/ACDCallQueueTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the ACD Call Queue Screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ACDCallQueueScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold">To send a call to
+        voicemail:</emphasis></para>
 
         <orderedlist>
           <listitem>
-            <para></para>
+            <para>Click <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDVoicemailButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> to send a call to voicemail, before it is
+            directed to an agent.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
+      </section>
+
+      <section>
+        <title>Messages:</title>
+
+        <para>The messages screen allows you to view voicemails for any of
+        your associated skills. The Messages tab itself will indicate whether
+        there are new voicemails for any skills by displaying the total count
+        of new unread voicemails for all of your configured skills. By
+        default, the messages screen will display a collection of all messages
+        for all of your skills. You can manage the messages to only display
+        messages for a specific skill.</para>
+
+        <para><emphasis role="bold">ACD Messages Screen Field
+        Definitions:</emphasis></para>
+
+        <para><emphasis role="bold">From:</emphasis> The caller who left the
+        message.</para>
+
+        <para><emphasis role="bold">Received:</emphasis> The time since the
+        message was left.</para>
+
+        <para><emphasis role="bold">Status:</emphasis> The state of the
+        message: new or old.</para>
+
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="60" fileref="Images/ACDMessagesTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the ACD Messages Screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ACDMessagesScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold">To Play a Message:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click the 'Play' link of the corresponding message you wish
+            to listen to.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To Toggle Message
+        Status:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click, <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDVoicemailMarkOldButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> , or , <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDVoicemailMarkNewButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> , depending on the current state of the
+            message.</para>
           </listitem>
 
           <listitem>
-            <para></para>
+            <para>The message should switch colors to indicate whether is old
+            / new and display a different status.</para>
+
+            <para>Old:</para>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata contentwidth="6.0in"
+                           fileref="Images/ACDOldVoicemail.JPG"></imagedata>
+              </imageobject>
+            </mediaobject>
+
+            <para>New:</para>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata contentwidth="6.0in"
+                           fileref="Images/ACDNewVoicemail.JPG"></imagedata>
+              </imageobject>
+            </mediaobject>
           </listitem>
         </orderedlist>
+
+        <para><emphasis role="bold">To Download a Message:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDVoicemailDownloadButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> button corresponding to the message you
+            wish to download.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To Delete a Message:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDVoicemailDeleteButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> button corresponding to the message you
+            wish to delete.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To Switch Skills:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Select the skill from the selection box, <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60"
+                             fileref="Images/ACDVoicemailSkillSelectionBox.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> , at the top of the screen, which defaults
+            to 'All'.</para>
+
+            <para>Note: The number of new messages for each skill will be
+            listed next to the skill's name, helping to identify which skills
+            have new messages.</para>
+          </listitem>
+
+          <listitem>
+            <para>The page should automatically refresh with the messages for
+            the specific skill displayed.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
+      </section>
+
+      <section>
+        <title>Call History:</title>
+
+        <para>The call history screen allows the user to view their call
+        history, optionally filtered by time, skill, or agent, as well as
+        export records to a CSV file. By default, the screen will show the
+        call history for all of the current user's skills over the last the
+        last 24 hours. For admins, the screen will who all calls within the
+        last 24 hours.</para>
+
+        <para><emphasis role="bold">ACD Call History Screen Field
+        Definitions:</emphasis></para>
+
+        <para><emphasis role="bold">Start Date:</emphasis> Only calls after
+        the specified date will be displayed.</para>
+
+        <para><emphasis role="bold">End Date:</emphasis> Only calls before the
+        specified date will be displayed.</para>
+
+        <para><emphasis role="bold">Skill:</emphasis> Calls will be filtered
+        by the given skill. All skills are listed for admin users. Normal
+        users may only filter by their configured skill set.</para>
+
+        <para><emphasis role="bold">Agent:</emphasis> Calls will be filtered
+        by the given skill. All agents are listed for admin users. Normal
+        users can only see their own call history.</para>
+
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="60"
+                         fileref="Images/ACDCallHistoryTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the call history screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ACDCallHistoryScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold">To Filter call history:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Enter the starting date in the format MM/DD/YYYY.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter the ending date in the format MM/DD/YYYY.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click on the skill select and select a skill.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click on the agent select and select an agent.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="30"
+                             fileref="Images/ACDCallHistoryFilterButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> button to refresh the page with the new
+            results.</para>
+          </listitem>
+        </orderedlist>
+
+        <para><emphasis role="bold">To export to CSV file:</emphasis></para>
+
+        <orderedlist>
+          <listitem>
+            <para>Optional: Use the filter steps above to filter the results.
+            The export action will use the same parameters to sort the
+            results.</para>
+          </listitem>
+
+          <listitem>
+            <para>Click the 'Export to CSV' link to download a CSV file, with
+            the filtered results.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
+      </section>
+
+      <section>
+        <title>Agent Status:</title>
+
+        <para>The agent status screen shows the status of all agents within an
+        organization for all skills. It is restricted to admin users.</para>
+
+        <para><emphasis role="bold">ACD Agent Status Screen Field
+        Definitions:</emphasis></para>
+
+        <para><emphasis role="bold">Agent:</emphasis> The agent's
+        username.</para>
+
+        <para><emphasis role="bold">Priority: </emphasis>The agent's priority
+        for the given skill, specified by the table header.</para>
+
+        <para><emphasis role="bold">Status:</emphasis> The agent's call
+        status.</para>
+
+        <para><emphasis role="bold">Status Changed:</emphasis> The date when
+        the agent's status was last updated.</para>
+
+        <para><emphasis role="bold">Last Call Completed:</emphasis> The date
+        of the last call completed by the agent.</para>
+
+        <para><emphasis role="bold">Current Call Start:</emphasis> The date at
+        which the agent's current call started. This will be blank in the
+        event that there is not a call in progress.</para>
+
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="60"
+                         fileref="Images/ACDAgentStatusTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the agent status screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ACDAgentStatusScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para>To change an agent's status:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Click the <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60"
+                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> or <inlinemediaobject>
+                <imageobject>
+                  <imagedata contentwidth="60"
+                             fileref="Images/ACDAvailableStatusButton.JPG"></imagedata>
+                </imageobject>
+              </inlinemediaobject> button to toggle the agent's status.</para>
+          </listitem>
+        </orderedlist>
+
+        <para></para>
       </section>
     </section>
 
@@ -6309,7 +6874,7 @@
       <section>
         <title>ACD Skills</title>
 
-        <para>The ACD Skills screen displays </para>
+        <para>The ACD Skills screen displays</para>
 
         <mediaobject>
           <imageobject>
@@ -6326,7 +6891,7 @@
         <para><emphasis role="bold">Users Assigned:</emphasis> The users
         assigned to the skill.</para>
 
-        <para><emphasis role="bold">Menus Assigned: </emphasis> The </para>
+        <para><emphasis role="bold">Menus Assigned: </emphasis> The</para>
 
         <section>
           <title>Add Skill</title>
