@@ -53,6 +53,15 @@
           <para>Updated ACD Tab.</para>
         </revdescription>
       </revision>
+	  
+	  <revision>
+	    <revnumber>1.0.3</revnumber>
+		<date>19 May 2013</date>
+		<authorinitials>Daniel Walter</authorinitials>
+		<revdescription>
+		  <para>Updated Attendant Tab.</para>
+	    </revdescription>
+	  </revision>
     </revhistory>
   </info>
 
@@ -4606,7 +4615,7 @@
           </imageobject>
         </inlinemediaobject> to display the Attendant screen.</para>
 
-      <para>The Attendant screen consists of two tabs:</para>
+      <para>The Attendant screen consists of three tabs:</para>
 
       <itemizedlist mark="none">
         <listitem>
@@ -4615,15 +4624,22 @@
         </listitem>
 
         <listitem>
-          <para><emphasis role="bold">Holidays:</emphasis> This screen allows
-          you to configure override welcoming menu prompts for holidays or
-          other one-day exceptions.</para>
+          <para><emphasis role="bold">Scheduled Event:</emphasis> This screen
+          allows you to configure override welcoming menu prompts for holidays
+          or other one-day exceptions.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Impromptu Event:</emphasis> This screen
+          allows you to configure a temporary event for an unspecified time
+          period.</para>
         </listitem>
       </itemizedlist>
 
       <mediaobject>
         <imageobject>
-          <imagedata contentwidth="6.0in" fileref="Images/AttendantScreen.jpg"></imagedata>
+          <imagedata contentwidth="6.0in"
+                     fileref="Images/UpdatedAttendantScreen.JPG"></imagedata>
         </imageobject>
       </mediaobject>
 
@@ -4724,6 +4740,13 @@
           <para><emphasis role="bold">Dial What They Pressed:</emphasis> This
           will dial the keys pressed by the caller. No additional inputs are
           made.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Route To An ACD:</emphasis> This will
+          route the call to an ACD Skill. When selected, another drop-down
+          menu is displayed which will display all configured ACD
+          skills.</para>
         </listitem>
 
         <listitem>
@@ -5056,19 +5079,31 @@
       </section>
 
       <section>
-        <title>Holidays</title>
+        <title>Scheduled Event</title>
 
-        <para>The Holidays screen allows you to configure an override
+        <para>The Scheduled Event screen allows you to configure an override
         welcoming menu prompts for holidays or other one-day
         exceptions.</para>
 
-        <para><guibutton>Holidays Fields Definitions</guibutton></para>
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentdepth="" contentwidth="45"
+                         fileref="Images/ScheduledEventTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the Scheduled Event Screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ScheduledEventScreen.JPG"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold"><guibutton>Scheduled Event Field
+        Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Date: </emphasis> The date to apply the
         override welcoming prompts</para>
-
-        <para><emphasis role="bold">For Menu Configurations:</emphasis> Select
-        the menu to apply the overriding welcome prompt</para>
 
         <para><emphasis role="bold">Select Prompt: </emphasis> Select the
         override welcoming prompt</para>
@@ -5076,28 +5111,22 @@
         <para><emphasis role="bold">Upload New Prompt:</emphasis> New prompt
         can be uploaded</para>
 
-        <para><emphasis role="bold">Discard link:</emphasis> Discard any
-        changes made to the form.</para>
+        <para><emphasis role="bold">Use Options From:</emphasis> The scheduled
+        event will use options from this configuration.</para>
+
+        <para><emphasis role="bold">Discard Link:</emphasis> Discard current
+        changes.</para>
+
+        <para><emphasis role="bold">Delete:</emphasis> Discard the scheduled
+        event. This will only appear once an event has been created.</para>
 
         <section>
-          <title>Add Override Welcome Prompt</title>
+          <title>Add Scheduled Event</title>
 
           <orderedlist>
             <listitem>
-              <para>Click <inlinemediaobject>
-                  <imageobject>
-                    <imagedata contentwidth="30"
-                               fileref="Images/HolidaysButton.jpg"></imagedata>
-                  </imageobject>
-                </inlinemediaobject> and the screen appears.</para>
-            </listitem>
-
-            <listitem>
-              <para>Select date from the drop down menu.</para>
-            </listitem>
-
-            <listitem>
-              <para>Select menu configuration from the drop down menu.</para>
+              <para>Select date from the drop down menu. Optionally click the
+              All day option to apply to the current 24 hour period.</para>
             </listitem>
 
             <listitem>
@@ -5106,10 +5135,14 @@
             </listitem>
 
             <listitem>
+              <para>Select a configuration to use options from.</para>
+            </listitem>
+
+            <listitem>
               <para>Click <inlinemediaobject>
                   <imageobject>
                     <imagedata contentwidth="30"
-                               fileref="Images/AddHolidayButton.jpg"></imagedata>
+                               fileref="Images/AddEventButton.JPG"></imagedata>
                   </imageobject>
                 </inlinemediaobject> and the saved message appears.</para>
             </listitem>
@@ -5127,17 +5160,87 @@
         </section>
 
         <section>
-          <title>Delete an Override Welcome Prompt</title>
+          <title>Delete Scheduled Event</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/DeleteButtonGrail.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> next to the record you want to delete and
+              the deleted message appears.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+      </section>
+
+      <section>
+        <title>Impromptu Event</title>
+
+        <para>The Impromptu Event Screen allows you to schedule a temporary
+        event that will automatically last until the end of the current day.
+        The event can be canceled to end earlier.</para>
+
+        <para>Click <inlinemediaobject>
+            <imageobject>
+              <imagedata contentwidth="45"
+                         fileref="Images/ImpromptuEventTab.JPG"></imagedata>
+            </imageobject>
+          </inlinemediaobject> to display the Impromptu Event Screen.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/ImpromptuEventScreen.jpg"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold"><guibutton>Impromptu Event Field
+        Definitions</guibutton></emphasis></para>
+
+        <para><emphasis role="bold">Select Prompt:</emphasis> Select the
+        override welcoming prompt.</para>
+
+        <para><emphasis role="bold"><emphasis role="bold">Use Options
+        From:</emphasis> <emphasis>The impromptu event will use options from
+        this configuration.</emphasis></emphasis></para>
+
+        <section>
+          <title>Start an Event</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Select a prompt to play.</para>
+            </listitem>
+
+            <listitem>
+              <para>Select a configuration to use options from.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/StartEventButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject></para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section>
+          <title>End Event</title>
 
           <orderedlist>
             <listitem>
               <para>Click <inlinemediaobject>
                   <imageobject>
                     <imagedata contentwidth="30"
-                               fileref="Images/DeleteButtonGrail.jpg"></imagedata>
+                               fileref="Images/EndEventButton.jpg"></imagedata>
                   </imageobject>
-                </inlinemediaobject> next to the record you want to delete and
-              the deleted message appears.</para>
+                </inlinemediaobject></para>
             </listitem>
           </orderedlist>
         </section>
@@ -5192,24 +5295,26 @@
       </itemizedlist>
 
       <section>
-        <title>Status:</title>
+        <title>Status</title>
 
-        <para><guibutton role="bold">Click <inlinemediaobject>
+        <para>Click <inlinemediaobject>
             <imageobject>
-              <imagedata contentwidth="30" fileref="Images/ACDStatusTab.JPG"></imagedata>
+              <imagedata contentwidth="30" fileref="Images/ACDStatusTab.JPG" />
             </imageobject>
-          </inlinemediaobject> to display the ACD status
-        screen.</guibutton></para>
+          </inlinemediaobject> to display the ACD status screen.</para>
 
         <mediaobject>
           <imageobject>
             <imagedata contentwidth="6.0in"
-                       fileref="Images/ACDStatusScreen.JPG"></imagedata>
+                       fileref="Images/ACDStatusScreen.JPG" />
           </imageobject>
         </mediaobject>
 
-        <para><guibutton role="bold">ACD Status Screen Field
-        Definitions:</guibutton></para>
+        <para>
+          <emphasis role="bold">
+            <guibutton>Status Field Definitions</guibutton>
+          </emphasis>
+        </para>
 
         <para><emphasis role="bold">Status:</emphasis> Your call availability.
         Your status determines whether Listen will route incoming calls to
@@ -5253,7 +5358,7 @@
 
           <listitem>
             <para><emphasis role="bold">Skill:</emphasis> The requested skill
-            for the current call. This should correspond to one of your own
+            for the current call. This will correspond to one of your own
             skills.</para>
           </listitem>
 
@@ -5276,123 +5381,152 @@
         history for the current day. This will only display calls routed to
         you by the ACD system.</para>
 
-        <para><emphasis role="bold">To set your current
-        status:</emphasis></para>
+        <section>
+          <title>Set your status</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click the colored button, <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject>, just below "Your Current ACD
-            Status".</para>
-          </listitem>
+          <orderedlist>
+            <listitem>
+              <para>Click the colored button, <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDUnavailableStatusButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject>, just below "Your Current ACD
+              Status".</para>
+            </listitem>
 
-          <listitem>
-            <para>The color should change, as shown here, <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject>, to indicate your were successful.</para>
+            <listitem>
+              <para>The color will change, as shown here, <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDAvailableStatusButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject>, to indicate your were successful.</para>
 
-            <para>Note: The status toggles, so if you were "Available",
-            following the same procedure above will toggle your status to
-            "Unavailable".</para>
-          </listitem>
-        </orderedlist>
+              <para>
+                <emphasis>Note: The status toggles, so if you were
+                "Available", following the same procedure above will toggle
+                your status to "Unavailable".</emphasis>
+              </para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">To update your contact
-        number:</emphasis></para>
+        <section>
+          <title>Set Contact Number</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Using the contact number select, <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="60"
-                             fileref="Images/ACDContactNumberSelect.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> , found just below "Your ACD Contact
-            Number", select a phone number.</para>
+          <orderedlist>
+            <listitem>
+              <para>Using the contact number select, <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="60"
+                               fileref="Images/ACDContactNumberSelect.JPG" />
+                  </imageobject>
+                </inlinemediaobject> , found just below "Your ACD Contact
+              Number", select a phone number.</para>
 
-            <para>Note: The numbers displayed in the select must be previously
-            configured as an extension or as a personal number via your
-            profile.</para>
-          </listitem>
-        </orderedlist>
+              <para>
+                <emphasis>Note: The numbers displayed in the select must be
+                previously configured as an extension or as a personal number
+                via your profile.</emphasis>
+              </para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">During a call:</emphasis></para>
+        <para>
+          <emphasis role="bold">During a call:</emphasis>
+        </para>
 
         <para>During a call, the current call section will be populated with
         additional fields, as shown here: <inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="2.0in"
-                         fileref="Images/ACDCurrentCall.JPG"></imagedata>
+                         fileref="Images/ACDCurrentCall.JPG" />
             </imageobject>
           </inlinemediaobject> .</para>
 
-        <para><emphasis role="bold">To place a call on hold:</emphasis></para>
+        <section>
+          <title>Place a call on hold</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Check the checkbox, under the label 'Hold'.</para>
-          </listitem>
-        </orderedlist>
+          <orderedlist>
+            <listitem>
+              <para>Check the checkbox, under the label 'Hold'.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">To transfer a call:</emphasis></para>
+        <section>
+          <title>Transfer Call</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click <inlinemediaobject>
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/ACDTransferButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject> to bring up a selection box with
+              available agents to transfer the call to. You will see a
+              selection box appear, as shown below.</para>
+
+              <mediaobject>
                 <imageobject>
-                  <imagedata contentwidth="20"
-                             fileref="Images/ACDTransferButton.JPG"></imagedata>
+                  <imagedata contentwidth="3.0in"
+                             fileref="Images/ACDCurrentCallTransfer.JPG" />
                 </imageobject>
-              </inlinemediaobject> to bring up a selection box with available
-            agents to transfer the call to. You should see a selection box
-            appear, as shown below.</para>
+              </mediaobject>
+            </listitem>
 
-            <mediaobject>
-              <imageobject>
-                <imagedata contentwidth="3.0in"
-                           fileref="Images/ACDCurrentCallTransfer.JPG"></imagedata>
-              </imageobject>
-            </mediaobject>
-          </listitem>
+            <listitem>
+              <para>Using the new selection box, choose one of the available
+              agents.</para>
+            </listitem>
 
-          <listitem>
-            <para>Using the new selection box, choose one of the available
-            agents.</para>
-          </listitem>
-        </orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDTransferButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject> to finish transferring the call. Click
+              <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDTransferCancelButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject> to cancel the transfer.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">To disconnect a call:</emphasis></para>
+        <section>
+          <title>Disconnect a call</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDDisconnectButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> , within the current call section, to
-            disconnect the current call.</para>
-          </listitem>
-        </orderedlist>
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDDisconnectButton.JPG" />
+                  </imageobject>
+                </inlinemediaobject> , within the current call section, to
+              disconnect the current call.</para>
+            </listitem>
+          </orderedlist>
+        </section>
       </section>
 
       <section>
-        <title>Call Queue:</title>
+        <title>Call Queue</title>
 
         <para>The call queue screen displays any incoming call that is
         associated with one of the agent's skills. It may also be configured
         to display all calls, regardless of the agent's skill set by assigning
         the ACD_Call_Queue or Administrator role to an agent.</para>
 
-        <para><emphasis role="bold">ACD Call Queue Field
-        Definitions:</emphasis></para>
+        <para><emphasis role="bold"><guibutton>Call Queue Field
+        Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Agent:</emphasis> The requested agent. The
         agent selected is determined by an algorithm that factors in the
@@ -5464,24 +5598,25 @@
           </imageobject>
         </mediaobject>
 
-        <para><emphasis role="bold">To send a call to
-        voicemail:</emphasis></para>
+        <section>
+          <title>Send a call to voicemail</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDVoicemailButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> to send a call to voicemail, before it is
-            directed to an agent.</para>
-          </listitem>
-        </orderedlist>
+          <orderedlist>
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDVoicemailButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> to send a call to voicemail, before it is
+              directed to an agent.</para>
+            </listitem>
+          </orderedlist>
+        </section>
       </section>
 
       <section>
-        <title>Messages:</title>
+        <title>Messages</title>
 
         <para>The messages screen allows you to view voicemails for any of
         your associated skills. The Messages tab itself will indicate whether
@@ -5491,8 +5626,8 @@
         for all of your skills. You can manage the messages to only display
         messages for a specific skill.</para>
 
-        <para><emphasis role="bold">ACD Messages Screen Field
-        Definitions:</emphasis></para>
+        <para><emphasis role="bold"><guibutton>Messages Field
+        Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">From:</emphasis> The caller who left the
         message.</para>
@@ -5516,112 +5651,122 @@
           </imageobject>
         </mediaobject>
 
-        <para><emphasis role="bold">To Play a Message:</emphasis></para>
+        <section>
+          <title>Play a Message</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click the 'Play' link of the corresponding message you wish
-            to listen to.</para>
-          </listitem>
-        </orderedlist>
+          <orderedlist>
+            <listitem>
+              <para>Click the 'Play' link of the corresponding message you
+              wish to listen to.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">To Toggle Message
-        Status:</emphasis></para>
+        <section>
+          <title>Toggle Message Status</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click, <inlinemediaobject>
+          <orderedlist>
+            <listitem>
+              <para>Click, <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDVoicemailMarkOldButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> , or , <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDVoicemailMarkNewButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> , depending on the current state of the
+              message.</para>
+            </listitem>
+
+            <listitem>
+              <para>The message will switch colors to indicate whether is old
+              / new and display a different status.</para>
+
+              <para>Old:</para>
+
+              <mediaobject>
                 <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDVoicemailMarkOldButton.JPG"></imagedata>
+                  <imagedata contentwidth="6.0in"
+                             fileref="Images/ACDOldVoicemail.JPG"></imagedata>
                 </imageobject>
-              </inlinemediaobject> , or , <inlinemediaobject>
+              </mediaobject>
+
+              <para>New:</para>
+
+              <mediaobject>
                 <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDVoicemailMarkNewButton.JPG"></imagedata>
+                  <imagedata contentwidth="6.0in"
+                             fileref="Images/ACDNewVoicemail.JPG"></imagedata>
                 </imageobject>
-              </inlinemediaobject> , depending on the current state of the
-            message.</para>
-          </listitem>
+              </mediaobject>
+            </listitem>
+          </orderedlist>
+        </section>
 
-          <listitem>
-            <para>The message should switch colors to indicate whether is old
-            / new and display a different status.</para>
+        <section>
+          <title>Download Message</title>
 
-            <para>Old:</para>
+          <orderedlist>
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="30"
+                               fileref="Images/ACDVoicemailDownloadButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button corresponding to the message you
+              wish to download.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-            <mediaobject>
-              <imageobject>
-                <imagedata contentwidth="6.0in"
-                           fileref="Images/ACDOldVoicemail.JPG"></imagedata>
-              </imageobject>
-            </mediaobject>
+        <section>
+          <title>Delete Message</title>
 
-            <para>New:</para>
+          <orderedlist>
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/ACDVoicemailDeleteButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button corresponding to the message you
+              wish to delete.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-            <mediaobject>
-              <imageobject>
-                <imagedata contentwidth="6.0in"
-                           fileref="Images/ACDNewVoicemail.JPG"></imagedata>
-              </imageobject>
-            </mediaobject>
-          </listitem>
-        </orderedlist>
+        <section>
+          <title>Switch Skills</title>
 
-        <para><emphasis role="bold">To Download a Message:</emphasis></para>
+          <orderedlist>
+            <listitem>
+              <para>Select the skill from the selection box,
+              <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="60"
+                               fileref="Images/ACDVoicemailSkillSelectionBox.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> , at the top of the screen, which
+              defaults to 'All'.</para>
 
-        <orderedlist>
-          <listitem>
-            <para>Click the <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="30"
-                             fileref="Images/ACDVoicemailDownloadButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> button corresponding to the message you
-            wish to download.</para>
-          </listitem>
-        </orderedlist>
+              <para><emphasis>Note: The number of new messages for each skill
+              will be listed next to the skill's name, helping to identify
+              which skills have new messages.</emphasis></para>
+            </listitem>
 
-        <para><emphasis role="bold">To Delete a Message:</emphasis></para>
-
-        <orderedlist>
-          <listitem>
-            <para>Click the <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="20"
-                             fileref="Images/ACDVoicemailDeleteButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> button corresponding to the message you
-            wish to delete.</para>
-          </listitem>
-        </orderedlist>
-
-        <para><emphasis role="bold">To Switch Skills:</emphasis></para>
-
-        <orderedlist>
-          <listitem>
-            <para>Select the skill from the selection box, <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="60"
-                             fileref="Images/ACDVoicemailSkillSelectionBox.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> , at the top of the screen, which defaults
-            to 'All'.</para>
-
-            <para>Note: The number of new messages for each skill will be
-            listed next to the skill's name, helping to identify which skills
-            have new messages.</para>
-          </listitem>
-
-          <listitem>
-            <para>The page should automatically refresh with the messages for
-            the specific skill displayed.</para>
-          </listitem>
-        </orderedlist>
+            <listitem>
+              <para>The page will automatically refresh with the messages for
+              the specific skill displayed.</para>
+            </listitem>
+          </orderedlist>
+        </section>
       </section>
 
       <section>
-        <title>Call History:</title>
+        <title>Call History</title>
 
         <para>The call history screen allows the user to view their call
         history, optionally filtered by time, skill, or agent, as well as
@@ -5630,8 +5775,8 @@
         last 24 hours. For admins, the screen will who all calls within the
         last 24 hours.</para>
 
-        <para><emphasis role="bold">ACD Call History Screen Field
-        Definitions:</emphasis></para>
+        <para><emphasis role="bold"><guibutton>Call History Field
+        Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Start Date:</emphasis> Only calls after
         the specified date will be displayed.</para>
@@ -5661,66 +5806,71 @@
           </imageobject>
         </mediaobject>
 
-        <para><emphasis role="bold">To Filter call history:</emphasis></para>
+        <section>
+          <title>Filter History</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Enter the starting date in the format MM/DD/YYYY.</para>
-          </listitem>
+          <orderedlist>
+            <listitem>
+              <para>Enter the starting date in the format MM/DD/YYYY.</para>
+            </listitem>
 
-          <listitem>
-            <para>Enter the ending date in the format MM/DD/YYYY.</para>
-          </listitem>
+            <listitem>
+              <para>Enter the ending date in the format MM/DD/YYYY.</para>
+            </listitem>
 
-          <listitem>
-            <para>Click on the skill select and select a skill.</para>
-          </listitem>
+            <listitem>
+              <para>Click on the skill select and select a skill.</para>
+            </listitem>
 
-          <listitem>
-            <para>Click on the agent select and select an agent.</para>
-          </listitem>
+            <listitem>
+              <para>Click on the agent select and select an agent.</para>
+            </listitem>
 
-          <listitem>
-            <para>Click the <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="20"
-                             fileref="Images/ACDCallHistoryFilterButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> button to refresh the page with the new
-            results.</para>
-          </listitem>
-        </orderedlist>
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/ACDCallHistoryFilterButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button to refresh the page with the new
+              results.</para>
+            </listitem>
+          </orderedlist>
+        </section>
 
-        <para><emphasis role="bold">To export to CSV file:</emphasis></para>
+        <section>
+          <title>Export to CSV</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Optional: Use the filter steps above to filter the results.
-            The export action will use the same parameters to sort the
-            results.</para>
-          </listitem>
+          <orderedlist>
+            <listitem>
+              <para>Optional: Use the filter steps above to filter the
+              results. The export action will use the same parameters to sort
+              the results.</para>
+            </listitem>
 
-          <listitem>
-            <para>Click the 'Export to CSV' link to download a CSV file, with
-            the filtered results.</para>
-          </listitem>
-        </orderedlist>
+            <listitem>
+              <para>Click the 'Export to CSV' link to download a CSV file,
+              with the filtered results.</para>
+            </listitem>
+          </orderedlist>
+        </section>
       </section>
 
       <section vendor="Admin">
-        <title>Agent Status:</title>
+        <title>Agent Status</title>
 
         <para>The agent status screen shows the status of all agents within an
-        organization for all skills. It is restricted to admin users.</para>
+        organization for all skills. A table is displayed for each
+        skill.</para>
 
-        <para><emphasis role="bold">ACD Agent Status Screen Field
-        Definitions:</emphasis></para>
+        <para><emphasis role="bold"><guibutton>Agent Status Field
+        Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Agent:</emphasis> The agent's
         username.</para>
 
         <para><emphasis role="bold">Priority: </emphasis>The agent's priority
-        for the given skill, specified by the table header.</para>
+        for the given skill.</para>
 
         <para><emphasis role="bold">Status:</emphasis> The agent's call
         status.</para>
@@ -5749,23 +5899,26 @@
           </imageobject>
         </mediaobject>
 
-        <para>To change an agent's status:</para>
+        <section>
+          <title>Update Agent Status</title>
 
-        <orderedlist>
-          <listitem>
-            <para>Click the <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="60"
-                             fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> or <inlinemediaobject>
-                <imageobject>
-                  <imagedata contentwidth="60"
-                             fileref="Images/ACDAvailableStatusButton.JPG"></imagedata>
-                </imageobject>
-              </inlinemediaobject> button to toggle the agent's status.</para>
-          </listitem>
-        </orderedlist>
+          <orderedlist>
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="60"
+                               fileref="Images/ACDUnavailableStatusButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> or <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="60"
+                               fileref="Images/ACDAvailableStatusButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button to toggle the agent's
+              status.</para>
+            </listitem>
+          </orderedlist>
+        </section>
       </section>
     </section>
 
@@ -6889,7 +7042,7 @@
           </imageobject>
         </mediaobject>
 
-        <para><emphasis role="bold"><guibutton>ACD Field
+        <para><emphasis role="bold"><guibutton>ACD Skills Field
         Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Skill Name:</emphasis> The name of the
@@ -6975,8 +7128,8 @@
             <listitem>
               <para>Edit the appropriate fields.</para>
 
-              <para><emphasis role="bold">Skill Field
-              Definitions:</emphasis></para>
+              <para><emphasis role="bold"><guibutton>Skill Field
+              Definitions</guibutton></emphasis></para>
 
               <para><emphasis role="bold">Skill Name:</emphasis> The name of
               the skill. This will be displayed on all screens that reference
@@ -7871,7 +8024,7 @@
         <para><emphasis role="bold">Email Address:</emphasis> The email
         address of the user.</para>
 
-        <para><emphasis role="bold">User Skill:</emphasis> A table of the
+        <para><emphasis role="bold">User Skills:</emphasis> A table of the
         user's skills. The user's priority for each skill can be updated here
         as well.</para>
 
