@@ -53,15 +53,18 @@
           <para>Updated ACD Tab.</para>
         </revdescription>
       </revision>
-	  
-	  <revision>
-	    <revnumber>1.0.3</revnumber>
-		<date>19 May 2013</date>
-		<authorinitials>Daniel Walter</authorinitials>
-		<revdescription>
-		  <para>Updated Attendant Tab.</para>
-	    </revdescription>
-	  </revision>
+
+      <revision>
+        <revnumber>1.0.3</revnumber>
+
+        <date>19 May 2013</date>
+
+        <authorinitials>Daniel Walter</authorinitials>
+
+        <revdescription>
+          <para>Updated Attendant Tab.</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -7151,11 +7154,11 @@
               played before the hold music begins playing.</para>
 
               <para><emphasis role="bold">Extended On Hold Prompt
-              Selection:</emphasis> After the hold music selection has looped
-              three times, and the on hold prompt has looped twice, an
-              additional prompt may be played to prompt the caller to leave a
-              voicemail. If the call opts out of leaving a voicemail, the
-              pattern is repeated.</para>
+              Selection:</emphasis> After the on hold prompt and the hold
+              music have each played three times, Listen will begin to play
+              the extended message in the place on the on hold message until
+              the caller connects with an agent or decides to leave a
+              voicemail.</para>
 
               <para><emphasis role="bold">On Hold Music Selection:</emphasis>
               The music played to the caller on hold. It will loop
