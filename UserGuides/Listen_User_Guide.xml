@@ -65,6 +65,18 @@
           <para>Updated Attendant Tab.</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.4</revnumber>
+
+        <date>28 September 2014</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Organizations tab for Custodian</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -6055,6 +6067,13 @@
 
         <para><emphasis role="bold">URL Path:</emphasis> The URL path for the
         organization</para>
+
+        <para><emphasis role="bold">Outbound Call ID:</emphasis> The outbound
+        caller id for the organization.</para>
+
+        <para><emphasis role="bold">Allow Mailbox's DID to Determine Outbound
+        Caller ID:</emphasis> if checked, the mailbox's DID to be used as
+        outbound caller id.</para>
 
         <para><emphasis role="bold">Enabled Features:</emphasis> When
         selected, the feature is to be available for the organization.
