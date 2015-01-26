@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:d="http://docbook.org/ns/docbook">
+  <info>
+    <title><inlinegraphic contentwidth="2.0in"
+    fileref="../docbook/listen_logo.jpg" /></title>
+
+    <subtitle><emphasis role="bold"><guibutton>IP PBX Phone Quick Start
+    Guide</guibutton></emphasis></subtitle>
+
+    <biblioid>B00002010080401</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>04 August 2010</date>
+
+        <authorinitials>Carrie Powers</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>04 November 2010</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Document</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>05 November 2010</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Removed Three Way Conference Call. Updated formatting.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.3</revnumber>
+
+        <date>09 November 2010</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated On Phone Conferencing Call section.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.4</revnumber>
+
+        <date>24 January 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Added Forward Call Directly to Voicemail section.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.5</revnumber>
+
+        <date>03 February 2011</date>
+
+        <authorinitials>Variya Ruenprom</authorinitials>
+
+        <revdescription>
+          <para>Updated Forward Call Directly to Voicemail section.</para>
+
+          <para>Added Blind Transfer to specific destination section.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.5</revnumber>
+
+        <date>05 October 2011</date>
+
+        <authorinitials>Mark Wemhoff</authorinitials>
+
+        <revdescription>
+          <para>Updated Forwarding section for when an extension is forwarded
+          to an external number.</para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>1.0.6</revnumber>
+
+        <date>23 January 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>Mods made for Mitel phone.</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title></title>
+
+    <para><emphasis role="bold"><guibutton>Making a
+    Call</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Internal Extension</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Dial <emphasis role="bold"><guilabel>4</guilabel></emphasis>
+            digit number</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>External Number</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Dial the 10 digits of the local or long distance number.
+            Dial the country code + numbers for international calls.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Receiving a
+    Call</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Pick up the handset or press the <emphasis
+        role="bold"><guilabel>Speaker</guilabel></emphasis> button.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Placing Caller on
+    Hold</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press <emphasis role="bold"><guilabel>Hold</guilabel></emphasis>
+        button to put active call on hold. Active line will begin flashing.
+        You can now answer an incoming call on another line, or select another
+        line to make a new call.</para>
+      </listitem>
+
+      <listitem>
+        <para>To resume a call, press the line button associated with that
+        call.</para>
+
+        <para>(<emphasis>Note: If a second call is in progress, that call will
+        be placed on hold while the original call is
+        resumed</emphasis>).</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Muting a
+    Call</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>While a call is active, press the <emphasis
+        role="bold"><guilabel>Mute</guilabel></emphasis> button. To cancel,
+        press the Mute button again.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis
+    role="bold"><guibutton>Redial</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Press the <emphasis
+        role="bold"><guilabel>Redial</guilabel></emphasis> button on
+        phone.</para>
+      </listitem>
+
+      <listitem>
+        <para>Use Navigation button to select number to redial.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Call
+    Transfers</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Attended Transfer</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>To initiate an attended transfer, press the button next to
+            <emphasis role="bold"><guilabel>Trans/Conf</guilabel></emphasis>
+            during an active call.</para>
+          </listitem>
+
+          <listitem>
+            <para>Active call is placed on hold and you hear a dial
+            tone.</para>
+          </listitem>
+
+          <listitem>
+            <para>Dial new number. Once the call is answered you can have a
+            conversation.</para>
+          </listitem>
+
+          <listitem>
+            <para>To transfer previous call to new call, just hang up.</para>
+          </listitem>
+
+          <listitem>
+            <para>Both calls are connected and you will be
+            disconnected.</para>
+
+            <para>(<emphasis>Note: If you hang up during the second call
+            before pressing <emphasis
+            role="bold"><guilabel>Trans/Conf</guilabel></emphasis>, the
+            transfer will not be completed. The second call is ended while the
+            first party is still on hold</emphasis>).</para>
+          </listitem>
+
+          <listitem>
+            <para>To cancel a transfer, press the Cancel button (with an X in
+            the circle)</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>Unattended (<emphasis>blind</emphasis>) Transfer</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>To initiate a blind transfer, press the button next to
+            <emphasis role="bold"><guilabel>Trans/Conf</guilabel></emphasis>
+            during an active call.</para>
+          </listitem>
+
+          <listitem>
+            <para>Active call is placed on hold and you hear a dial
+            tone.</para>
+          </listitem>
+
+          <listitem>
+            <para>Dial new number and hangup.</para>
+          </listitem>
+
+          <listitem>
+            <para>To cancel a transfer, press the Cancel button (with an X in
+            the circle)</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>On Phone
+    Conferencing</guibutton></emphasis></para>
+
+    <orderedlist>
+      <listitem>
+        <para>When no active call on the line<orderedlist
+            numeration="loweralpha">
+            <listitem>
+              <para>Dial the first party's number.</para>
+            </listitem>
+
+            <listitem>
+              <para>After the party answers the phone, press the button next
+              to <emphasis role="bold"><guilabel>Trans/Conf</guilabel>
+              </emphasis>key on your phone (<emphasis>Party 1 is placed
+              on-hold</emphasis>).</para>
+            </listitem>
+
+            <listitem>
+              <para>Enter the second party's number.</para>
+            </listitem>
+
+            <listitem>
+              <para>After the party answers the phone, press the <emphasis
+              role="bold"><guilabel>Trans/Conf</guilabel></emphasis>
+              key.</para>
+            </listitem>
+
+            <listitem>
+              <para>All parties are conferenced on the same call.</para>
+
+              <para><emphasis>Note: Only 2 parties can be conferenced in at
+              one time.</emphasis></para>
+            </listitem>
+          </orderedlist></para>
+      </listitem>
+
+      <listitem>
+        <para>When a call is on hold and the other line is either ringing or
+        connected.</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>If the phone has only one call on hold, press the button
+            <emphasis role="bold"><guilabel>Trans/Conf</guilabel></emphasis>
+            to join the call on hold with the active call.</para>
+          </listitem>
+
+          <listitem>
+            <para>If the phone has more than one call on hold, the button
+            <emphasis role="bold"><guilabel>Trans/Conf</guilabel></emphasis>
+            places the active call on hold and prompts the user to select the
+            other line key to join with the conference call.</para>
+          </listitem>
+
+          <listitem>
+            <para>All parties are conferenced on the same call. A special
+            brief tone will be played to all three parties to indicate that a
+            conference call is in progress.</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para>The initiator of the conference call can terminate the conference
+    any time by hanging up.</para>
+
+    <para><emphasis role="bold"><guibutton>Pick Up On-Hold
+    Call</guibutton></emphasis> (#9+extension)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>To pick up a call that is currently on-hold at another
+        extension:</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>Dial <emphasis
+            role="bold"><guilabel>#9+extension</guilabel></emphasis> of the
+            caller who has placed the other caller on-hold. You are then
+            connected to the on-hold caller.</para>
+
+            <para><emphasis>Example:</emphasis></para>
+
+            <para><emphasis>ext3478 calls ext3592</emphasis></para>
+
+            <para><emphasis>ext3478 puts ext3592 on hold</emphasis></para>
+
+            <para><emphasis>ext3426 dials #93478 to talk to
+            ext359</emphasis></para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>To pick up a call that is ringing at another extension:</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>Dial <emphasis
+            role="bold"><guilabel>#9+extension</guilabel></emphasis> of the
+            caller whose phone is ringing.</para>
+
+            <para><emphasis>Example:</emphasis></para>
+
+            <para><emphasis>ext3478 calls ext3592</emphasis></para>
+
+            <para><emphasis>ext3426 dials #93592 to pick up call and talk to
+            ext3478</emphasis></para>
+
+            <para><emphasis> </emphasis></para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Forward
+    Phone</guibutton></emphasis> (#33)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>To forward your phone to another phone from your own
+        extension:</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>Dial <emphasis
+            role="bold"><guilabel>#33</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter the number you want to forward your phone to and press
+            <emphasis role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+            <para><emphasis>Note: This can be another extension or an external
+            phone number.</emphasis></para>
+          </listitem>
+
+          <listitem>
+            <para>All calls to your extension will be forwarded to the new
+            number until you cancel the forward (<emphasis>see Cancel
+            Forward</emphasis>).</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>To forward your phone to another phone from any other
+        extension:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial <emphasis
+            role="bold"><guilabel>#33</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>*</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your extension and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter the number you want to forward your phone to and press
+            <emphasis role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+            <para><emphasis>Note: This can be another extension or an external
+            phone number.</emphasis></para>
+          </listitem>
+
+          <listitem>
+            <para>All calls to your extension will be forwarded to the new
+            number until you cancel the forward (<emphasis>see Cancel
+            Forward</emphasis>).</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>To forward your phone to another phone from an external
+        number:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Dial the company phone number.</para>
+          </listitem>
+
+          <listitem>
+            <para>Press <emphasis
+            role="bold"><guilabel>#33</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your extension and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter your passcode and press <emphasis
+            role="bold"><guilabel>#</guilabel></emphasis>.</para>
+          </listitem>
+
+          <listitem>
+            <para>Enter the number you want to forward your phone to and press
+            <emphasis role="bold"><guilabel>#</guilabel></emphasis>.</para>
+
+            <para><emphasis>Note: This can be another extension or an external
+            phone number. </emphasis></para>
+          </listitem>
+
+          <listitem>
+            <para>To forward to an external phone number, you must enter
+            prefix '9' and follow by the phone number.</para>
+
+            <para><emphasis>Example: 9 + 402 3269737</emphasis></para>
+          </listitem>
+
+          <listitem>
+            <para>All calls to your extension will be forwarded to the new
+            number until you cancel the forward (<emphasis>see Cancel
+            Forward</emphasis>).</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Transfer Call
+    </guibutton></emphasis> (extension is Forwarded to an external
+    number)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Unattended (blind) Transfer call directly to voicemail:</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>while the call is active, dial
+            *<guilabel>1+extension+#</guilabel></para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+
+      <listitem>
+        <para>Unattended (blind) Transfer to a specific destination:</para>
+
+        <orderedlist numeration="loweralpha">
+          <listitem>
+            <para>To transfer the call to another extension</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>while the call is active, dial
+                <guilabel>*2+extension+#</guilabel></para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>To transfer the call to an external number</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>while the call is active, <guilabel>dial *2+9+phone
+                number+#</guilabel></para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Cancel
+    Forward</guibutton></emphasis> (#34+extension)</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Dial <emphasis
+        role="bold"><guilabel>#34</guilabel></emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para>Enter your extension.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Broadcast
+    Message</guibutton></emphasis> (799)</para>
+
+    <para>To broadcast a message to all phones (except those on Do Not
+    Disturb):</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Dial <emphasis
+        role="bold"><guilabel>799</guilabel></emphasis>.</para>
+      </listitem>
+
+      <listitem>
+        <para>Speak your message.</para>
+      </listitem>
+
+      <listitem>
+        <para>Hang up.</para>
+      </listitem>
+    </orderedlist>
+
+    <para><emphasis role="bold"><guibutton>Do Not
+    Disturb</guibutton></emphasis><orderedlist>
+        <listitem>
+          <para>Press the soft key <emphasis
+          role="bold"><guilabel>dnd</guilabel></emphasis>.</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>All incoming calls go directly to voicemail</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </orderedlist></para>
+  </section>
+</article>
