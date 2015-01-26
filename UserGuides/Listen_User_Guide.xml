@@ -5901,7 +5901,7 @@
                                fileref="Images/DeleteButtonGrail.jpg"></imagedata>
                   </imageobject>
                 </inlinemediaobject> and Organization deleted message
-              appears</para>
+              appears.</para>
             </listitem>
           </orderedlist>
         </section>
@@ -5924,10 +5924,10 @@
         Definitions</guibutton></emphasis></para>
 
         <para><emphasis role="bold">Name:</emphasis> The name of the
-        organization</para>
+        organization.</para>
 
         <para><emphasis role="bold">URL Path:</emphasis> The URL path for the
-        organization</para>
+        organization.</para>
 
         <para><emphasis role="bold">Outbound Call ID:</emphasis> The outbound
         caller id for the organization.</para>
@@ -5935,6 +5935,9 @@
         <para><emphasis role="bold">Allow Mailbox's DID to Determine Outbound
         Caller ID:</emphasis> if checked, the mailbox's DID to be used as
         outbound caller id.</para>
+
+        <para><emphasis role="bold">Extension Length:</emphasis> The number of
+        digits in the extensions for the organization.</para>
 
         <para><emphasis role="bold">Enabled Features:</emphasis> When
         selected, the feature is to be available for the organization.
@@ -6446,8 +6449,8 @@
       <section>
         <title>Extensions</title>
 
-        <para>The Extensions screen allows you to create and assign numbers to
-        a user.</para>
+        <para>The Extensions screen allows you to create and assign extension
+        numbers to a user.</para>
 
         <mediaobject>
           <imageobject>
@@ -6465,8 +6468,23 @@
         <para><emphasis role="bold">Belongs To:</emphasis> The user whose the
         number is assigned to.</para>
 
+        <para><emphasis role="bold">Phone Username:</emphasis> The username
+        the phone will send when registering.</para>
+
+        <para><emphasis role="bold">Phone Password:</emphasis> The password
+        the phone will send when registering.</para>
+
+        <para><emphasis role="bold">Confirm Password:</emphasis> Repeat the
+        Phone Password.</para>
+
         <para><emphasis role="bold">IP Address: </emphasis> The IP address of
         the IP Phone.</para>
+
+        <para><emphasis role="bold">Last SIP Registration:</emphasis> The last
+        time this phone was successfully registered.</para>
+
+        <para><emphasis role="bold">Registered:</emphasis> Indicates whether
+        or not the phone is currently registered.</para>
 
         <section>
           <title>Add Extension</title>
@@ -6478,16 +6496,28 @@
                     <imagedata contentwidth="20"
                                fileref="Images/ExtensionsButton.jpg"></imagedata>
                   </imageobject>
-                </inlinemediaobject> and the Add Extensions screen
-              appears.</para>
+                </inlinemediaobject> and the Extensions screen appears.</para>
             </listitem>
 
             <listitem>
-              <para>Enter the number.</para>
+              <para>Enter the extension number. </para>
             </listitem>
 
             <listitem>
-              <para>Select Belongs To from the drop down menu.</para>
+              <para>Select the user to which the number belongs from the
+              Belongs To drop down menu.</para>
+            </listitem>
+
+            <listitem>
+              <para>Enter the Phone Username.</para>
+            </listitem>
+
+            <listitem>
+              <para>Enter the Phone Password.</para>
+            </listitem>
+
+            <listitem>
+              <para>Confirm the Phone Password.</para>
             </listitem>
 
             <listitem>
@@ -6497,7 +6527,9 @@
                                fileref="Images/AddExtensionsButton.jpg"></imagedata>
                   </imageobject>
                 </inlinemediaobject> and the Phone number created message
-              appears.</para>
+              appears. The extension is added to the list. Note that the IP
+              Address will be populated when the phone is first
+              registered.</para>
             </listitem>
           </orderedlist>
         </section>
@@ -7666,6 +7698,47 @@
                   </imageobject>
                 </inlinemediaobject> on the user you want to enable. The User
               enabled message appears.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+
+        <section>
+          <title>Delete User</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Before you can delete a user, you must first Disable the
+              user by clicking <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/DisableButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> on the user you want to delete. The
+              <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/DeleteUserButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button will appear on the disabled user
+              row.</para>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata contentwidth="6.0in"
+                             fileref="Images/UsersListDelete.jpg"></imagedata>
+                </imageobject>
+              </mediaobject>
+            </listitem>
+
+            <listitem>
+              <para>Click <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/DeleteUserButton.jpg"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> on the user you want to delete. Click OK
+              in the confirmation dialog. The User Deleted message
+              appears.</para>
             </listitem>
           </orderedlist>
         </section>
