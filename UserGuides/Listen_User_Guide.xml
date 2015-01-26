@@ -2219,139 +2219,6 @@
         </section>
       </section>
     </section>
-
-    <section>
-      <title>Find Me/Follow Me</title>
-
-      <para><emphasis><emphasis>You can enable, disable or delete your Find
-      Me/Follow Me numbers. </emphasis></emphasis></para>
-
-      <section>
-        <title>Access Find Me/Follow Me</title>
-
-        <para>You can access Find Me/Follow Me menu from:</para>
-
-        <orderedlist>
-          <listitem>
-            <para>Your own extension:</para>
-
-            <orderedlist numeration="loweralpha">
-              <listitem>
-                <para>Dial the access number.</para>
-              </listitem>
-
-              <listitem>
-                <para>Enter your passcode and press <emphasis
-                role="bold"><guibutton>#</guibutton></emphasis>.</para>
-              </listitem>
-            </orderedlist>
-          </listitem>
-
-          <listitem>
-            <para>Someone else's extension:</para>
-
-            <orderedlist numeration="loweralpha">
-              <listitem>
-                <para>Dial the access number.</para>
-              </listitem>
-
-              <listitem>
-                <para>Press<guibutton> *</guibutton>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Enter your mailbox number and press<guibutton>
-                #</guibutton>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Enter your password and press
-                <guibutton>#</guibutton>.</para>
-              </listitem>
-            </orderedlist>
-          </listitem>
-
-          <listitem>
-            <para>An external phone:</para>
-
-            <orderedlist numeration="loweralpha">
-              <listitem>
-                <para>Dial access number.</para>
-              </listitem>
-
-              <listitem>
-                <para>Press <guibutton>*</guibutton>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Enter number mailbox number and press
-                <guibutton>#</guibutton>.</para>
-              </listitem>
-
-              <listitem>
-                <para>Enter your passcode and press
-                <guibutton>#</guibutton>.</para>
-              </listitem>
-            </orderedlist>
-
-            <para>When dialing from an external number, if that number is one
-            of your access numbers then you only have to enter your passcode.
-            If the number isn't registered as the access number, it will
-            prompt you to enter the mailbox number.</para>
-          </listitem>
-        </orderedlist>
-      </section>
-
-      <section>
-        <title>Find Me/Follow Me Menu</title>
-
-        <para>This menu is accessed upon entering your mailbox. You will hear
-        your Find Me/Follow Me status.</para>
-
-        <para>At this time, you have two options:</para>
-
-        <orderedlist>
-          <listitem>
-            <para>You can activate or deactivate your Find Me/Follow Me based
-            on your current Find Me/Follow Me status.</para>
-
-            <itemizedlist>
-              <listitem>
-                <para>When activate, the configuration expires 24 hour from
-                the activation time.</para>
-              </listitem>
-
-              <listitem>
-                <para>When deactivate, the configuration expires
-                immediately.</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-
-          <listitem>
-            <para>You can edit your number(s). The following options are
-            available:</para>
-
-            <itemizedlist>
-              <listitem>
-                <para>Press <guibutton>1</guibutton> to enable the
-                number.</para>
-              </listitem>
-
-              <listitem>
-                <para>Press <guibutton>2</guibutton> to disable the
-                number.</para>
-              </listitem>
-
-              <listitem>
-                <para>Press <guibutton>3</guibutton> to delete the
-                number.</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-        </orderedlist>
-      </section>
-    </section>
   </section>
 
   <section>
@@ -4821,12 +4688,6 @@
             </listitem>
 
             <listitem>
-              <para><emphasis role="bold">Find Me Config:</emphasis> The
-              application used to direct inbound calls to different phone
-              number(s).</para>
-            </listitem>
-
-            <listitem>
               <para><emphasis role="bold">Mailbox:</emphasis> The application
               used to retrieve voicemails.</para>
             </listitem>
@@ -6485,12 +6346,6 @@
             <para><emphasis role="bold">Custom: </emphasis>A custom
             application. If selected, the name of the custom application is
             displayed.</para>
-          </listitem>
-
-          <listitem>
-            <para><emphasis role="bold">Find Me Config:</emphasis> The
-            application used to activate or deactivate Find Me
-            configuration.</para>
           </listitem>
 
           <listitem>
