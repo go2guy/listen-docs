@@ -77,6 +77,22 @@
           <para>Updated Organizations tab for Custodian</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.5</revnumber>
+
+        <date>26 January 2015</date>
+
+        <authorinitials>Sharon Zeleny</authorinitials>
+
+        <revdescription>
+          <para>Updated User Delete function</para>
+
+          <para>Updated Extension Configuration</para>
+
+          <para>Updated Organization Create function</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -6500,7 +6516,7 @@
             </listitem>
 
             <listitem>
-              <para>Enter the extension number. </para>
+              <para>Enter the extension number.</para>
             </listitem>
 
             <listitem>
