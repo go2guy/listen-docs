@@ -93,6 +93,18 @@
           <para>Updated Organization Create function</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.6</revnumber>
+
+        <date>5 February 2015</date>
+
+        <authorinitials>Sharon Zeleny</authorinitials>
+
+        <revdescription>
+          <para>Updated Extension Configuration</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -6496,11 +6508,8 @@
         <para><emphasis role="bold">IP Address: </emphasis> The IP address of
         the IP Phone.</para>
 
-        <para><emphasis role="bold">Last SIP Registration:</emphasis> The last
-        time this phone was successfully registered.</para>
-
-        <para><emphasis role="bold">Registered:</emphasis> Indicates whether
-        or not the phone is currently registered.</para>
+        <para><emphasis role="bold">Last SIP Activity:</emphasis> The last
+        time SIP activity was detected from this phone.</para>
 
         <section>
           <title>Add Extension</title>
