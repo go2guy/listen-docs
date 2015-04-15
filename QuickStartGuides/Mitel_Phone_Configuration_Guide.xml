@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1999/xhtml"
+         xmlns:ns3="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns="http://docbook.org/ns/docbook">
+  <info>
+    <title><emphasis role="bold"><guibutton>Mitel Phone
+    Configuration</guibutton></emphasis></title>
+
+    <biblioid>B00002015041501</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>17 March 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title>Mitel IP Phone 5330 Configuration</title>
+
+    <para><emphasis role="bold"><emphasis>These are instructions for
+    configuring your Mitel 5330 SIP phone to work with the Listen
+    solution.</emphasis></emphasis></para>
+
+    <para><emphasis role="bold"><emphasis>Here are some
+    basics:</emphasis></emphasis></para>
+
+    <itemizedlist>
+      <listitem>
+        <para>As you go through the menus, you will choose most menu settings
+        with * and #</para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist>
+      <listitem>
+        <para>For IP address entry use # for . and * for backspace</para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist>
+      <listitem>
+        <para>Scrolling is all done with up/down arrows on top right of
+        phone.</para>
+      </listitem>
+    </itemizedlist>
+
+    <section>
+      <title>Restoring to Factory Settings</title>
+
+      <para>If the phone has been configured before is recommended that it be
+      restored to factory settings, following the steps below.</para>
+
+      <para>Power off the unit (by disconnecting the Ethernet cable) and power
+      it back on (by reconnecting the Ethernet cable).</para>
+
+      <para>After that keep the arrow up button pressed until it
+      prompts</para>
+
+      <para>CONFIGURE PHONE? *=yes</para>
+
+      <para>NETWORK PARAMETERS #=no</para>
+
+      <para>Keep answering no until TOOLS AND FEATURES? *=yes</para>
+
+      <para>ERASE PIN? #=no</para>
+
+      <para>Keep answering no until RESTORE DEFAULTS? *=yes</para>
+
+      <para>CONFIRM? *=yes</para>
+
+      <para>Then the unit will be reset.</para>
+    </section>
+
+    <section>
+      <title>Setting the Phone to SIP Mode</title>
+
+      <para>CONFIGURE PHONE? *=yes</para>
+
+      <para>NETWORK PARAMETERS: #=No</para>
+
+      <para>HARDWARE CONFIG: #=No</para>
+
+      <para>PHONE MODE: *=Yes</para>
+
+      <para>PROTOCOL? *=Yes</para>
+
+      <para>PHONE MODE: *=CHANGE</para>
+
+      <para>0=SIP</para>
+
+      <para>#=ACCEPT</para>
+
+      <para>STORE CHANGES? *=Yes</para>
+
+      <para>REBOOT NOW? #=Yes</para>
+
+      <para>The unit will reboot. When it prompts ENTER USERID, press
+      CANCEL</para>
+    </section>
+
+    <section>
+      <title>Find the IP Address of the Phone</title>
+
+      <para>Press Blue “Super” key</para>
+
+      <para>Press the left side top soft key next to &gt;&gt; in the screen to
+      scroll to ADMIN TOOLS, press the soft key next to OK</para>
+
+      <para>Press the top soft key by NEXT in the screen to 3. NETWORK
+      SETTINGS, press the soft key next to OK</para>
+
+      <para>ENTER PASSWORD: &lt;default_is_model_number&gt; e.g. 5330</para>
+
+      <para>Press SUBMIT</para>
+
+      <para>Make sure DHCP is ON</para>
+
+      <para>Press NEXT to get to PHONE IP ADDRESS</para>
+
+      <para>Press REVIEW and the ip address will be displayed</para>
+    </section>
+
+    <section>
+      <title>Access the GUI</title>
+
+      <para>Enter the IP Address into your browser and the following page
+      should open</para>
+
+      <figure>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Images/MitelFTTP.png" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Enter the TFTP address provided by the system administrator and
+      press “Submit And Reboot”. After the unit reboots, refresh the web page
+      and you will be prompted to enter the username and password:
+      admin/5330.</para>
+
+      <para>Now you will have full access to the phone configuration.</para>
+    </section>
+
+    <section>
+      <title>GUI Configuration</title>
+
+      <para>All necessary phone configuration can be preformed via a web page.
+      Below are instructions for logging in and configuring each page.</para>
+
+      <section>
+        <title>Quick Start</title>
+
+        <para>Follow the examples below to populate the fields:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold"><emphasis role="bold">User ID or
+            Extension</emphasis>:</emphasis> <emphasis>3333</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">User Display Name:</emphasis>
+            <emphasis>John Smith 3333 </emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Authentication Name:</emphasis>
+            <emphasis>ext3333 </emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Authentication
+            Password:</emphasis> <emphasis>mypasswd</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Proxy Server:</emphasis>
+            <emphasis>10.19.10.10 </emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Registry Server:</emphasis>
+            <emphasis>10.19.10.10 </emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <para>All other fields can be left with their default values.</para>
+
+        <para>Click on <emphasis role="bold">APPLY </emphasis></para>
+
+        <figure>
+          <title></title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata depth="300" fileref="Images/MitelQuickStart.jpg"></imagedata>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>User List Config</title>
+
+        <para>Click on the extension that appears under <emphasis
+        role="bold">Current User List</emphasis></para>
+
+        <para>Follow the examples below to populate the fields:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Voice Mail Server:
+            </emphasis><emphasis>10.19.10.10</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <para>All other fields can be left with their default values.</para>
+
+        <para>Click on <emphasis role="bold">APPLY </emphasis></para>
+      </section>
+
+      <section>
+        <title>Advanced Features</title>
+
+        <para>Follow the examples below to populate the fields:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Registry Duration:</emphasis>
+            <emphasis>3000</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Session Timer:</emphasis>
+            <emphasis>0</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Voice Mail Retrieve
+            Address:</emphasis> <emphasis>770 </emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <para>All other fields can be left with their default values.</para>
+
+        <para>Click on <emphasis role="bold">APPLY </emphasis></para>
+      </section>
+
+      <section>
+        <title>Network Config</title>
+
+        <para>Follow the examples below to populate the fields:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Phone Host Name:</emphasis>
+            JoeS</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Domain Name:</emphasis>
+            my.domain.local</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">DHCP:</emphasis> on/off</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>If DHCP is set to off, populate the fields as in the examples
+        below:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">SIP Phone IP Address:</emphasis>
+            <emphasis>10.19.10.200</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Subnet Mask:</emphasis>
+            <emphasis>255.255.255.0</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Default Gateway:</emphasis>
+            <emphasis>10.19.10.1</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Primary DNS</emphasis>:
+            <emphasis>10.19.11.199</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Secondary DNS</emphasis>:
+            <emphasis>10.19.11.198</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Set the value of <emphasis role="bold">Time Zone</emphasis>
+        corresponding to your region.</para>
+
+        <para>All other fields can be left with their default values.</para>
+
+        <para>Click on<emphasis role="bold"> APPLY </emphasis></para>
+
+        <figure>
+          <title></title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata depth="300" fileref="Images/MitelNetworkConfig.jpg"></imagedata>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Protocols</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>TFTP access: off</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>The configuration is complete. <emphasis role="bold">SAVE AND
+        REBOOT </emphasis></para>
+      </section>
+
+      <section>
+        <title>Registration</title>
+
+        <para>The registration status of the phone can be verified in the
+        Registration page. The link CLICK HERE takes to the page shown
+        below.</para>
+
+        <figure>
+          <title></title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata depth="30" fileref="Images/MitelRegistration.jpg"></imagedata>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+    </section>
+  </section>
+
+  <?hard-pagebreak ?>
+
+  <glossary role="NotInToc">
+    <title>Company Information</title>
+  </glossary>
+</article>
