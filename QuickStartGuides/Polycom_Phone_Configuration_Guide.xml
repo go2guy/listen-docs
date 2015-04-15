@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1999/xhtml"
+         xmlns:ns3="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns="http://docbook.org/ns/docbook">
+  <info>
+    <title><emphasis role="bold"><guibutton>Polycom Phone
+    Configuration</guibutton></emphasis></title>
+
+    <biblioid>B00002015041502</biblioid>
+
+    <revhistory role="NotInDoc">
+      <revision>
+        <revnumber>1.0.0</revnumber>
+
+        <date>31 March 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>New Document</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+  </info>
+
+  <section>
+    <title>Polycom Soundstation IP 550 Configuration</title>
+
+    <para><emphasis role="bold"><emphasis>These are instructions for
+    configuring your Polycom IP 550 SIP phone to work with the Listen
+    solution.S</emphasis></emphasis></para>
+
+    <section>
+      <title>Software Upgrade</title>
+
+      <para>For new phones, upgrade the phone's boot block and software
+      versions to the latest 4.0.X release. More details can be found at the
+      Polycom website at http://voipt2.polycom.com.</para>
+
+      <para>From the phone's local menu press <emphasis role="bold">Menu &gt;
+      Settings &gt; Advanced</emphasis> (default password: 456) <emphasis
+      role="bold">&gt; Administration Settings &gt; Network Configuration &gt;
+      Server Menu</emphasis></para>
+
+      <para>Set <emphasis role="bold">Server Type</emphasis> to
+      <emphasis>HTTP</emphasis></para>
+
+      <para>Input <emphasis role="bold">Server Address</emphasis> as
+      <emphasis>voipt2.polycom.com/401</emphasis></para>
+
+      <para>Press the back button a few times until you get to <emphasis
+      role="bold">Save Config</emphasis>.</para>
+
+      <para>After saving the settings press the back button two more times
+      until you get the <emphasis role="bold">Advanced</emphasis> menu and
+      then choose <emphasis role="bold">Reboot Phone</emphasis>.</para>
+
+      <para>The phone will update the boot ROM and the software. It will
+      reboot itself two or three times. Do not interrupt until it is sitting
+      at a screen with the Date and Time being displayed before you try to
+      modify setting or make a call.</para>
+    </section>
+
+    <section>
+      <title>Restoring to Factory Settings</title>
+
+      <para>Use this to re-purpose a phone or reset a phone's settings.</para>
+
+      <para>From the phone's local menu press <emphasis role="bold">Menu &gt;
+      Settings &gt; Advanced</emphasis> (default password: 456) <emphasis
+      role="bold">&gt; Administration Settings &gt; Reset to
+      Defaults</emphasis></para>
+
+      <para><emphasis role="bold">Reset Local Configuration</emphasis> -
+      Yes</para>
+
+      <para><emphasis role="bold">Reset Web Configuration</emphasis> -
+      Yes</para>
+
+      <para><emphasis role="bold">Reset Device Settings</emphasis> -
+      Yes</para>
+
+      <para><emphasis role="bold">Reset to Factory</emphasis> - Yes</para>
+
+      <para>The phone will reboot.</para>
+
+      <para>Do not interrupt until it is sitting at a screen with the Date and
+      Time being displayed before you try to modify setting or make a
+      call.</para>
+
+      <para>Then the unit will be reset.</para>
+    </section>
+
+    <section>
+      <title>Access the Web Configuration Utility Page</title>
+
+      <para>Find the IP address of the phone. From the phone's local menu
+      press <emphasis role="bold">Menu &gt; Status &gt; Network</emphasis>
+      <emphasis role="bold">&gt; TCP/IP Paramaters</emphasis></para>
+
+      <para>Enter the IP Address into your browser and you should have access
+      to the phone's Web Configuration Utility page. Log in as Admin and
+      password 456.</para>
+    </section>
+
+    <section>
+      <title>GUI Configuration</title>
+
+      <para>Go to the tab <emphasis role="bold">Preferences &gt; Date &amp;
+      Time </emphasis>and set the SNTP Server and Time Zone.</para>
+
+      <para>Go to the tab <emphasis role="bold">Preferences &gt; Additional
+      preferences</emphasis> and set the values:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Headset Memory Mode</emphasis><emphasis
+          role="bold">:</emphasis> <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">One Touch Voice Mail:</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Bypass Instant Message:</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Welcome Sound (Warm Boot):</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Click <emphasis role="bold">Save</emphasis>. The phone will
+      reboot.</para>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; Network &gt; QoS
+      &gt; Audio RTP</emphasis></para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">IP ToS Maximize Throughput:</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; Network &gt; QoS
+      &gt; Call Control</emphasis></para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">IP ToS Maximize Throughput:</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">IP ToS Maximize Reliability:</emphasis>
+          <emphasis>Enable</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Click <emphasis role="bold">Save</emphasis>. The phone will
+      reboot.</para>
+
+      <para>If you want to disable DHCP, go to the tab <emphasis
+      role="bold">Settings &gt; Network &gt; Ethernet &gt; General
+      </emphasis>and enter the values in the mandatory fields.</para>
+
+      <para>Click <emphasis role="bold">Save</emphasis>. The phone will
+      reboot.</para>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; SIP &gt; Local
+      Settings</emphasis></para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Digitmap:</emphasis> <emphasis>x.T|
+          x.*x.*x.*x.T|9,x.RR9Rx.T|#xx.T|#9xxx.T</emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Digitmap Timeout:</emphasis>
+          <emphasis>7|7|7|1|1 </emphasis></para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; SIP &gt; Server1
+      </emphasis>and enter the <emphasis role="bold">Address</emphasis> of the
+      SIP server. Use <emphasis role="bold">Port</emphasis> 5060 and <emphasis
+      role="bold">Register</emphasis> set to Yes with <emphasis
+      role="bold">Expires</emphasis> 3000 s.</para>
+
+      <para>Click <emphasis role="bold">Save</emphasis>. The phone will
+      reboot.</para>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; SIP &gt; Server1
+      &gt; Lines &gt; Line 1 &gt; Identification </emphasis>(see figure
+      below)</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Display Name</emphasis><emphasis
+          role="bold"><emphasis role="bold">:</emphasis> </emphasis>(the
+          displayed caller ID)</para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Address</emphasis><emphasis
+          role="bold">:</emphasis> (the extension number)</para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Label:</emphasis> (the displayed name on
+          the phone for that line)</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Go to the tab <emphasis role="bold">Settings &gt; SIP &gt; Server1
+      &gt; Lines &gt; Line 1 &gt; Authentication</emphasis> (see figure
+      below)</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">User ID</emphasis><emphasis
+          role="bold">:</emphasis> (required by the registrar at the SIP
+          server)</para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Password</emphasis><emphasis
+          role="bold">: </emphasis> (required by the registrar at the SIP
+          server)</para>
+
+          <para></para>
+
+          <figure>
+            <title></title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata contentdepth="300" fileref="Images/Polycom.jpg"></imagedata>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </listitem>
+      </itemizedlist>
+
+      <para></para>
+
+      <para>Click <emphasis role="bold">Save</emphasis>. The phone will
+      reboot.</para>
+
+      <para></para>
+
+      <para>After the reboot is complete the phone should be registered to the
+      SIP server and ready to make and receive calls.</para>
+    </section>
+  </section>
+
+  <?hard-pagebreak ?>
+
+  <glossary role="NotInToc">
+    <title>Company Information</title>
+  </glossary>
+</article>
