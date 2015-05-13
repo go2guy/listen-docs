@@ -24,6 +24,18 @@
           <para>New Document</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>11 May 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>Added section on dial plan</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -352,6 +364,40 @@
               <imagedata depth="300" fileref="Images/MitelNetworkConfig.jpg"></imagedata>
             </imageobject>
           </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Dial Plan</title>
+
+        <para>The desired dial plan can be configured following the
+        instructions given in this page, as seen below.</para>
+
+        <figure>
+          <title></title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="400" depth=""
+                         fileref="Images/MitelDialPlan.jpg"></imagedata>
+            </imageobject>
+          </mediaobject>
+
+          <para>A sample dial plan is shown below. Note that the extensions
+          have to end with '#' as to differentiate the rule from other long
+          rules. If the '#' isn't there, any number that contains 3 or more
+          digits will trigger the extension rules. </para>
+
+          <figure>
+            <title></title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata depth="100"
+                           fileref="Images/MitelSampleDialPlan.jpg"></imagedata>
+              </imageobject>
+            </mediaobject>
+          </figure>
         </figure>
       </section>
 

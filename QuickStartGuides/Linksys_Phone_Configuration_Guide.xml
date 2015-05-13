@@ -36,6 +36,18 @@
           <para>Changed document title</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.2</revnumber>
+
+        <date>11 May 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>Added section on dial plan</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -459,6 +471,22 @@
           </listitem>
         </orderedlist>
       </section>
+    </section>
+
+    <section>
+      <title>Dial Plan</title>
+
+      <para>In case a dial plan different from the one in the previous section
+      is required, the user can refer to the documents at
+      <emphasis>http://www.cisco.com/c/en/us/support/docs/collaboration-endpoints/spa901-1-line-ip-phone/108747-pqa-108747.html
+      </emphasis>or
+      <emphasis>https://supportforums.cisco.com/document/37011/dial-plans-spa9000-and-spa-phones</emphasis>.
+      They contain instructions and examples on how to write digit
+      maps.</para>
+
+      <para>Although the dial plan implementation by different phone vendors
+      might vary, the digit maps syntax is defined in the section 2.1.5 of the
+      RFC 3435.</para>
     </section>
   </section>
 
