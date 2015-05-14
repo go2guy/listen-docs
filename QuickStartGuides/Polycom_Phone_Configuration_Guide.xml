@@ -24,6 +24,18 @@
           <para>New Document</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.1</revnumber>
+
+        <date>11 May 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>Added section on dial plan</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -277,6 +289,20 @@
 
       <para>After the reboot is complete the phone should be registered to the
       SIP server and ready to make and receive calls.</para>
+    </section>
+
+    <section>
+      <title>Dial Plan</title>
+
+      <para>In case a dial plan different from the one in the previous section
+      is required, the user can refer to the document at
+      <emphasis>http://support.polycom.com/global/documents/support/technical/products/voice/Understanding_Digit_Maps_Tech_Tip.pdf
+      </emphasis>. It contains instructions and examples on how to write digit
+      maps.</para>
+
+      <para>Although the dial plan implementation by different phone vendors
+      might vary, the digit maps syntax is defined in the section 2.1.5 of the
+      RFC 3435.</para>
     </section>
   </section>
 
