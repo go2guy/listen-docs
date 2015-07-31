@@ -114,6 +114,19 @@
           <para>Removed instruction to dial 9 before external numbers</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.7</revnumber>
+
+        <date>31 July 2015</date>
+
+        <authorinitials>Ricardo Mastroleo</authorinitials>
+
+        <revdescription>
+          <para>Removed instruction to usage of #33 feature from external
+          phones. </para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -139,8 +152,8 @@
 
         <itemizedlist>
           <listitem>
-            <para>Dial the 10 digits of the local or long distance number.
-            </para>
+            <para>Dial the 10 digits of the local or long distance
+            number.</para>
           </listitem>
         </itemizedlist>
 
@@ -464,46 +477,6 @@
 
             <para><emphasis>Note: This can be another extension or an external
             phone number.</emphasis></para>
-          </listitem>
-
-          <listitem>
-            <para>All calls to your extension will be forwarded to the new
-            number until you cancel the forward (<emphasis>see Cancel
-            Forward</emphasis>).</para>
-          </listitem>
-        </orderedlist>
-      </listitem>
-
-      <listitem>
-        <para>To forward your phone to another phone from an external
-        number:</para>
-
-        <orderedlist>
-          <listitem>
-            <para>Dial the company phone number.</para>
-          </listitem>
-
-          <listitem>
-            <para>Press <emphasis
-            role="bold"><guilabel>#33</guilabel></emphasis>.</para>
-          </listitem>
-
-          <listitem>
-            <para>Enter your extension and press <emphasis
-            role="bold"><guilabel>#</guilabel></emphasis>.</para>
-          </listitem>
-
-          <listitem>
-            <para>Enter your passcode and press <emphasis
-            role="bold"><guilabel>#</guilabel></emphasis>.</para>
-          </listitem>
-
-          <listitem>
-            <para>Enter the number you want to forward your phone to and press
-            <emphasis role="bold"><guilabel>#</guilabel></emphasis>.</para>
-
-            <para><emphasis>Note: This can be another extension or an external
-            phone number. </emphasis></para>
           </listitem>
 
           <listitem>
