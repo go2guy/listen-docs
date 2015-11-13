@@ -105,6 +105,18 @@
           <para>Updated Extension Configuration</para>
         </revdescription>
       </revision>
+      
+      <revision>
+              <revnumber>1.0.7</revnumber>
+      
+              <date>13 November 2015</date>
+      
+              <authorinitials>Kris Novak</authorinitials>
+      
+              <revdescription>
+                <para>Updated Organization Configuration</para>
+              </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -5966,6 +5978,21 @@
 
         <para><emphasis role="bold">Extension Length:</emphasis> The number of
         digits in the extensions for the organization.</para>
+        
+        <para><emphasis role="bold">AD Server:</emphasis> The organizations
+        active directory server hostname.</para>
+        
+        <para><emphasis role="bold">AD Domain:</emphasis> The organizations
+        active directory server domain.</para>
+        
+        <para><emphasis role="bold">LDAP Base DN:</emphasis> The organizations
+        active directory server LDAP base DN.</para>
+        
+        <para><emphasis role="bold">LDAP Port:</emphasis> The organizations
+        active directory server LDAP port.</para>
+        
+        <para><emphasis role="bold">LDAP DC:</emphasis> The organizations
+        active directory server LDAP DC.</para>
 
         <para><emphasis role="bold">Enabled Features:</emphasis> When
         selected, the feature is to be available for the organization.
@@ -6497,7 +6524,9 @@
         number is assigned to.</para>
 
         <para><emphasis role="bold">Phone Username:</emphasis> The username
-        the phone will send when registering.</para>
+        the phone will send when registering. This value defaults to the user's
+        unique identifier. If this value is not used, an identifier should
+        be used which is unique across all organizations.</para>
 
         <para><emphasis role="bold">Phone Password:</emphasis> The password
         the phone will send when registering.</para>
