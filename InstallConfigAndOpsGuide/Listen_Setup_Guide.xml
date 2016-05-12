@@ -91,6 +91,18 @@
           instructions.</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.6</revnumber>
+
+        <date>11 May 2016</date>
+
+        <authorinitials>Daniel Walter</authorinitials>
+
+        <revdescription>
+          <para>Update prerequisites.</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
