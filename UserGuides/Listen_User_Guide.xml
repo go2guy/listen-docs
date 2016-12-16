@@ -7479,7 +7479,8 @@
         <section>
           <title>Delete Template</title>
 
-          <listitem>
+          <orderedlist>
+            <listitem>
               <para>Click <inlinemediaobject>
                   <imageobject>
                     <imagedata contentwidth="30"
@@ -7488,12 +7489,14 @@
                 </inlinemediaobject> and the Template Deleted message
               appears.</para>
             </listitem>
+          </orderedlist>
         </section>
         
         <section>
           <title>Edit Template</title>
 
-          <listitem>
+          <orderedlist>
+            <listitem>
               <para>Click the Template Name and you will be redirected to the Edit Template
               page.<inlinemediaobject>
                   <imageobject>
@@ -7502,8 +7505,9 @@
                   </imageobject>
                 </inlinemediaobject>
               </para>
-          </listitem>
-          
+            </listitem>
+          </orderedlist>
+
           <glosslist>
             <glossentry>
               <glossterm>The edit screen consists of two editable fields:</glossterm>
@@ -7514,30 +7518,33 @@
                 <para><emphasis role="bold">Template Names:</emphasis> The name of the template.</para>
 
                 <para><emphasis role="bold">Template:</emphasis> The template that will be
-                compiled when the IP Phone requests it from the provisioning server. The
-                following variables are allowed to be used within this field:
-                    <listitem>
-                      <para>&lt;%=number%&gt;	Extension number</para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=userId%&gt;	"User ID" from extension </para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=username%&gt;	"Username" from extension </para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=password%&gt;	"Password" from extension </para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=organizationId%&gt;	Organization Id of Extension </para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=realName%&gt;	Real name of user assigned to the extension </para>
-                    </listitem>
-                    <listitem>
-                      <para>&lt;%=macAddress%&gt;	Mac Address assigned to this extension </para>
-                    </listitem>
-                
+                compiled when the IP Phone requests it from the provisioning server. If you
+                would like to bypass templating, you can add the files directly to the provisioning
+                server located at the default location of /interact/provisioner/root/.
+                The following variables are allowed to be used within this field:
+                    <orderedlist>
+                        <listitem>
+                          <para>&lt;%=number%&gt;	Extension number</para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=userId%&gt;	"User ID" from extension </para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=username%&gt;	"Username" from extension </para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=password%&gt;	"Password" from extension </para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=organizationId%&gt;	Organization Id of Extension </para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=realName%&gt;	Real name of user assigned to the extension </para>
+                        </listitem>
+                        <listitem>
+                          <para>&lt;%=macAddress%&gt;	Mac Address assigned to this extension </para>
+                        </listitem>
+                    </orderedlist>
                 </para>
               </glossdef>
             </glossentry>
