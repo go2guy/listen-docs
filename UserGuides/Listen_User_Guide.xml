@@ -8908,7 +8908,7 @@
 	
 	        <para><emphasis role="bold">Example Request:</emphasis></para>
 	
-	        <programlisting>http://listen.yourorg.com:8080/listen/api/acd/agent/476?apiKey=764b023cc7be11e69d9dcec0c932ce01&status=available</programlisting>
+	        <programlisting>http://listen.yourorg.com:8080/listen/api/acd/agent/476?apiKey=764b023cc7be11e69d9dcec0c932ce01&amp;status=available</programlisting>
 	
 	        <para><emphasis role="bold">Example Response:</emphasis></para>
 	
