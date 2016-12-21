@@ -117,6 +117,18 @@
                 <para>Updated Organization and extension Configuration</para>
               </revdescription>
       </revision>
+      
+      <revision>
+	    <revnumber>1.0.8</revnumber>
+
+	    <date>21 December 2016</date>
+
+	    <authorinitials>Kris Novak</authorinitials>
+
+	    <revdescription>
+	      <para>Added ACD API's</para>
+	    </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -8560,7 +8572,274 @@
       returned to the login screen.</para>
     </section>
   </section>
+  
+  <section vendor="Admin">
+	<title>API's</title>
 
+	<para>API's are available for performing tasks from
+	an external system without using the GUI or TUI.</para>
+
+	<sect2>
+	      <title>ACD Agent</title>
+	
+	      <para><emphasis role="bold">Supported Methods:</emphasis> GET and
+	      PUT</para>
+	
+	      <sect3>
+	        <title>GET /api/acd/agent/<id></title>
+	
+	        <informaltable>
+	          <tgroup cols="4">
+	            <colspec colname="c1" colnum="1" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c2" colnum="2" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c3" colnum="3" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c4" colnum="4" colsep="0" colwidth="4*"
+	                     rowsep="0" />
+	
+	            <tbody>
+	              <row>
+	                <entry><emphasis role="bold">Method:</emphasis></entry>
+	
+	                <entry nameend="c4" namest="c2">GET</entry>
+	              </row>
+	
+	              <row>
+	                <entry><emphasis role="bold">Description:</emphasis></entry>
+	
+	                <entry nameend="c4" namest="c2">Gets ACD Agent status
+	                information.</entry>
+	              </row>
+	
+	              <row>
+	                <entry><emphasis role="bold">Parameters:</emphasis></entry>
+	
+	                <entry>id</entry>
+			
+			<entry nameend="c4" namest="c3" rowsep="0">ID of the agent.</entry>
+	              </row>
+
+                      <row>
+                        <entry></entry>
+		      	
+                        <entry>apiKey</entry>
+		      	
+                        <entry nameend="c4" namest="c3">apiKey for the organization.</entry>
+	              </row>
+	
+	              <row>
+	                <entry colsep="0" rowsep="0"><emphasis
+	                role="bold">Response:</emphasis></entry>
+	
+	                <entry>200</entry>
+	
+	                <entry nameend="c4" namest="c3" rowsep="0">OK + JSON</entry>
+	              </row>
+	
+	              <row>
+	                <entry></entry>
+	
+	                <entry>302</entry>
+	
+	                <entry nameend="c4" namest="c3">Not Authenticated</entry>
+	              </row>
+	
+	              <row>
+	                <entry></entry>
+	
+	                <entry>400</entry>
+	
+	                <entry nameend="c4" namest="c3">Bad Request, Invalid Inputs</entry>
+	              </row>
+	
+	              <row>
+	                <entry></entry>
+	
+	                <entry>404</entry>
+	
+	                <entry nameend="c4" namest="c3">Agent Not Found</entry>
+	              </row>
+	
+	              <row>
+			<entry colsep="0" rowsep="0"><emphasis
+			role="bold">Response Body (JSON):</emphasis></entry>
+
+			<entry>id</entry>
+
+			<entry nameend="c4" namest="c3" rowsep="0">The Agent Id</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>status</entry>
+
+			<entry nameend="c4" namest="c3">The agent's current status 
+			(Available/Unavailable).</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>statusModified</entry>
+
+			<entry nameend="c4" namest="c3">Timestamp of the last agent status 
+			modification (Format YYYY-MMDDTHH:MM:SS-XX:00</entry>
+		      </row>
+	            </tbody>
+	          </tgroup>
+	        </informaltable>
+	        <para><emphasis role="bold">Example Request:</emphasis></para>
+			
+		<programlisting>http://listen.yourorg.com:8080/listen/api/acd/agent/476?apiKey=764b023cc7be11e69d9dcec0c932ce01</programlisting>
+
+		<para><emphasis role="bold">Example Response:</emphasis></para>
+
+		<programlisting>
+{
+  "id": 476,
+  "status": "Available",
+  "statusModified": "2016-12-21T15:07:41-05:00"
+}</programlisting>
+	      </sect3>
+	
+	      <sect3>
+	        <title>PUT /api/acd/agent/<id></title>
+	
+	        <informaltable>
+	          <tgroup cols="4">
+	            <colspec colname="c1" colnum="1" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c2" colnum="2" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c3" colnum="3" colsep="0" colwidth="1.0*"
+	                     rowsep="0" />
+	
+	            <colspec colname="c4" colnum="4" colsep="0" colwidth="4*"
+	                     rowsep="0" />
+	
+	            <tbody>
+	              <row>
+	                <entry><emphasis role="bold">Method:</emphasis></entry>
+	
+	                <entry nameend="c4" namest="c2">PUT</entry>
+	              </row>
+	
+	              <row>
+	                <entry><emphasis role="bold">Description:</emphasis></entry>
+	
+	                <entry nameend="c4" namest="c2">Sets ACD Agent status.</entry>
+	              </row>
+	
+	              <row>
+	                <entry><emphasis role="bold">Parameters:</emphasis></entry>
+				
+			<entry>id</entry>
+
+			<entry nameend="c4" namest="c3" rowsep="0">ID of the agent.</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>apiKey</entry>
+
+			<entry nameend="c4" namest="c3">apiKey for the organization.</entry>
+	              </row>
+	              
+	              <row>
+			<entry></entry>
+
+			<entry>status</entry>
+
+			<entry nameend="c4" namest="c3">Status to set for the agent (available/unavailable).</entry>
+	              </row>
+	
+	              <row>
+			<entry colsep="0" rowsep="0"><emphasis
+			role="bold">Response:</emphasis></entry>
+
+			<entry>200</entry>
+
+			<entry nameend="c4" namest="c3" rowsep="0">OK + JSON</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>302</entry>
+
+			<entry nameend="c4" namest="c3">Not Authenticated</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>400</entry>
+
+			<entry nameend="c4" namest="c3">Bad Request, Invalid Inputs</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>404</entry>
+
+			<entry nameend="c4" namest="c3">Agent Not Found</entry>
+		      </row>
+
+		      <row>
+			<entry colsep="0" rowsep="0"><emphasis
+			role="bold">Response Body (JSON):</emphasis></entry>
+
+			<entry>id</entry>
+
+			<entry nameend="c4" namest="c3" rowsep="0">The Agent Id</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>status</entry>
+
+			<entry nameend="c4" namest="c3">The agent's current status 
+			(Available/Unavailable).</entry>
+		      </row>
+
+		      <row>
+			<entry></entry>
+
+			<entry>statusModified</entry>
+
+			<entry nameend="c4" namest="c3">Timestamp of the last agent status 
+			modification (Format YYYY-MMDDTHH:MM:SS-XX:00</entry>
+		      </row>
+	            </tbody>
+	          </tgroup>
+	        </informaltable>
+	
+	        <para><emphasis role="bold">Example Request:</emphasis></para>
+	
+	        <programlisting>http://listen.yourorg.com:8080/listen/api/acd/agent/476?apiKey=764b023cc7be11e69d9dcec0c932ce01&status=available</programlisting>
+	
+	        <para><emphasis role="bold">Example Response:</emphasis></para>
+	
+	        <programlisting>
+{
+  "id": 476,
+  "status": "Available",
+  "statusModified": "2016-12-21T15:07:41-05:00"
+}</programlisting>
+	      </sect3>
+    </sect2>
+  </section>
   <?hard-pagebreak ?>
 
   <glossary role="NotInToc">
