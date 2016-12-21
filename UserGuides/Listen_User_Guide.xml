@@ -8660,13 +8660,13 @@
 	<para>API's are available for performing tasks from
 	an external system without using the GUI or TUI.</para>
 
-	<sect2>
+	<section>
 	      <title>ACD Agent</title>
 	
 	      <para><emphasis role="bold">Supported Methods:</emphasis> GET and
 	      PUT</para>
 	
-	      <sect3>
+	      <section>
 	        <title>GET /api/acd/agent/&lt;id&gt;</title>
 	
 	        <informaltable>
@@ -8770,7 +8770,7 @@
 			<entry>statusModified</entry>
 
 			<entry nameend="c4" namest="c3">Timestamp of the last agent status 
-			modification (Format YYYY-MMDDTHH:MM:SS-XX:00</entry>
+			modification (Format YYYY-MMDDTHH:MM:SS-XX:00)</entry>
 		      </row>
 	            </tbody>
 	          </tgroup>
@@ -8787,9 +8787,9 @@
   "status": "Available",
   "statusModified": "2016-12-21T15:07:41-05:00"
 }</programlisting>
-	      </sect3>
+	      </section>
 	
-	      <sect3>
+	      <section>
 	        <title>PUT /api/acd/agent/&lt;id&gt;</title>
 	
 	        <informaltable>
@@ -8900,7 +8900,7 @@
 			<entry>statusModified</entry>
 
 			<entry nameend="c4" namest="c3">Timestamp of the last agent status 
-			modification (Format YYYY-MMDDTHH:MM:SS-XX:00</entry>
+			modification (Format YYYY-MMDDTHH:MM:SS-XX:00)</entry>
 		      </row>
 	            </tbody>
 	          </tgroup>
@@ -8918,8 +8918,8 @@
   "status": "Available",
   "statusModified": "2016-12-21T15:07:41-05:00"
 }</programlisting>
-	      </sect3>
-    </sect2>
+	      </section>
+    </section>
   </section>
   <?hard-pagebreak ?>
 
