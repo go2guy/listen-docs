@@ -8667,7 +8667,7 @@
 	      PUT</para>
 	
 	      <sect3>
-	        <title>GET /api/acd/agent/<id></title>
+	        <title>GET /api/acd/agent/&lt;id&gt;</title>
 	
 	        <informaltable>
 	          <tgroup cols="4">
@@ -8790,7 +8790,7 @@
 	      </sect3>
 	
 	      <sect3>
-	        <title>PUT /api/acd/agent/<id></title>
+	        <title>PUT /api/acd/agent/&lt;id&gt;</title>
 	
 	        <informaltable>
 	          <tgroup cols="4">
