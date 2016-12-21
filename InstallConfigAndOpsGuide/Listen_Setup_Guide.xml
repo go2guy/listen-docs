@@ -91,6 +91,18 @@
           instructions.</para>
         </revdescription>
       </revision>
+
+      <revision>
+        <revnumber>1.0.6</revnumber>
+
+        <date>11 May 2016</date>
+
+        <authorinitials>Daniel Walter</authorinitials>
+
+        <revdescription>
+          <para>Update prerequisites.</para>
+        </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -248,6 +260,15 @@
         <listitem>
           <para>Httpd must be running and should be configured in chkconfig so
           that it starts up automatically on system boot.</para>
+        </listitem>
+
+        <listitem>
+          <para>Ensure that the host has an eth0 in /sbin/ifconfig file or by running the /sbin/ifconfig command.</para>
+        </listitem>
+
+        <listitem>
+          <para>A standalone instance of SPOTbuild should be installed and the
+          Listen-Merge application should be deployed</para>
         </listitem>
 
         <listitem>
