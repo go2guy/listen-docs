@@ -129,6 +129,18 @@
 	      <para>Added ACD API's</para>
 	    </revdescription>
       </revision>
+      <revision>
+	    <revnumber>1.0.9</revnumber>
+
+	    <date>3 January 2017</date>
+
+	    <authorinitials>Corey Geesey</authorinitials>
+
+	    <revdescription>
+	      <para>Added Provisioner Templates</para>
+          <para>Updated Organization with Outbound Route</para>
+	    </revdescription>
+      </revision>
     </revhistory>
   </info>
 
@@ -5990,6 +6002,9 @@
 
         <para><emphasis role="bold">Extension Length:</emphasis> The number of
         digits in the extensions for the organization.</para>
+        
+        <para><emphasis role="bold">Outbound Route:</emphasis> The IP/host that
+        all outbound calls will be routed through.</para>
         
         <para><emphasis role="bold">AD Server:</emphasis> The organizations
         active directory server hostname.</para>
