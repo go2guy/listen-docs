@@ -7293,7 +7293,45 @@
           </glossentry>
         </glosslist>
       </section>
-      
+          <title>Search Call History</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Enter the start date in the format MM/DD/YYYY.</para>
+            </listitem>
+
+            <listitem>
+              <para>Enter the end date in the format MM/DD/YYYY.</para>
+            </listitem>
+			
+			<listitem>
+              <para>Enter the caller number in the "Caller" tab.</para>
+            </listitem>
+			
+			<listitem>
+              <para>Enter the callee number in the "Callee" tab.</para>
+            </listitem>
+			
+			<listitem>
+              <para>Enter the call result in the "Call Result" tab.</para>
+            </listitem>
+			
+            <listitem>
+              <para>Select the user from the "Users" tab for whom you want to do the search.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/SearchCallHistoryButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button to refresh the page with the new search
+              results.</para>
+            </listitem>
+          </orderedlist>
+        </section>
+		
       <section>
         <title>Action History</title>
 
