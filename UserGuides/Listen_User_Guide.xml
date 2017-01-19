@@ -5807,8 +5807,22 @@
 		 
 		 <para><emphasis role="bold">began :</emphasis> The date and time of when the call started on the Listen platform.  Format 'YYYY-MM-DD HH:mm:SS'</para>
 		 
+		 <para><emphasis role="bold">calling party :</emphasis> The number of the party making the call.  For calls from numbers or extensions registered with the Listen system,
+		 the Listen user name will also be displayed.</para>
+		 
+		 <para><emphasis role="bold">called party :</emphasis> The number of the party that was called.  For calls from numbers or extensions registered with the Listen system,
+		 the Listen user name will also be displayed.</para>
+		 
+		 <para><emphasis role="bold">duration :</emphasis> The duration of this call.  Format 'HH:mm:SS'</para>
+		 
+		 <para><emphasis role="bold">organization :</emphasis>  The organization name associated with this call.</para>
 		  
-		  
+		 <para><emphasis role="bold">call result :</emphasis> A text description of the call disposition of this call.</para>
+		 
+		 <para><emphasis role="bold">sessionId :</emphasis> The IVR session id associated with this call.</para>
+		 
+		 <para><emphasis role="bold">ivr :</emphasis> The IP address of the IVR that processed this call.</para>
+		 
 		</section>
       </section>
 
