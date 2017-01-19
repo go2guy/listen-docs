@@ -7446,7 +7446,7 @@
 		 <para><emphasis role="bold">ivr :</emphasis> The IP address of the IVR that processed this call.</para>
 		 
 		 
-		 <para>/* The following fields will only populated for ACD calls */</para>
+		 <para><emphasis role="bold"><guibutton>/* The following fields will only be populated for ACD calls */</guibutton></emphasis></para>
 		 
 		 
 		 <para><emphasis role="bold">skill :</emphasis> The ACD skill name related to this ACD call.</para>
