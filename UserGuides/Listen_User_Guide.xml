@@ -7280,8 +7280,8 @@
             </glossdef>
           </glossentry>
         </glosslist>
-      </section>
-      <section>
+      
+		  <section>
           <title>Search Call History</title>
 
           <orderedlist>
@@ -7319,8 +7319,8 @@
               results.</para>
             </listitem>
           </orderedlist>
-        </section>
-		
+          </section>
+		</section>
       <section>
         <title>Action History</title>
 
