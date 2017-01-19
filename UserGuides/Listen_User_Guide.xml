@@ -5374,18 +5374,6 @@
           </orderedlist>
         </section>
 
-        <para>
-          <emphasis role="bold">During a call:</emphasis>
-        </para>
-
-        <para>During a call, the current call section will be populated with
-        additional fields, as shown here: <inlinemediaobject>
-            <imageobject>
-              <imagedata contentwidth="2.0in"
-                         fileref="Images/ACDCurrentCall.JPG" />
-            </imageobject>
-          </inlinemediaobject> .</para>
-
         <section>
           <title>Place a call on hold</title>
 
@@ -7293,6 +7281,7 @@
           </glossentry>
         </glosslist>
       </section>
+      <section>
           <title>Search Call History</title>
 
           <orderedlist>
@@ -7304,15 +7293,15 @@
               <para>Enter the end date in the format MM/DD/YYYY.</para>
             </listitem>
 			
-			<listitem>
+            <listitem>
               <para>Enter the caller number in the "Caller" tab.</para>
             </listitem>
 			
-			<listitem>
+            <listitem>
               <para>Enter the callee number in the "Callee" tab.</para>
             </listitem>
-			
-			<listitem>
+
+            <listitem>
               <para>Enter the call result in the "Call Result" tab.</para>
             </listitem>
 			
