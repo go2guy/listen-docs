@@ -7599,6 +7599,82 @@
         </mediaobject>
 		 
 		 </section>
+		 
+		 <section>
+		 
+		 <title>Export to CSV</title>
+
+          <orderedlist>
+            <listitem>
+              <para>Optional: Use the search steps above to search the
+              results. The export action will use the same parameters to sort
+              the results.</para>
+            </listitem>
+
+            <listitem>
+              <para>Click the 'Export to CSV' link to download a CSV file,
+              with the filtered results.</para>
+            </listitem>
+          </orderedlist>
+		  
+		  
+		  
+		  <para>Action History Export:</para>
+		  <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="7.5in"
+                         fileref="Images/ActionHistoryExport.jpg"></imagedata>
+            </imageobject>
+        </mediaobject>
+		  
+		 
+		<para><emphasis role="bold"><guibutton>Action History Export Field Definitions</guibutton></emphasis></para>
+         
+		 <para><emphasis role="bold">Date :</emphasis> The date and time (mm/dd/yy:hh:mm:ss) the action was performed.</para>
+		 
+		 <para><emphasis role="bold">User :</emphasis>  The user name of the subscriber who performed the action. And the user name of the subscriber
+		 who the action was performed upon, if applicable.</para>
+		 
+		 <para><emphasis role="bold">Description: </emphasis> A short
+              description of the action.</para>
+
+              <itemizedlist mark="none">
+                <listitem>
+                  <para>For action history DRs, this includes a generic
+                  description of the action, whether it was performed on the
+                  TUI or GUI and some basic information about the action. This
+                  can include one or more of the following:</para>
+
+                  <itemizedlist>
+                    <listitem>
+                      <para>Caller Number</para>
+                    </listitem>
+
+                    <listitem>
+                      <para>Conference Description</para>
+                    </listitem>
+
+                    <listitem>
+                      <para>Old Value</para>
+                    </listitem>
+
+                    <listitem>
+                      <para>New Value</para>
+                    </listitem>
+
+                    <listitem>
+                      <para>Date/Time</para>
+                    </listitem>
+                  </itemizedlist>
+                </listitem>
+              </itemizedlist>
+
+              <para><emphasis role="bold">Channel: </emphasis> The channel
+              through which the user performed the action. TUI or GUI.</para>
+		 
+		 
+		 
+		 </section>
 		</section>
       
       <section>
