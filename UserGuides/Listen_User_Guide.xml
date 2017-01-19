@@ -5800,12 +5800,13 @@
             </imageobject>
         </mediaobject>
 		  
-		  
-		  
-		  <para><emphasis role="bold"><guibutton>ACD Call History Export Field Definitions</guibutton></emphasis></para>
-
+		 <listitem>
+		<para><emphasis role="bold"><guibutton>ACD Call History Export Field Definitions</guibutton></emphasis></para>
+         </listitem>
+		 
+		 <listitem>
         <para><emphasis role="bold">timestamp :</emphasis> Gets the milliseconds of the 'began' instant from the Java epoch of 1970-01-01T00:00:00Z.</para>
-		  
+		 </listitem> 
 		  
 		  
 		</section>
