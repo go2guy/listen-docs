@@ -5823,6 +5823,21 @@
 		 
 		 <para><emphasis role="bold">ivr :</emphasis> The IP address of the IVR that processed this call.</para>
 		 
+		 <para><emphasis role="bold">skill :</emphasis> The ACD skill name related to this ACD call.</para>
+		 
+		 <para><emphasis role="bold">enqueueTime :</emphasis> The date and time of when this ACD call entered the ACD queue. Format 'YYYY-MM-DD HH:mm:SS'.</para>
+		 
+		 <para><emphasis role="bold">dequeueTime :</emphasis> The date and time of when this ACD call left the ACD queue and was forwarded to an ACD agent. Format 'YYYY-MM-DD HH:mm:SS'.</para>
+		 
+		 <para><emphasis role="bold">agent :</emphasis> The username of the ACD agent that answered this ACD call.</para>
+		 
+		 <para><emphasis role="bold">agentCallStart :</emphasis>  The date and time of when this ACD call was answered by the defined ACD agent.  Format 'YYYY-MM-DD HH:mm:SS'.</para>
+		 
+		 <para><emphasis role="bold">agentCallEnd :</emphasis> The date and time of when this ACD call to the defined ACD agent ended.  Format 'YYYY-MM-DD HH:mm:SS'.</para>
+		 
+		 <para><emphasis role="bold">agentTime :</emphasis> The time spent on the phone with the ACD agent defined by the 'agent' column.</para>
+		 
+		 
 		</section>
       </section>
 
