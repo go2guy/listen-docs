@@ -7423,7 +7423,7 @@
         </mediaobject>
 		  
 		 
-		<para><emphasis role="bold"><guibutton>ACD Call History Export Field Definitions</guibutton></emphasis></para>
+		<para><emphasis role="bold"><guibutton>Call History Export Field Definitions</guibutton></emphasis></para>
          
 		 <para><emphasis role="bold">timestamp :</emphasis> Gets the milliseconds of the 'began' instant from the Java epoch of 1970-01-01T00:00:00Z.</para>
 		 
@@ -7445,7 +7445,9 @@
 		 
 		 <para><emphasis role="bold">ivr :</emphasis> The IP address of the IVR that processed this call.</para>
 		 
-		 <para> /* The following fields will only populated for ACD calls */ </para>
+		 
+		 <para>/* The following fields will only populated for ACD calls */</para>
+		 
 		 
 		 <para><emphasis role="bold">skill :</emphasis> The ACD skill name related to this ACD call.</para>
 		 
