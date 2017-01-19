@@ -7318,6 +7318,17 @@
                 </inlinemediaobject> button to refresh the page with the new search
               results.</para>
             </listitem>
+			
+			<listitem>
+              <para>Click the <inlinemediaobject>
+                  <imageobject>
+                    <imagedata contentwidth="20"
+                               fileref="Images/ResetCallHistoryButton.JPG"></imagedata>
+                  </imageobject>
+                </inlinemediaobject> button to reset the search options.</para>
+            </listitem>
+            
+			
           </orderedlist>
           </section>
 		</section>
