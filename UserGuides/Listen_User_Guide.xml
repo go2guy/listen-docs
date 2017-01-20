@@ -7529,7 +7529,7 @@
               the subscriber who performed the action.</para>
 
               <para><emphasis role="bold">On User:</emphasis> The user name of
-              the subscriber who action was performed upon.</para>
+              the subscriber whose action was performed upon.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
               description of the action.</para>
@@ -7651,7 +7651,7 @@
 		 <para><emphasis role="bold">Date :</emphasis> The date and time (mm/dd/yy:hh:mm:ss) the action was performed.</para>
 		 
 		 <para><emphasis role="bold">User :</emphasis>  The user name of the subscriber who performed the action. And the user name of the subscriber
-		 who the action was performed upon, if applicable.</para>
+		 whom the action was performed upon, if applicable.</para>
 		 
 		 <para><emphasis role="bold">Description: </emphasis> A short
               description of the action.</para>
@@ -8762,7 +8762,7 @@
 
               <para><emphasis role="bold">User:</emphasis> The user name of
               the subscriber who performed the action. And the user name of
-              the subscriber who the action was performed upon, if
+              the subscriber whom the action was performed upon, if
               applicable.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
@@ -8858,7 +8858,7 @@
 
               <para><emphasis role="bold">User:</emphasis> The user name of
               the subscriber who performed the action. And the user name of
-              the subscriber who the action was performed upon, if
+              the subscriber whom the action was performed upon, if
               applicable.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
