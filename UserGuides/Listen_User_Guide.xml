@@ -6089,6 +6089,12 @@
         Available features are:</para>
 
         <itemizedlist>
+		
+		  <listitem>
+            <para><emphasis role="bold">ACD:</emphasis> This feature
+            enables Listen's Automatic Call Distribution.</para>
+          </listitem>		
+		
           <listitem>
             <para><emphasis role="bold">After Hours:</emphasis> This feature
             allows you to configure the after hours number and alternate
@@ -6222,6 +6228,148 @@
                 </inlinemediaobject> and the change is saved.</para>
             </listitem>
           </orderedlist>
+		  
+		  <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="6.0in"
+                       fileref="Images/EditOrganization.jpg"></imagedata>
+          </imageobject>
+        </mediaobject>
+
+        <para><emphasis role="bold"><guibutton>Edit Field
+        Definitions</guibutton></emphasis></para>
+
+        <para><emphasis role="bold">Name:</emphasis> The name of the
+        organization.</para>
+
+        <para><emphasis role="bold">URL Path:</emphasis> The URL path for the
+        organization.</para>
+
+        <para><emphasis role="bold">Outbound Call ID:</emphasis> The outbound
+        caller id for the organization.</para>
+
+        <para><emphasis role="bold">Allow Mailbox's DID to Determine Outbound
+        Caller ID:</emphasis> if checked, the mailbox's DID to be used as
+        outbound caller id.</para>
+
+        <para><emphasis role="bold">Extension Length:</emphasis> The number of
+        digits in the extensions for the organization.</para>
+        
+        <para><emphasis role="bold">Outbound Route:</emphasis> The IP/host that
+        all outbound calls will be routed through.</para>
+        
+        <para><emphasis role="bold">AD Server:</emphasis> The organizations
+        active directory server hostname.</para>
+        
+        <para><emphasis role="bold">AD Domain:</emphasis> The organizations
+        active directory server domain.</para>
+        
+        <para><emphasis role="bold">LDAP Base DN:</emphasis> The organizations
+        active directory server LDAP base DN.</para>
+        
+        <para><emphasis role="bold">LDAP Port:</emphasis> The organizations
+        active directory server LDAP port.</para>
+        
+        <para><emphasis role="bold">LDAP DC:</emphasis> The organizations
+        active directory server LDAP DC.</para>
+		
+		<para><emphasis role="bold">CDR Url:</emphasis> The URL path for the
+        CDR posting.</para>
+		
+		<para><emphasis role="bold"> Enable cdr post to external server :</emphasis> When checked, it enables
+		the CDR posting to external server mentioned in CDR Url.</para>
+		
+
+        <para><emphasis role="bold">Enabled Features:</emphasis> When
+        selected, the feature is to be available for the organization.
+        Available features are:</para>
+
+        <itemizedlist>
+		
+		  <listitem>
+            <para><emphasis role="bold">ACD:</emphasis> This feature
+            enables Listen's Automatic Call Distribution.</para>
+          </listitem>
+		   
+          <listitem>
+            <para><emphasis role="bold">After Hours:</emphasis> This feature
+            allows you to configure the after hours number and alternate
+            mobile number for after hours support.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Attendant:</emphasis> This feature
+            allows you to configure prompts and handle keypresses for incoming
+            calls.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">PBX Broadcast:</emphasis> This feature
+            allows you to broadcast messages over the phones system.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Conferencing:</emphasis> This feature
+            allows you to schedule and manage conferences.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Custom SPOT Applications:</emphasis>
+            This feature allow you to integrate the use of custom
+            application.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Fax:</emphasis> This feature allow you
+            to send and receive fax in the PDF format using the GUI.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Find Me/Follow Me:</emphasis> This
+            feature allows you to configure the way incoming calls are
+            handled.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Transcription: </emphasis> This
+            feature transcribes voicemail message into text message on the GUI
+            and Android app.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Voicemail:</emphasis> This feature
+            allows you to listen and manage voicemail.</para>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">IP PBX:</emphasis> This feature allows
+            extended functionality for calls and intraoffice communication.
+            Calls between two phones on the network can use forwarding and
+            transferring keys etc.</para>
+
+            <para><emphasis>Note: If a feature is not licensed, it is not
+            displayed.</emphasis></para>
+          </listitem>
+        </itemizedlist>
+
+        <para><emphasis role="bold">Username:</emphasis> The name used to log
+        in to the Listen GUI.</para>
+
+        <para><emphasis role="bold">Password:</emphasis> The password used to
+        log in to the Listen GUI.</para>
+
+        <para><emphasis role="bold">Confirm Password:</emphasis> The password
+        that needs to match the password used to log in to the Listen
+        GUI.</para>
+
+        <para><emphasis role="bold">Real Name:</emphasis> The real name of the
+        user.</para>
+
+        <para><emphasis role="bold">Email Address:</emphasis> The email
+        address of the user.</para>
+		  
+		  
+		  
         </section>
 
         <section>
@@ -7529,7 +7677,7 @@
               the subscriber who performed the action.</para>
 
               <para><emphasis role="bold">On User:</emphasis> The user name of
-              the subscriber whose action was performed upon.</para>
+              the subscriber who action was performed upon.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
               description of the action.</para>
@@ -7651,7 +7799,7 @@
 		 <para><emphasis role="bold">Date :</emphasis> The date and time (mm/dd/yy:hh:mm:ss) the action was performed.</para>
 		 
 		 <para><emphasis role="bold">User :</emphasis>  The user name of the subscriber who performed the action. And the user name of the subscriber
-		 whom the action was performed upon, if applicable.</para>
+		 who the action was performed upon, if applicable.</para>
 		 
 		 <para><emphasis role="bold">Description: </emphasis> A short
               description of the action.</para>
@@ -8762,7 +8910,7 @@
 
               <para><emphasis role="bold">User:</emphasis> The user name of
               the subscriber who performed the action. And the user name of
-              the subscriber whom the action was performed upon, if
+              the subscriber who the action was performed upon, if
               applicable.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
@@ -8858,7 +9006,7 @@
 
               <para><emphasis role="bold">User:</emphasis> The user name of
               the subscriber who performed the action. And the user name of
-              the subscriber whom the action was performed upon, if
+              the subscriber who the action was performed upon, if
               applicable.</para>
 
               <para><emphasis role="bold">Description: </emphasis> A short
