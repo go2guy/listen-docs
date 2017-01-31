@@ -9391,12 +9391,29 @@
 	        <para><emphasis role="bold">Example Response:</emphasis></para>
 	
 	        <programlisting>
+			
 {
   "id": 476,
   "status": "Available",
   "statusModified": "2016-12-21T15:07:41-05:00"
 }</programlisting>
 	      </section>
+		  
+		  <section>
+		  <title>POST CDR</title>
+		  
+		  <para>Whenever we enable CDR posting in an oragnization, there will be post data which will be sent to the configured external server.</para>
+		  
+          <para><emphasis role="bold">Example POST:</emphasis></para>
+	
+      <programlisting>
+{
+  2017/01/30 14:49:00:089 - debug: Got a /post request on worker [1] with data [{"{\"sessionId\":\"session.06F77FE599DF105298481730972148468784627717\",\"callReceived\":\"2017-01-30 14:47:36\",\"timeStamp\":1485809256367,\"ani\":\"4026161602\",\"dnis\":\"8888\",\"agent\":\"8888\",\"enqueueTime\":\"2017-01-30T14:47:31-06:00\",\"agentCallStart\":\"2017-01-30T14:47:44-06:00\",\"agentCallEnd\":\"2017-01-30T14:47:57-06:00\"}":""}]. Returning status code [200]
+
+} </programlisting>          
+		  
+		  </section>
+		  
     </section>
   </section>
   <?hard-pagebreak ?>
