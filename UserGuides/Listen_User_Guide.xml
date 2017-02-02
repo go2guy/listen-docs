@@ -158,6 +158,19 @@
 		 </revdescription>
       </revision>
 	  
+	   <revision>
+	    <revnumber>1.0.11</revnumber>
+
+	    <date>02 February 2017</date>
+
+	    <authorinitials>Vikas Singh</authorinitials>
+
+	    <revdescription>
+	      <para>Updated “Edit Organization” screen with definitions including CDR Url.</para>
+		  <para>Added body of the CDR POST in the API section</para>
+		</revdescription>
+      </revision>
+	  
 	  
     </revhistory>
   </info>
