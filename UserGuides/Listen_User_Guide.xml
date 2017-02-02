@@ -9408,10 +9408,45 @@
 	
       <programlisting>
 {
-  2017/01/30 14:49:00:089 - debug: Got a /post request on worker [1] with data [{"{\"sessionId\":\"session.06F77FE599DF105298481730972148468784627717\",\"callReceived\":\"2017-01-30 14:47:36\",\"timeStamp\":1485809256367,\"ani\":\"4026161602\",\"dnis\":\"8888\",\"agent\":\"8888\",\"enqueueTime\":\"2017-01-30T14:47:31-06:00\",\"agentCallStart\":\"2017-01-30T14:47:44-06:00\",\"agentCallEnd\":\"2017-01-30T14:47:57-06:00\"}":""}]. Returning status code [200]
+  "sessionId":"session.06F77FE599DF248060586110414858858022276",
+  "callReceived":"2017-01-31 12:34:57",
+  "timeStamp":"1485887697000",
+  "ani":"5205591191",
+  "dnis":"4024768786",
+  "agent":"602",
+  "enqueueTime":"2017-02-01 06:37:24",
+  "agentCallStart":"2017-02-01 06:38:02",
+  "agentCallEnd":"2017-02-01 06:38:22"
+
 
 } </programlisting>          
 		  
+	<para><emphasis role="bold"><guibutton>POST Field
+        Definitions</guibutton></emphasis></para>
+		
+			  <para><emphasis role="bold">sessionId:</emphasis> A unique ID for the call.</para>
+
+              <para><emphasis role="bold">callReceived:</emphasis> A timestamp indicating the date and time the call was received by our platform.</para>
+
+              <para><emphasis role="bold">timestamp: </emphasis> Julian timestamp representing the Epoch time of a date in milliseconds.</para>
+
+              <para><emphasis role="bold">ani:</emphasis> The calling party.</para>
+
+              <para><emphasis role="bold">dnis:</emphasis> The called party.</para>
+
+              <para><emphasis role="bold">agent:</emphasis> The agent who handled the call. The value will be null if the caller hangs up without being connected to an agent or if this is not an ACD call.</para>
+			  
+			  <para><emphasis role="bold">enqueueTime:</emphasis> The time the caller was placed in the selected queue. This value will be null if the caller hangs up without reaching the queue or if this is not an ACD call.</para>
+			  
+			  <para><emphasis role="bold">agentCallStart:</emphasis> The time the agent answered the call. This value will be null if the caller hangs up without reaching an agent or if this is not an ACD call.</para>
+			  
+			  <para><emphasis role="bold">agentCallEnd:</emphasis> The time the call ended with this agent. This value will be null if the caller hangs up without reaching an agent or if this is not an ACD call.</para>
+			  
+              
+			  <para>It is possible to have multiple CDRs posted at the same time if the agent transferred the call to another agent or external party. There will be multiple structures and the the agent, agent call start and call end times will reflect each leg of the call.</para>
+		  
+		
+     		  
 		  </section>
 		  
     </section>
