@@ -171,6 +171,18 @@
 		</revdescription>
       </revision>
 	  
+	  <revision>
+	    <revnumber>1.0.12</revnumber>
+
+	    <date>09 February 2017</date>
+
+	    <authorinitials>Corey Geesey</authorinitials>
+
+	    <revdescription>
+	      <para>Updated Call History</para>
+		</revdescription>
+      </revision>
+	  
 	  
     </revhistory>
   </info>
@@ -7506,6 +7518,9 @@
 
               <para><emphasis role="bold">Called Party:</emphasis> The name of
               the call recipient.</para>
+			  
+			  <para><emphasis role="bold">Dialed Number:</emphasis> The number
+              that was originally dialed to reach Listen.</para>
 
               <para><emphasis role="bold">Duration:</emphasis> The length of
               the call.</para>
@@ -7513,6 +7528,10 @@
               <para><emphasis role="bold">Call Result:</emphasis> The result
               of the call <emphasis>(Call Answered, No answered or Call
               failed)</emphasis>.</para>
+			  
+			  <para><emphasis role="bold">ACD:</emphasis> Checked if the call
+              is from the ACD.</para>
+			  
             </glossdef>
           </glossentry>
         </glosslist>
@@ -7535,6 +7554,10 @@
 			
             <listitem>
               <para>Enter the callee number in the "Callee" tab.</para>
+            </listitem>
+			
+			<listitem>
+              <para>Enter the dailed number in the "Dialed Number" tab.</para>
             </listitem>
 
             <listitem>
